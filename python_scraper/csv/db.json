@@ -1,0 +1,2544 @@
+[{
+    "nome": "Rosalba ZIZZA |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969736",
+    "email": "rzizza@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "http://intranet.di.unisa.it/~zizza/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "10:00 - 12:00",
+            "location": "Null"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:00 - 16:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "METODI MATEMATICI PER L'INFORMATICA",
+            "code": "cod. 0512100041",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "STRUMENTI FORMALI PER LA BIOINFORMATICA",
+            "code": "cod. 0522500145",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/020880/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/020880.jpg",
+    "error": false
+},{
+    "nome": "ROCCO ZACCAGNINO |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "rzaccagnino@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "10:00 - 12:00",
+            "location": "Laboratorio di Computer Music"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "10:00 - 11:00",
+            "location": "Laboratorio di Computer Music"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "COMPUTATIONAL INTELLIGENCE & TECHNO-REGULATION. PARADIGMS, METHODS, TOOLS",
+            "code": "cod. 8860100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "METODI MATEMATICI PER L'INFORMATICA",
+            "code": "cod. 0512100041",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MUSICA ALGORITMICA E SOUND COMPUTING",
+            "code": "cod. 0522500150",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "STRUMENTI FORMALI PER LA BIOINFORMATICA",
+            "code": "cod. 0522500145",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/023039/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Giuliana VITIELLO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963317",
+    "email": "gvitiello@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 083 (U.FINV-12B.P01.083)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "15:30 - 16:30",
+            "location": "Null"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "12:30 - 14:30",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "HUMAN COMPUTER INTERACTION AND EXPERIENCE DESIGN IN THE INTERNET OF THINGS",
+            "code": "cod. 0522500124",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTERAZIONE UOMO MACCHINA",
+            "code": "cod. 0512100020",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "INTERAZIONE UOMO MACCHINA E USABILIT\u00c0 DEL SOFTWARE",
+            "code": "cod. 0522500013",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/003730/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/003730.jpg",
+    "error": false
+},{
+    "nome": "Ugo VACCARO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969734",
+    "email": "uvaccaro@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 109 (U.FSTEC-07.P04.109)",
+    "pagina_personale": "http://intranet.di.unisa.it/~uv/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "Campus di Fisciano, Stecca 7, Piano Quarto, stanza 109"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "Campus di Fisciano, Stecca 7, Piano Quarto, stanza 109"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "PROGETTAZIONE DI ALGORITMI",
+            "code": "cod. 0512100043",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "TEORIA DELL'INFORMAZIONE",
+            "code": "cod. 0522200052",
+            "department": "DIPARTIMENTO DI MATEMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "TEORIA DELL'INFORMAZIONE",
+            "code": "cod. 0522500148",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000806/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000806.jpg",
+    "error": false
+},{
+    "nome": "Maurizio TUCCI |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963312",
+    "email": "mtucci@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 077 (U.FINV-12B.P01.077)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Studio docente, FINV-12BP01077"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "12:00 - 13:00",
+            "location": "Studio docente, FINV-12BP01077"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "GEOGRAPHICAL INFORMATION SYSTEMS",
+            "code": "cod. 0522500086",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PRINCIPI DI INFORMATICA",
+            "code": "cod. 0512800019",
+            "department": "DIPARTIMENTO DI CHIMICA E BIOLOGIA \"ADOLFO ZAMBELLI\"",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE & STRUTTURE DATI",
+            "code": "cod. 0512100052",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001463/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001463.jpg",
+    "error": false
+},{
+    "nome": "Genoveffa TORTORA |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 963333",
+        "089 96 3314"
+    ],
+    "email": "tortora@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Studio. Edificio F2. 1\u00b0 piano, stanza 81"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "10:00 - 11:00",
+            "location": "Studio. Edificio F2. 1\u00b0 piano, stanza 81"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARTIFICIAL INTELLIGENCE",
+            "code": "cod. 0522700006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "BASI DI DATI",
+            "code": "cod. 0512100008",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "BASI DI DATI II",
+            "code": "cod. 0522500005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "NATURAL LANGUAGE PROCESSING",
+            "code": "cod. 0522500138",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000751/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000751.jpg",
+    "error": false
+},{
+    "nome": "CARMINE SPAGNUOLO |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "cspagnuolo@unisa.it",
+    "ufficio": "ISISLab2 (Campus di Fisciano, Edificio F, Secondo Piano) (U.FSTEC-07.P02.020)",
+    "pagina_personale": "https://spagnuolocarmine.github.io/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Dipartimento di Informatica, Campus di Fisciano, stecca 7, 2 piano, ISISLab 2"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "PROGRAMMAZIONE CONCORRENTE, PARALLELA E SU CLOUD",
+            "code": "cod. 0522500102",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE DISTRIBUITA",
+            "code": "cod. 0512100021",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/028012/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Monica Maria Lucia SEBILLO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963375",
+    "email": "msebillo@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "BASI DI DATI",
+            "code": "cod. 0512100008",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "GEOGRAPHICAL INFORMATION SYSTEMS",
+            "code": "cod. 0522500086",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTELLIGENT WEB",
+            "code": "cod. 0522500137",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "TECNOLOGIE PER LA GEOINFORMATICA",
+            "code": "cod. 0512100062",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004827/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004827.jpg",
+    "error": false
+},{
+    "nome": "Vittorio SCARANO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 969733",
+        "089 96 9307"
+    ],
+    "email": "vitsca@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 001 (U.FSTEC-07.P04.001)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Su piattaforma Microsoft Teams UNISA, contattarmi come utente vitsca@unisa.it"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Su piattaforma Microsoft Teams UNISA, contattarmi come utente vitsca@unisa.it"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ACCOMPAGNAMENTO AL LAVORO",
+            "code": "cod. 0512100054",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO",
+            "code": "cod. 0522500045",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "ARCHITETTURE DISTRIBUITE PER IL CLOUD",
+            "code": "cod. 0522500107",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "FONDAMENTI DI CLOUD COMPUTING",
+            "code": "cod. 0522700001",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTERNATIONAL SCHOOL ON IOT",
+            "code": "cod. 0522500122",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SERVERLESS COMPUTING FOR IOT",
+            "code": "cod. 0522500120",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001717/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001717.jpg",
+    "error": false
+},{
+    "nome": "Giuseppe SCANNIELLO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "gscanniello@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://sites.google.com/view/prof-giuseppe-scanniello/home",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "16:00 - 18:00",
+            "location": "Drop me an email"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "16:00 - 18:00",
+            "location": "Drop me an email"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "EMBEDDED SYSTEMS",
+            "code": "cod. 0522500126",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "LABORATORIO DI INFORMATICA",
+            "code": "cod. 0512900009",
+            "department": "DIPARTIMENTO DI FISICA \"E.R. CAIANIELLO\"",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "METODI PER IL TRATTAMENTO DELL'INFORMAZIONE",
+            "code": "cod. 0512300029",
+            "department": "DIPARTIMENTO DI MATEMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "TECNOLOGIE SOFTWARE PER IL WEB",
+            "code": "cod. 0512100056",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/020007/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/020007.jpg",
+    "error": false
+},{
+    "nome": "Simone ROMANO |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "siromano@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://sites.google.com/view/simoneromano/home?authuser=0",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "16:00 - 18:00",
+            "location": "Via Teams"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "LABORATORIO DI INFORMATICA",
+            "code": "cod. 0512900009",
+            "department": "DIPARTIMENTO DI FISICA \"E.R. CAIANIELLO\"",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "RICERCA INFERMIERISTICA E GESTIONE DELLE INFORMAZIONI",
+            "code": "cod. 1012100031",
+            "department": "DIPARTIMENTO DI MEDICINA, CHIRURGIA E ODONTOIATRIA \"SCUOLA MEDICA SALERNITANA\"",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "TECNOLOGIE SOFTWARE PER IL WEB",
+            "code": "cod. 0512100056",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/042849/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Adele Anna RESCIGNO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969732",
+    "email": "arescigno@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 103 (U.FSTEC-07.P04.103)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "meeting via Teams (canale Ricevimento del team Metodi Matematici per l'Informatica)"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "16:00 - 17:00",
+            "location": "meeting via Teams (canale Ricevimento del team Metodi Matematici per l'Informatica)"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "METODI MATEMATICI PER L'INFORMATICA",
+            "code": "cod. 0512100041",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "RETI SOCIALI",
+            "code": "cod. 0522500072",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SISTEMI OPERATIVI",
+            "code": "cod. 0512100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001727/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001727.jpg",
+    "error": false
+},{
+    "nome": "Giuseppe POLESE |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963315",
+    "email": "gpolese@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 082 (U.FINV-12B.P01.082)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "15:30 - 17:00",
+            "location": "Online, Team \"Ricevimento Prof. Polese\" su Microsoft Teams"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:30 - 17:00",
+            "location": "Online, Team \"Ricevimento Prof. Polese\" su Microsoft Teams"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "BASI DI DATI",
+            "code": "cod. 0512100008",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "BIG DATA",
+            "code": "cod. 0522700002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "FONDAMENTI DI DATA SCIENCE E MACHINE LEARNING",
+            "code": "cod. 0522500135",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTERNATIONAL SCHOOL ON IOT",
+            "code": "cod. 0522500122",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "MACHINE LEARNING",
+            "code": "cod. 0512100064",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MINING AND PROFILING DATA STREAMS",
+            "code": "cod. 8860100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004281/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004281.jpg",
+    "error": false
+},{
+    "nome": "Fabio PALOMBA |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "fpalomba@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://fpalomba.github.io",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "14:00 - 17:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "FONDAMENTI DI INTELLIGENZA ARTIFICIALE",
+            "code": "cod. 0512100055",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "INGEGNERIA DEL SOFTWARE",
+            "code": "cod. 0512100019",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "SCIENTIFIC WRITING AND PUBLISHING",
+            "code": "cod. 8860100001",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "SOFTWARE ENGINEERING FOR ARTIFICIAL INTELLIGENCE",
+            "code": "cod. 0522500139",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/027888/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/027888.jpg",
+    "error": false
+},{
+    "nome": "Francesco PALMIERI |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "fpalmieri@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "Stanza Docente o Laboratorio (o Canale Teams con prenotazione via e-mail)"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "Stanza Docente o Laboratorio (o Canale Teams con prenotazione via e-mail)"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "CYBERSECURITY",
+            "code": "cod. 0522500075",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTERNATIONAL SCHOOL ON IOT",
+            "code": "cod. 0522500122",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTERNET OF THINGS",
+            "code": "cod. 0522500144",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "RETI DI CALCOLATORI",
+            "code": "cod. 0512100011",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/026587/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/026587.jpg",
+    "error": false
+},{
+    "nome": "Marialaura NOCE |",
+    "titolo": "RicercatoreDocente a contratto",
+    "dipartimento": "Dipartimento di Informatica/DIDipartimento di Ingegneria Industriale/DIIN",
+    "telefono": "Null",
+    "email": "mnoce@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "MATEMATICA DISCRETA",
+            "code": "cod. 0512100040",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/032269/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default_f.jpg",
+    "error": false
+},{
+    "nome": "Amelia Giuseppina NOBILE |",
+    "titolo": "Docente a contratto",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963325",
+    "email": "nobile@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 091 (U.FINV-12B.P01.091)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Campus di Fisciano, Invariante 12B, primo piano, stanza 91"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Campus di Fisciano, Invariante 12B, primo piano, stanza 91"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "SIMULAZIONE",
+            "code": "cod. 0512100025",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000706/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000706.jpg",
+    "error": false
+},{
+    "nome": "Michele NAPPI |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 963334",
+        "089 96 3345"
+    ],
+    "email": "mnappi@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "CONTEXT AWARE SECURITY ANALYTICS IN COMPUTER VISION",
+            "code": "cod. 0522500118",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "FONDAMENTI DI VISIONE ARTIFICIALE E BIOMETRIA",
+            "code": "cod. 0522500084",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004288/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004288.jpg",
+    "error": false
+},{
+    "nome": "LEILA MORADI |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "lmoradi@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/046548/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default_f.jpg",
+    "error": false
+},{
+    "nome": "Barbara MASUCCI |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969727",
+    "email": "bmasucci@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 040 (U.FSTEC-07.P04.040)",
+    "pagina_personale": "https://www.di.unisa.it/~masucci",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "11:00 - 12:30",
+            "location": "Null"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "11:00 - 12:30",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARCHITETTURA DEGLI ELABORATORI",
+            "code": "cod. 0512100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE SICURA",
+            "code": "cod. 0522500065",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/005096/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/005096.jpg",
+    "error": false
+},{
+    "nome": "Michele MASTROIANNI |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "mmastroianni@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "FONDAMENTI DI CYBERSECURITY",
+            "code": "cod. 0522700005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/058549/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Delfina MALANDRINO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 96 9308",
+        "089 969714"
+    ],
+    "email": "dmalandrino@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "15:00 - 16:00",
+            "location": "Stecca 7 - Piano 4\u00b0, Studio 43."
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "Stecca 7 - Piano 4\u00b0, Studio 43."
+        }
+    ],
+    "corsi": [
+        {
+            "name": "COMPUTATIONAL INTELLIGENCE & TECHNO-REGULATION. PARADIGMS, METHODS, TOOLS",
+            "code": "cod. 8860100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "PROGRAMMAZIONE DISTRIBUITA",
+            "code": "cod. 0512100021",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "RETI GEOGRAFICHE: STRUTTURA, ANALISI E PRESTAZIONI",
+            "code": "cod. 0522500114",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/005126/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/005126.jpg",
+    "error": false
+},{
+    "nome": "Salvatore LA TORRE |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969726",
+    "email": "slatorre@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 085 (U.FSTEC-07.P04.085)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "PROGRAMMAZIONE OBJECT ORIENTED",
+            "code": "cod. 0512100053",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "TECNICHE AUTOMATICHE PER LA CORRETTEZZA DEL SOFTWARE",
+            "code": "cod. 0522500076",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004821/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004821.jpg",
+    "error": false
+},{
+    "nome": "Gerardo IOVANE |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "giovane@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "13:00 - 15:00",
+            "location": "stanza 278 blocco E"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "13:00 - 14:00",
+            "location": "stanza 278 blocco E"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ANALISI MATEMATICA",
+            "code": "cod. 0512100001",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "FINANCIAL COMPUTING E TECNOLOGIE PER L'HIGH FREQUENCY TRADING",
+            "code": "cod. 0522500090",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004508/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Carmine GRAVINO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963503",
+    "email": "gravino@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 077 (U.FINV-12B.P01.077)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Edificio F2 - Primo Piano, Stanza 077"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Edificio F2 - Primo Piano, Stanza 077"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "INGEGNERIA DEL SOFTWARE",
+            "code": "cod. 0512100019",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "METRICHE E QUALIT\u00c0 DEL SOFTWARE",
+            "code": "cod. 0522500087",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SOFTWARE ENGINEERING FOR SECURE CLOUD SYSTEMS",
+            "code": "cod. 0522700004",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004724/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004724.jpg",
+    "error": false
+},{
+    "nome": "Carmine Grasso |",
+    "titolo": "Docente a contratto",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "cgrasso@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://www.carminegrasso.it",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "17:30 - 18:30",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARCHITETTURA DEGLI ELABORATORI",
+            "code": "cod. 0512100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/065301/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Virginia GIORNO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963371",
+    "email": "giorno@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 091 (U.FINV-12B.P01.091)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "9:00 - 10:30",
+            "location": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 091"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "9:00 - 10:30",
+            "location": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 091"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "AFFIDABILITA' DI SISTEMI",
+            "code": "cod. 0522500001",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "CALCOLO DELLE PROBABILITA' E STATISTICA MATEMATICA",
+            "code": "cod. 0512100009",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MODELLI PER IL TRATTAMENTO DELL'INFORMAZIONE",
+            "code": "cod. 0522200051",
+            "department": "DIPARTIMENTO DI MATEMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000781/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000781.jpg",
+    "error": false
+},{
+    "nome": "Luisa GARGANO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969725",
+    "email": "lgargano@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 110 (U.FSTEC-07.P04.110)",
+    "pagina_personale": "http://www.di.unisa.it/~lg/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "15:00 - 16:00",
+            "location": "Da concordare via email"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "15:00 - 16:00",
+            "location": "Da concordare via email"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "RETI SOCIALI",
+            "code": "cod. 0522500072",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000779/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000779.jpg",
+    "error": false
+},{
+    "nome": "Pietro FUSCO |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "pfusco@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/064613/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Vittorio FUCCELLA |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 963320",
+        "089 96 3390"
+    ],
+    "email": "vfuccella@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "13:30 - 15:30",
+            "location": "Campus di Fisciano, Invariante 12B, Piano Primo, stanza 084"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Campus di Fisciano, Invariante 12B, Piano Primo, stanza 084"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "INTERACTIVE SYSTEMS DESIGN",
+            "code": "cod. 0522500103",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE & STRUTTURE DATI",
+            "code": "cod. 0512100052",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004376/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004376.jpg",
+    "error": false
+},{
+    "nome": "Rita FRANCESE |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963316",
+    "email": "francese@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "-",
+            "location": "- Microsoft teams codice corso: amhccqo"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "15:00 - 16:30",
+            "location": "piattaforma teams del corso"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "15:00 - 16:30",
+            "location": "piattaforma teams del corso"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ENTERPRISE MOBILE APPLICATION DEVELOPMENT",
+            "code": "cod. 0522500088",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "TECNOLOGIE SOFTWARE PER IL WEB",
+            "code": "cod. 0512100056",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004763/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004763.jpg",
+    "error": false
+},{
+    "nome": "Ugo FIORE |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "ufiore@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARCHITETTURA DEGLI ELABORATORI",
+            "code": "cod. 0512100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "CYBERSECURITY",
+            "code": "cod. 0522500075",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "DIGITAL FORENSICS",
+            "code": "cod. 0522500100",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "RETI DI CALCOLATORI",
+            "code": "cod. 0512100011",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/026152/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Massimo FICCO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 968242",
+    "email": "mficco@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "LAB OF IOT",
+            "code": "cod. 0522500123",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE OBJECT ORIENTED",
+            "code": "cod. 0512100053",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/058291/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Filomena FERRUCCI |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963374",
+    "email": "fferrucci@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 084 (U.FINV-12B.P01.084)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:30 - 13:30",
+            "location": "Null"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "13:00 - 14:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "DIDATTICA DELL'INFORMATICA",
+            "code": "cod. 0522500104",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "GESTIONE DEI PROGETTI SOFTWARE",
+            "code": "cod. 0522500008",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INGEGNERIA DEL SOFTWARE",
+            "code": "cod. 0512100019",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001775/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001775.jpg",
+    "error": false
+},{
+    "nome": "ESLAM FARSIMADAN |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "efarsimadan@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/046532/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "CHRISTIANCARMINE ESPOSITO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969728",
+    "email": "esposito@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 018 (U.FSTEC-07.P04.018)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 018."
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 018."
+        }
+    ],
+    "corsi": [
+        {
+            "name": "5G TECHNOLOGIES FOR THE NEXT GENERATION NETWORKS",
+            "code": "cod. 8860100007",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "EXPLOITATION OF RESEARCH RESULTS",
+            "code": "cod. 8860100003",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "IOT SECURITY",
+            "code": "cod. 0522500140",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE OBJECT ORIENTED",
+            "code": "cod. 0512100053",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "RETI DI CALCOLATORI",
+            "code": "cod. 0512100011",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/030400/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/030400.jpg",
+    "error": false
+},{
+    "nome": "Riccardo DISTASI |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "ricdis@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "13:00 - 14:30",
+            "location": "Contattare via email"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "13:00 - 14:00",
+            "location": "Contattare via email"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "COMPUTER ASSISTED AUDIO PRODUCTION",
+            "code": "cod. 0522500147",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004532/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "DARIO DI NUCCI |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "ddinucci@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://dardin88.github.io/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Stanza L11. Ex sala del consiglio del Dipartimento di Informatica, vicino al laboratorio Alan Turing."
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "14:00 - 16:00",
+            "location": "Stanza L11. Ex sala del consiglio del Dipartimento di Informatica, vicino al laboratorio Alan Turing."
+        }
+    ],
+    "corsi": [
+        {
+            "name": "FUNDING AND MANAGEMENT OF RESEARCH PROJECTS",
+            "code": "cod. 8860100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "PROGRAMMAZIONE OBJECT ORIENTED",
+            "code": "cod. 0512100053",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "SOFTWARE DEPENDABILITY",
+            "code": "cod. 0522500119",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SOFTWARE ENGINEERING FOR SECURE CLOUD SYSTEMS",
+            "code": "cod. 0522700004",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/029186/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/029186.jpg",
+    "error": false
+},{
+    "nome": "Luigi Di Biasi |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "ldibiasi@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "10:30 - 12:30",
+            "location": "Laboratorio L8"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Laboratorio 43"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "BASI DI DATI",
+            "code": "cod. 0512100008",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "STATISTICA E ANALISI DEI DATI",
+            "code": "cod. 0522500094",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/029717/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/029717.jpg",
+    "error": false
+},{
+    "nome": "Vincenzo DEUFEMIA |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963346",
+    "email": "deufemia@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 082 (U.FINV-12B.P01.082)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Null"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "BIG DATA",
+            "code": "cod. 0522700002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTELLIGENZA ARTIFICIALE",
+            "code": "cod. 0522500093",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE OBJECT ORIENTED",
+            "code": "cod. 0512100053",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/005087/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/005087.jpg",
+    "error": false
+},{
+    "nome": "Alfredo DE SANTIS |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969723",
+    "email": "ads@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "http://www.di-srv.unisa.it/~ads/pages/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "16:00 - 18:00",
+            "location": "Ufficio del docente: Stecca 7, livello 4, ufficio 48."
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "15:00 - 17:00",
+            "location": "Ufficio del docente: Stecca 7, livello 4, ufficio 48."
+        }
+    ],
+    "corsi": [
+        {
+            "name": "SICUREZZA",
+            "code": "cod. 0512100048",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "SICUREZZA DEI DATI",
+            "code": "cod. 0522500062",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000769/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000769.jpg",
+    "error": false
+},{
+    "nome": "Roberto DE PRISCO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969722",
+    "email": "robdep@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 102 (U.FSTEC-07.P04.102)",
+    "pagina_personale": "http://intranet.di.unisa.it/~robdep",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 12:30",
+            "location": "studio 58, piano 4"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "14:00 - 15:30",
+            "location": "studio 58, piano 4"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ALGORITMI AVANZATI",
+            "code": "cod. 0522500064",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "MOBILE PROGRAMMING",
+            "code": "cod. 0512100057",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MUSICA ALGORITMICA E SOUND COMPUTING",
+            "code": "cod. 0522500150",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "MUSIMATICA",
+            "code": "cod. 0512100065",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/003550/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/003550.jpg",
+    "error": false
+},{
+    "nome": "Gianluca DE MARCO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969721",
+    "email": "gidemarco@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": [
+        "http://www.di.unisa.it/~demarco/",
+        "https://scholar.google.com/citations?user=Eg0ZuKUAAAAJ&hl=it"
+    ],
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:00 - 16:30",
+            "location": "studio del docente"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "11:30 - 13:00",
+            "location": "studio del docente"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "LABORATORIO DI INFORMATICA",
+            "code": "cod. 0512600017",
+            "department": "DIPARTIMENTO DI FISICA \"E.R. CAIANIELLO\"",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004514/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Carmen DE MAIO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 969514",
+        "089 96 9318"
+    ],
+    "email": "cdemaio@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 063 (U.FSTEC-08.P04.063)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "8:30 - 10:30",
+            "location": "Stecca 8 - Piano Quarto, stanza 063"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "CYBER INTELLIGENCE & SECURITY",
+            "code": "cod. 8861100009",
+            "department": "DIPARTIMENTO DI SCIENZE AZIENDALI - MANAGEMENT & INNOVATION SYSTEMS",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "DISTRIBUTED PROGRAMMING",
+            "code": "cod. 0622700074",
+            "department": "DIPARTIMENTO DI INGEGNERIA DELL'INFORMAZIONE ED ELETTRICA E MATEMATICA APPLICATA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "FONDAMENTI DI PROGRAMMAZIONE",
+            "code": "cod. 0612700106",
+            "department": "DIPARTIMENTO DI INGEGNERIA DELL'INFORMAZIONE ED ELETTRICA E MATEMATICA APPLICATA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MOBILE PROGRAMMING",
+            "code": "cod. 0612700123",
+            "department": "DIPARTIMENTO DI INGEGNERIA DELL'INFORMAZIONE ED ELETTRICA E MATEMATICA APPLICATA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE & STRUTTURE DATI",
+            "code": "cod. 0512100052",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/023600/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/023600.jpg",
+    "error": false
+},{
+    "nome": "Andrea DE LUCIA |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963376",
+    "email": "adelucia@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 089 (U.FINV-12B.P01.089)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "11:00 - 12:30",
+            "location": "Edificio F2, primo piano, stanza 089"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "11:00 - 12:30",
+            "location": "Edificio F2, primo piano, stanza 089"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "FUNDING AND MANAGEMENT OF RESEARCH PROJECTS",
+            "code": "cod. 8860100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "INGEGNERIA DEL SOFTWARE",
+            "code": "cod. 0512100019",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "INGEGNERIA, GESTIONE ED EVOLUZIONE DEL SOFTWARE",
+            "code": "cod. 0522500083",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "INTERNATIONAL SCHOOL ON IOT",
+            "code": "cod. 0522500122",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/003241/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/003241.jpg",
+    "error": false
+},{
+    "nome": "Clelia DE FELICE |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969720",
+    "email": "cdefelice@unisa.it",
+    "ufficio": "U.FSTEC-07.P04.093",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "13:30 - 15:30",
+            "location": "Ufficio U.FSTEC-07.P04.093"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "METODI MATEMATICI PER L'INFORMATICA",
+            "code": "cod. 0512100041",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "STRUMENTI FORMALI PER LA BIOINFORMATICA",
+            "code": "cod. 0522500145",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001119/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001119.jpg",
+    "error": false
+},{
+    "nome": "Annalisa DE BONIS |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969719",
+    "email": "adebonis@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 082 (U.FSTEC-07.P04.082)",
+    "pagina_personale": "http://intranet.di.unisa.it/~debonis/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "14:30 - 16:30",
+            "location": "Null"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "16:00 - 17:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "PROGETTAZIONE DI ALGORITMI",
+            "code": "cod. 0512100043",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE AVANZATA",
+            "code": "cod. 0512100047",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004511/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default_f.jpg",
+    "error": false
+},{
+    "nome": "Paolo D'ARCO |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969718",
+    "email": "pdarco@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "http://intranet.di.unisa.it/~paodar/index.html",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "15:00 - 16:30",
+            "location": "Null"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "10:30 - 12:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI CRITTOGRAFIA",
+            "code": "cod. 0522500080",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "FONDAMENTI DI INFORMATICA E LABORATORIO",
+            "code": "cod. 0512300003",
+            "department": "DIPARTIMENTO DI MATEMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "SECURE MULTI-PARTY COMPUTATION",
+            "code": "cod. 8860100009",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004531/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004531.jpg",
+    "error": false
+},{
+    "nome": "Gianni D'ANGELO |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969594",
+    "email": "giadangelo@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 061 (U.FSTEC-08.P04.061)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Null"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARCHITETTURA DEGLI ELABORATORI",
+            "code": "cod. 0512100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "RETI DI CALCOLATORI",
+            "code": "cod. 0512100011",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004492/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004492.jpg",
+    "error": false
+},{
+    "nome": "Gennaro COSTAGLIOLA |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 963319",
+        "089 96 3390"
+    ],
+    "email": "gencos@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 036 (U.FSTEC-08.P04.036)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "aulaF5-ufficio"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:30 - 16:30",
+            "location": "aulaF5-ufficio"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "COMPILATORI",
+            "code": "cod. 0522500134",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "TECNOLOGIE SOFTWARE PER IL WEB",
+            "code": "cod. 0512100056",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001602/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001602.jpg",
+    "error": false
+},{
+    "nome": "Biagio COSENZA |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "bcosenza@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://www.cosenza.eu",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "10:00 - 11:00",
+            "location": "Dipartimento di Informatica, Campus di Fisciano, stecca 7, 4 piano"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Dipartimento di Informatica, Campus di Fisciano, stecca 7, 4 piano"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "HIGH PERFORMANCE COMPUTING",
+            "code": "cod. 0522500136",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE DISTRIBUITA",
+            "code": "cod. 0512100021",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/022879/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/022879.jpg",
+    "error": false
+},{
+    "nome": "STEFANO CIRILLO |",
+    "titolo": "Docente a contrattoRicercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "scirillo@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "STATISTICA E ANALISI DEI DATI",
+            "code": "cod. 0522500094",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/032633/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/032633.jpg",
+    "error": false
+},{
+    "nome": "Martina Cerulli |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "mcerulli@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/064642/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/064642.jpg",
+    "error": false
+},{
+    "nome": "Giuseppe CATTANEO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969716",
+    "email": "cattaneo@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": [
+        "http://www.researcherid.com/rid/R-4680-2016",
+        "https://scholar.google.it/citations?user=PKs7M0gAAAAJ&hl=en"
+    ],
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "17:00 - 18:00",
+            "location": "Per tutta la durata della cosiddetta fase 2 sar\u00e0 possibile stabilire una connessione on-line attraverso la piattaforma MS Teams"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "16:00 - 18:00",
+            "location": "Per tutta la durata della cosiddetta fase 2 sar\u00e0 possibile stabilire una connessione on-line attraverso la piattaforma MS Teams"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "SISTEMI OPERATIVI",
+            "code": "cod. 0512100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/000763/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/000763.jpg",
+    "error": false
+},{
+    "nome": "Gemma Catolino |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "gcatolino@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "https://www.gemmacatolino.com",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "15:00 - 18:00",
+            "location": "Edificio F2 | Piano -1 | Laboratorio 12-06"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/033024/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default_f.jpg",
+    "error": false
+},{
+    "nome": "Arcangelo CASTIGLIONE |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963306",
+    "email": "arcastiglione@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F, Piano Quarto, stanza 018 (U.FSTEC-07.P04.018)",
+    "pagina_personale": "https://docenti.unisa.it/026260/ricerca/laboratori?id=668",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "14:00 - 16:00",
+            "location": "Stanza Docente o Laboratorio (o Teams con prenotazione via e-mail)"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Stanza Docente o Laboratorio (o Teams con prenotazione via e-mail)"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARCHITETTURA DEGLI ELABORATORI",
+            "code": "cod. 0512100002",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PENETRATION TESTING AND ETHICAL HACKING",
+            "code": "cod. 0522500081",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/026260/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/026260.jpg",
+    "error": false
+},{
+    "nome": "Lucia CASCONE |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "lcascone@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/035387/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/035387.jpg",
+    "error": false
+},{
+    "nome": "LOREDANA CARUCCIO |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "lcaruccio@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "17:00 - 18:00",
+            "location": "A distanza, Team Ricevimento - Dott.ssa Loredana Caruccio, Codice l5sjqez"
+        },
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "16:00 - 18:00",
+            "location": "A distanza, Team Ricevimento - Dott.ssa Loredana Caruccio, Codice l5sjqez"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ARTIFICIAL INTELLIGENCE",
+            "code": "cod. 0522700006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "BASI DI DATI",
+            "code": "cod. 0512100008",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MACHINE LEARNING",
+            "code": "cod. 0512100064",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "MINING AND PROFILING DATA STREAMS",
+            "code": "cod. 8860100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        },
+        {
+            "name": "NATURAL LANGUAGE PROCESSING",
+            "code": "cod. 0522500138",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/027648/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/027648.jpg",
+    "error": false
+},{
+    "nome": "Bruno CARPENTIERI |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969500",
+    "email": "bcarpentieri@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Null"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "COMPRESSIONE DATI",
+            "code": "cod. 0522500077",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SISTEMI OPERATIVI",
+            "code": "cod. 0512100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001368/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001368.jpg",
+    "error": false
+},{
+    "nome": "Elmo BENEDETTO |",
+    "titolo": "Docente a contrattoAssegnista di ricerca",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "ebenedetto@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Null"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "9:00 - 11:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/039085/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default.jpg",
+    "error": false
+},{
+    "nome": "Pietro Battistoni |",
+    "titolo": "Docente a contrattoRicercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 963324",
+    "email": "pbattistoni@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 043 (U.FINV-12B.P01.043)",
+    "pagina_personale": "https://battistoni.it/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Mercoled\u00ec",
+            "timings": "11:00 - 12:00",
+            "location": "Edificio F2, Piano 1\u00b0 Stanza 43 (Open Space)"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ROBOT PROGRAMMING",
+            "code": "cod. 0522500125",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        }
+    ],
+    "url": "https://docenti.unisa.it/041968/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/041968.jpg",
+    "error": false
+},{
+    "nome": "ALESSIA AURIEMMA CITARELLA |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "aauriemmacitarella@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/038541/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default_f.jpg",
+    "error": false
+},{
+    "nome": "Marcella ANSELMO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969712",
+    "email": "manselmo@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "http://www.di.unisa.it/~anselmo/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "9:30 - 11:00",
+            "location": "Null"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "9:30 - 11:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGETTAZIONE DI ALGORITMI",
+            "code": "cod. 0512100043",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001367/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001367.jpg",
+    "error": false
+},{
+    "nome": "Andrea Francesco ABATE |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 963313",
+        "089 96 3432"
+    ],
+    "email": "abate@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 092 (U.FINV-12B.P01.092)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "15:30 - 17:00",
+            "location": "Studio docente"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:30 - 17:00",
+            "location": "Studio docente"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "GRAFICA ED INTERATTIVITA'",
+            "code": "cod. 0512100049",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "INFORMATION VISUALIZATION",
+            "code": "cod. 0522500098",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SISTEMI OPERATIVI",
+            "code": "cod. 0512100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004620/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004620.jpg",
+    "error": false
+},{
+    "nome": "Fabio Narducci |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "fnarducci@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Luned\u00ec",
+            "timings": "10:00 - 11:00",
+            "location": "Laboratorio CGLab, FINV12BS01048"
+        },
+        {
+            "day": "Marted\u00ec",
+            "timings": "11:00 - 13:00",
+            "location": "Laboratorio CGLab, FINV12BS01048"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "14:00 - 15:00",
+            "location": "Laboratorio CGLab, FINV12BS01048"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "CONTEXT AWARE SECURITY ANALYTICS IN COMPUTER VISION",
+            "code": "cod. 0522500118",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "PROGRAMMAZIONE & STRUTTURE DATI",
+            "code": "cod. 0512100052",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGRAMMAZIONE I",
+            "code": "cod. 0512100005",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "SCIENTIFIC WRITING AND PUBLISHING",
+            "code": "cod. 8860100001",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI DOTTORATO (D.M.226/2021)"
+        }
+    ],
+    "url": "https://docenti.unisa.it/025547/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/025547.jpg",
+    "error": false
+}]

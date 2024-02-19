@@ -1,0 +1,98 @@
+id_professore,giorno,orario,luogo
+1,Mercoledì,10:00 - 12:00,Null
+1,Giovedì,15:00 - 16:00,Null
+2,Martedì,15:30 - 16:30,Null
+2,Giovedì,12:30 - 14:30,Null
+3,Lunedì,15:00 - 17:00,"Campus di Fisciano, Stecca 7, Piano Quarto, stanza 109"
+3,Giovedì,15:00 - 17:00,"Campus di Fisciano, Stecca 7, Piano Quarto, stanza 109"
+4,Lunedì,11:00 - 13:00,"Studio docente, FINV-12BP01077"
+4,Martedì,12:00 - 13:00,"Studio docente, FINV-12BP01077"
+5,Martedì,11:00 - 13:00,"Studio. Edificio F2. 1° piano, stanza 81"
+5,Giovedì,10:00 - 11:00,"Studio. Edificio F2. 1° piano, stanza 81"
+6,Lunedì,11:00 - 13:00,"Dipartimento di Informatica, Campus di Fisciano, stecca 7, 2 piano, ISISLab 2"
+8,Giovedì,9:00 - 11:00,"Su piattaforma Microsoft Teams UNISA, contattarmi come utente vitsca@unisa.it"
+8,Venerdì,11:00 - 12:00,"Su piattaforma Microsoft Teams UNISA, contattarmi come utente vitsca@unisa.it"
+9,Lunedì,16:00 - 18:00,Drop me an email
+9,Martedì,16:00 - 18:00,Drop me an email
+10,Martedì,16:00 - 18:00,Via Teams
+11,Martedì,15:00 - 17:00,meeting via Teams (canale Ricevimento del team Metodi Matematici per l'Informatica)
+11,Mercoledì,16:00 - 17:00,meeting via Teams (canale Ricevimento del team Metodi Matematici per l'Informatica)
+12,Martedì,15:30 - 17:00,"Online, Team ""Ricevimento Prof. Polese"" su Microsoft Teams"
+12,Giovedì,15:30 - 17:00,"Online, Team ""Ricevimento Prof. Polese"" su Microsoft Teams"
+13,Giovedì,14:00 - 17:00,Null
+14,Lunedì,15:00 - 17:00,Stanza Docente o Laboratorio (o Canale Teams con prenotazione via e-mail)
+14,Mercoledì,15:00 - 17:00,Stanza Docente o Laboratorio (o Canale Teams con prenotazione via e-mail)
+16,Lunedì,9:00 - 11:00,"Campus di Fisciano, Invariante 12B, primo piano, stanza 91"
+16,Mercoledì,9:00 - 11:00,"Campus di Fisciano, Invariante 12B, primo piano, stanza 91"
+17,Lunedì,10:00 - 11:00,"Laboratorio CGLab, FINV12BS01048"
+17,Martedì,11:00 - 13:00,"Laboratorio CGLab, FINV12BS01048"
+17,Giovedì,14:00 - 15:00,"Laboratorio CGLab, FINV12BS01048"
+20,Lunedì,11:00 - 12:30,Null
+20,Mercoledì,11:00 - 12:30,Null
+22,Lunedì,15:00 - 16:00,"Stecca 7 - Piano 4°, Studio 43."
+22,Mercoledì,15:00 - 17:00,"Stecca 7 - Piano 4°, Studio 43."
+24,Mercoledì,13:00 - 15:00,stanza 278 blocco E
+24,Giovedì,13:00 - 14:00,stanza 278 blocco E
+25,Giovedì,11:00 - 13:00,"Edificio F2 - Primo Piano, Stanza 077"
+25,Venerdì,9:00 - 11:00,"Edificio F2 - Primo Piano, Stanza 077"
+26,Giovedì,17:30 - 18:30,Null
+27,Lunedì,9:00 - 10:30,"Campus di Fisciano, Edificio F2, Piano Primo, stanza 091"
+27,Martedì,9:00 - 10:30,"Campus di Fisciano, Edificio F2, Piano Primo, stanza 091"
+28,Lunedì,15:00 - 16:00,Da concordare via email
+28,Venerdì,15:00 - 16:00,Da concordare via email
+30,Lunedì,13:30 - 15:30,"Campus di Fisciano, Invariante 12B, Piano Primo, stanza 084"
+30,Giovedì,11:00 - 12:00,"Campus di Fisciano, Invariante 12B, Piano Primo, stanza 084"
+31,Lunedì,-,- Microsoft teams codice corso: amhccqo
+31,Martedì,15:00 - 16:30,piattaforma teams del corso
+31,Venerdì,15:00 - 16:30,piattaforma teams del corso
+33,Lunedì,11:00 - 13:00,Null
+34,Martedì,11:30 - 13:30,Null
+34,Venerdì,13:00 - 14:00,Null
+36,Martedì,11:00 - 13:00,"Campus di Fisciano, Edificio F, Piano Quarto, stanza 018."
+36,Giovedì,9:00 - 11:00,"Campus di Fisciano, Edificio F, Piano Quarto, stanza 018."
+37,Mercoledì,13:00 - 14:30,Contattare via email
+37,Giovedì,13:00 - 14:00,Contattare via email
+38,Martedì,11:00 - 13:00,"Stanza L11. Ex sala del consiglio del Dipartimento di Informatica, vicino al laboratorio Alan Turing."
+38,Mercoledì,14:00 - 16:00,"Stanza L11. Ex sala del consiglio del Dipartimento di Informatica, vicino al laboratorio Alan Turing."
+39,Mercoledì,10:30 - 12:30,Laboratorio L8
+39,Giovedì,11:00 - 13:00,Laboratorio 43
+40,Giovedì,16:00 - 18:00,"Ufficio del docente: Stecca 7, livello 4, ufficio 48."
+40,Venerdì,15:00 - 17:00,"Ufficio del docente: Stecca 7, livello 4, ufficio 48."
+41,Martedì,11:00 - 12:30,"studio 58, piano 4"
+41,Giovedì,14:00 - 15:30,"studio 58, piano 4"
+42,Giovedì,15:00 - 16:30,studio del docente
+42,Venerdì,11:30 - 13:00,studio del docente
+43,Martedì,8:30 - 10:30,"Stecca 8 - Piano Quarto, stanza 063"
+44,Lunedì,11:00 - 12:30,"Edificio F2, primo piano, stanza 089"
+44,Mercoledì,11:00 - 12:30,"Edificio F2, primo piano, stanza 089"
+45,Martedì,13:30 - 15:30,Ufficio U.FSTEC-07.P04.093
+46,Lunedì,14:30 - 16:30,Null
+46,Mercoledì,16:00 - 17:00,Null
+47,Lunedì,15:00 - 16:30,Null
+47,Giovedì,10:30 - 12:00,Null
+48,Lunedì,11:00 - 13:00,Null
+48,Martedì,11:00 - 13:00,Null
+49,Mercoledì,11:00 - 13:00,aulaF5-ufficio
+49,Giovedì,15:30 - 16:30,aulaF5-ufficio
+50,Giovedì,10:00 - 11:00,"Dipartimento di Informatica, Campus di Fisciano, stecca 7, 4 piano"
+50,Venerdì,11:00 - 12:00,"Dipartimento di Informatica, Campus di Fisciano, stecca 7, 4 piano"
+53,Giovedì,17:00 - 18:00,Per tutta la durata della cosiddetta fase 2 sarà possibile stabilire una connessione on-line attraverso la piattaforma MS Teams
+53,Venerdì,16:00 - 18:00,Per tutta la durata della cosiddetta fase 2 sarà possibile stabilire una connessione on-line attraverso la piattaforma MS Teams
+54,Mercoledì,15:00 - 18:00,Edificio F2 | Piano -1 | Laboratorio 12-06
+55,Martedì,14:00 - 16:00,Stanza Docente o Laboratorio (o Teams con prenotazione via e-mail)
+55,Giovedì,11:00 - 12:00,Stanza Docente o Laboratorio (o Teams con prenotazione via e-mail)
+57,Martedì,17:00 - 18:00,"A distanza, Team Ricevimento - Dott.ssa Loredana Caruccio, Codice l5sjqez"
+57,Mercoledì,16:00 - 18:00,"A distanza, Team Ricevimento - Dott.ssa Loredana Caruccio, Codice l5sjqez"
+58,Martedì,11:00 - 13:00,Null
+58,Giovedì,11:00 - 12:00,Null
+59,Lunedì,9:00 - 11:00,Null
+59,Martedì,9:00 - 11:00,Null
+60,Mercoledì,11:00 - 12:00,"Edificio F2, Piano 1° Stanza 43 (Open Space)"
+62,Giovedì,9:30 - 11:00,Null
+62,Venerdì,9:30 - 11:00,Null
+63,Martedì,15:30 - 17:00,Studio docente
+63,Giovedì,15:30 - 17:00,Studio docente
+64,Martedì,10:00 - 12:00,Laboratorio di Computer Music
+64,Giovedì,10:00 - 11:00,Laboratorio di Computer Music
+65,Martedì,11:00 - 12:00,Null
+65,Giovedì,11:00 - 13:00,Null
