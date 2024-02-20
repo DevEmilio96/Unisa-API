@@ -1,0 +1,103 @@
+[{
+    "nome": "ALESSIA AURIEMMA CITARELLA |",
+    "titolo": "Ricercatore",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "Null",
+    "email": "aauriemmacitarella@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Null",
+            "timings": "Null",
+            "location": "Null"
+        }
+    ],
+    "corsi": [],
+    "url": "https://docenti.unisa.it/038541/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/default_f.jpg",
+    "error": false
+},{
+    "nome": "Marcella ANSELMO |",
+    "titolo": "Professore Associato",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": "089 969712",
+    "email": "manselmo@unisa.it",
+    "ufficio": "Null",
+    "pagina_personale": "http://www.di.unisa.it/~anselmo/",
+    "orari_di_ricevimento": [
+        {
+            "day": "Gioved\u00ec",
+            "timings": "9:30 - 11:00",
+            "location": "Null"
+        },
+        {
+            "day": "Venerd\u00ec",
+            "timings": "9:30 - 11:00",
+            "location": "Null"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "ELEMENTI DI TEORIA DELLA COMPUTAZIONE",
+            "code": "cod. 0512100018",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "PROGETTAZIONE DI ALGORITMI",
+            "code": "cod. 0512100043",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/001367/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/001367.jpg",
+    "error": false
+},{
+    "nome": "Andrea Francesco ABATE |",
+    "titolo": "Professore Ordinario",
+    "dipartimento": "Dipartimento di Informatica/DI",
+    "telefono": [
+        "089 963313",
+        "089 96 3432"
+    ],
+    "email": "abate@unisa.it",
+    "ufficio": "Campus di Fisciano, Edificio F2, Piano Primo, stanza 092 (U.FINV-12B.P01.092)",
+    "pagina_personale": "Null",
+    "orari_di_ricevimento": [
+        {
+            "day": "Marted\u00ec",
+            "timings": "15:30 - 17:00",
+            "location": "Studio docente"
+        },
+        {
+            "day": "Gioved\u00ec",
+            "timings": "15:30 - 17:00",
+            "location": "Studio docente"
+        }
+    ],
+    "corsi": [
+        {
+            "name": "GRAFICA ED INTERATTIVITA'",
+            "code": "cod. 0512100049",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        },
+        {
+            "name": "INFORMATION VISUALIZATION",
+            "code": "cod. 0522500098",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA MAGISTRALE"
+        },
+        {
+            "name": "SISTEMI OPERATIVI",
+            "code": "cod. 0512100006",
+            "department": "DIPARTIMENTO DI INFORMATICA",
+            "degree": "CORSO DI LAUREA"
+        }
+    ],
+    "url": "https://docenti.unisa.it/004620/home",
+    "url_immagine_professore": "https://docenti.unisa.it/uploads/rescue/foto/004620.jpg",
+    "error": false
+}]

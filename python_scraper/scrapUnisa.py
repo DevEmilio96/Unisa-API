@@ -7,6 +7,7 @@ import warnings
 from collections import deque
 import getUrlDocenti
 import json
+from write_to_remote_database import write_to_remote_database
 
 # Ignora tutti i warning
 warnings.filterwarnings("ignore")
@@ -148,6 +149,7 @@ def estrai_dati_professore(url_professore):
         
         # Seleziona i dati dal layout della pagina, usando i selettori appropriati
         nome = soup.find('h1', id='rescue-title').find('span', class_='hidden-xs').text.strip()
+        nome = nome.replace(" |", "")
         # Titolo
         titolo = analize_icon(soup,"glyphicon glyphicon-user")
         # Dipartimento
@@ -206,25 +208,12 @@ def estrai_dati_professore(url_professore):
     return dati_professore
 
 
-# URL della pagina principale del collegio dei docenti
-#url_collegio_docenti = 'https://corsi.unisa.it/88601/collegio-dei-docenti'
-
-# Richiesta HTTP alla pagina principale
-#response = requests.get(url_collegio_docenti, verify=False)
-#soup = BeautifulSoup(response.text, 'html.parser')
-
-# Trova tutti i link dei professori (modifica il selettore in base alla struttura della pagina)
-#links_professori = soup.select('div.clearfix ul li.text-justify a')
-# Elimina Duplicati
-#links_unici = set(link.get('href') for link in links_professori)  # Converti in set per rimuovere i duplicati
-#links_professori = list(links_unici)  # Converti nuovamente in lista per l'iterazione
-
 links_professori = getUrlDocenti.getUrlDocenti()
 # Lista per salvare i dati
 dati_professori = []
 
 #split array for test
-#links_professori = links_professori[:3]
+links_professori = links_professori[:3]
 # Converti l'elenco dei link in una deque (coda doppia) che funge da stack
 stack_links = deque(links_professori)
 
@@ -252,15 +241,16 @@ while stack_links:
 ##################################################################################################################################
 
 # Scrivi la stringa JSON in un file
-with open('db.json', 'w') as json_file:
-    json_file.write('[')  # Inizia con una parentesi quadra aperta
-    for index, professore in enumerate(dati_professori):
-        # Trasforma ciascun oggetto in una stringa JSON e scrivilo nel file
-        json_string = json.dumps(professore, indent=4)
-        json_file.write(json_string)
-        if index < len(dati_professori) - 1:
-            json_file.write(',')  # Aggiungi una virgola se non è l'ultimo oggetto
-    json_file.write(']')
+def write_professors_json(professors_data):
+    with open('db.json', 'w') as json_file:
+        json_file.write('[')  # Inizia con una parentesi quadra aperta
+        for index, professore in enumerate(dati_professori):
+            # Trasforma ciascun oggetto in una stringa JSON e scrivilo nel file
+            json_string = json.dumps(professore, indent=4)
+            json_file.write(json_string)
+            if index < len(dati_professori) - 1:
+                json_file.write(',')  # Aggiungi una virgola se non è l'ultimo oggetto
+        json_file.write(']')
 
 def write_professors_csv(professors_data, filename='csv/professori.csv'):
     with open(filename, 'w', newline='', encoding='utf-8') as file:
@@ -310,8 +300,10 @@ def write_reception_hours_csv(professors_data, filename='csv/orari_di_riceviment
                     writer.writerow([id, giorno, timings, luogo])
 
 # Supponendo che 'dati_professori' sia la lista dei dati dei professori
-write_professors_csv(dati_professori)
-write_courses_csv(dati_professori)
-write_reception_hours_csv(dati_professori)
-write_phone_csv(dati_professori)
+#write_professors_csv(dati_professori)
+#write_courses_csv(dati_professori)
+#write_reception_hours_csv(dati_professori)
+#write_phone_csv(dati_professori)
+#write_professors_json(professors_data)
+write_to_remote_database(dati_professori)
 
