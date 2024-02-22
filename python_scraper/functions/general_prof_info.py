@@ -131,10 +131,14 @@ def clean_text(text):
 def format_phone_number(phone_number):
     """Formatta il numero di telefono nel formato desiderato."""
     # Rimuovi caratteri non numerici
+    phone_number = phone_number.replace(" ", "")
     digits = ''.join(filter(str.isdigit, phone_number))
-    # Formatta secondo il pattern desiderato, assumendo che abbiamo sempre la lunghezza corretta
-    if len(digits) == 10:
-        formatted = f"{digits[0:3]} {digits[3:5]} {digits[5:7]} {digits[7:9]}"
+    # Assicurati che la lunghezza dei numeri sia quella attesa (10 cifre)
+    if len(digits) == 9:
+        # Formatta secondo il pattern desiderato
+        formatted = f"{digits[0:3]} {digits[3:5]} {digits[5:7]} {digits[7:10]}"
     else:
-        formatted = phone_number  # Restituisci il numero originale se non corrisponde
+        # Restituisci il numero originale se non corrisponde alla lunghezza attesa
+        formatted = phone_number
     return formatted
+
