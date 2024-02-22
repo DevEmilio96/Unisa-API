@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from chatbot_utils.utils import *
-
+from chatbot_utils.formatters.TextResponseFormatter import TextResponseFormatter
+from chatbot_utils.formatters.VoiceResponseFormatter import VoiceResponseFormatter
+import re
 app = Flask(__name__)
 
 # Carica i dati JSON
@@ -45,6 +47,7 @@ def rispondi_a_domanda(domanda, professori = professori, formato="voce"):
 
     # Gestione domande su un professore specifico
     elif professore_nome:
+        professore_nome = re.sub(r"[ ?]+$", "",  professore_nome)
         professore = find_professore(professore_nome, professori)
         if professore:
             for categoria, frasi in domande_categorie.items():
@@ -64,34 +67,26 @@ def gestisci_categoria_risposta(categoria, professore, formato):
         else:
             return f"Non sono stati trovati orari di ricevimento per {professore['nome']}."
     elif categoria == "tutte_informazioni":
-        info_parts = [
-            f"Nome: {professore['nome']}",
-            f"Titolo: {professore['titolo']}",
-            f"Dipartimento: {professore['dipartimento']}",
-            f"Corsi insegnati: {format_corsi(professore.get('corsi', []))}",
-            f"Contatti: {format_contatti(professore)}",
-            f"Orari di ricevimento: {format_orari(professore.get('orari_di_ricevimento', []))}"
-        ]
-        return " ".join(info_parts)
+        if formato == 'voce':
+            formatter = VoiceResponseFormatter()
+            return formatter.allInfo(professore)
+        if formato == 'testo':
+            return TextResponseFormatter.default(professore['nome'])
+
     elif categoria == "contatti":
-        if formato == "testo":
-            return professore['nome']
-        else:
-            contatti = f"Email: {professore['email']}"
-            if isinstance(professore['telefono'], list):
-                telefoni = ", ".join(professore['telefono'])
-            else:
-                telefoni = professore['telefono']
-            if telefoni != "Null":
-                contatti += f", o Telefono: {telefoni}"
-            return f"Puoi contattare {professore['nome']} tramite {contatti}."
+        if formato == 'voce':
+            formatter = VoiceResponseFormatter()
+            return formatter.formatContacts(professore)
+        if formato == 'testo':
+            return TextResponseFormatter.default(professore['nome'])
+
     elif categoria == "corsi_insegnati":
-        corsi = professore.get("corsi", [])
-        if corsi:
-            corsi_str = ", ".join([corso["name"] for corso in corsi])
-            return f"{professore['nome']} insegna i seguenti corsi: {corsi_str}."
-        else:
-            return f"Non sono stati trovati corsi insegnati da {professore['nome']}."
+        if formato == 'testo':
+            return TextResponseFormatter.default(professore['nome'])
+        if formato == 'voce':
+            formatter = VoiceResponseFormatter()
+            return formatter.formatTeachedCourses(professore)
+        
     elif categoria == "informazioni_generali":
         return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
 
@@ -102,11 +97,14 @@ def gestisci_categoria_risposta(categoria, professore, formato):
 def chatbot():
     dati_richiesta = request.get_json()
     testo_domanda = dati_richiesta.get("domanda")
-    formato_risposta = dati_richiesta.get("formato", "testo")  # Default a "testo" se non specificato
+    formato_risposta = dati_richiesta.get("formato", "voce")  # Default a "testo" se non specificato
     risposta = rispondi_a_domanda(testo_domanda, formato=formato_risposta)
     return jsonify({"risposta": risposta})
 
 if __name__ == '__main__':
+    print("\ntutte le informazioni Rita Francese?")
+    print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
+    '''
     print("\nQuali sono gli orari di ricevimento di Rita Francese?")
     print(rispondi_a_domanda("Quali sono gli orari di ricevimento di Rita Francese?"))
 
@@ -127,16 +125,16 @@ if __name__ == '__main__':
 
     print("\nchi insegna Programmazione I")
     print(rispondi_a_domanda("chi insegna Programmazione I"))
-
+    
     print("\ncosa insegna Rita Francese?")
     print(rispondi_a_domanda("cosa insegna Rita Francese?"))
-
+    
     print("\ndammi la lista dei professori che insegnano Informatica")
     print(rispondi_a_domanda("dammi la lista dei professori che insegnano Informatica"))
 
     print("\n lista dei professori appartenenti al Dipartimento di Informatica")
     print(rispondi_a_domanda("lista dei professori appartenenti al Dipartimento di Informatica"))
-
+    '''
     
 
     app.run(debug=True)

@@ -1,5 +1,6 @@
 import json
 import spacy
+import re
 
 nlp = spacy.load("it_core_news_sm")
 
@@ -85,10 +86,38 @@ def find_professore(nome,professori):
     return None
 
 def format_orari(orari):
-    if not orari or all(o["day"] == "Null" for o in orari):
+    # Espressione regolare per validare il formato dell'orario "HH:MM - HH:MM"
+    timing_pattern = re.compile(r"\d{2}:\d{2} - \d{2}:\d{2}")
+
+    formatted_orari = []
+    for o in orari:
+        # Salta l'orario se il giorno non è valido
+        if o.get("day") == "Null" or not o.get("day"):
+            continue
+        
+        # Controlla se il formato di 'timings' è corretto
+        timings = o.get("timings", "")
+        if not timing_pattern.match(timings):
+            # Puoi decidere di saltare questo orario, inserire un placeholder, o gestirlo in altro modo
+            timings = "con orario non specificato"
+        else:
+            timings = "dalle " + timings
+            timings = timings.replace("-","alle")
+        
+        # Gestisci la presenza opzionale della location
+        location = o.get("location", "Luogo non specificato")
+        if location == "Null":
+            location = "un luogo non specificato"
+        else:
+            location = location.replace("-","")
+        
+        formatted_orari.append(f"{o['day']} {timings} presso {location}")
+
+    # Gestisci il caso in cui tutti gli orari siano stati saltati
+    if not formatted_orari:
         return "Orari di ricevimento non disponibili."
-    else:
-        return ", ".join([f"{o['day']} dalle {o['timings']} {o['location']}" for o in orari if o["day"] != "Null"])
+
+    return ", ".join(formatted_orari)
 
 def format_corsi(corsi):
     if not corsi:
