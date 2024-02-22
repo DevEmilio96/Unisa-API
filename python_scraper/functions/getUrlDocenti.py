@@ -55,5 +55,6 @@ def getUrlDocenti(popola_filtro=False, dipartimento="Dipartimento di Informatica
             # Modifica il selettore se necessario
             links = soup.select('tr a')
             urls = [link.get('href') for link in links if link.get('href')]
+        print(f"il numero di url trovati è {len(urls)}")
 
     return urls

@@ -47,7 +47,8 @@ while stack_links:
 # Scrivi i dati dei professori in formato JSON
 print("\n----------------Scrivo i dati del dizionario dei professori nel file db.json ----------------")
 write_professors_json(dati_professori)
-
+print("\n----------------Pulisco il file json eliminando le key con valori N/A ----------------")
+clean_json_file("json/db.json")
 
 print("\n----------------Creo il json con le offerte formative relative ai corsi di laurea----------------\n")
 estrai_informazioni_corsi()

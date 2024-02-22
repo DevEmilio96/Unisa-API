@@ -1,7 +1,38 @@
 from bs4 import BeautifulSoup
 import requests
 import time
+import json
 
+def clean_scheda_and_links(data):
+    for corso in data['corsi']:
+        # Rimuovi "orari_lezioni_link" se contiene "N/A"
+        if 'orari_lezioni_link' in corso and "N/A" in corso['orari_lezioni_link']:
+            del corso['orari_lezioni_link']
+
+        # Continua con la logica precedente per pulire "scheda"
+        if 'scheda' in corso:
+            keys_to_delete = [key for key, value in corso['scheda'].items() if "N/A" in value]
+            for key in keys_to_delete:
+                del corso['scheda'][key]
+            if not corso['scheda']:
+                del corso['scheda']
+    return data
+
+def clean_json_file(file_path):
+    # Legge il file JSON
+    with open(file_path, 'r', encoding='utf-8') as file:
+        json_data = json.load(file)
+
+    # Assicurati che json_data sia una lista prima di iterare
+    if isinstance(json_data, list):
+        cleaned_json_data = [clean_scheda_and_links(item) for item in json_data]
+    else:
+        # Se json_data non è una lista, applica direttamente clean_scheda_and_links
+        cleaned_json_data = clean_scheda_and_links(json_data)
+
+    # Sovrascrive il file JSON con i dati puliti
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(cleaned_json_data, file, indent=4, ensure_ascii=False)
 
 def get_course_details(didattica_soup, base_url="https://docenti.unisa.it"):
     courses_details = []
