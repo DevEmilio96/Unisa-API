@@ -11,7 +11,7 @@ from functions.corsiDiLaurea import estrai_informazioni_corsi
 
 # Ignora tutti i warning
 warnings.filterwarnings("ignore")
-
+print("\n----------------Ottengo i link relativi alle pagine web dei professori dal sito unisa.it ----------------")
 # Ottieni i link dei professori
 links_professori = getUrlDocenti()
 
@@ -19,11 +19,12 @@ links_professori = getUrlDocenti()
 dati_professori = []
 
 # Limita il numero di link per il test
-links_professori = links_professori[:3]
+#links_professori = links_professori[:3]
 
 # Converti l'elenco dei link in una deque (coda doppia) che funge da stack
 stack_links = deque(links_professori)
 
+print("\n---------------- Organizzo i dati trovati nei link in un dizionario di oggetti ----------------")
 while stack_links:
     url_professore = stack_links.pop()
     try:
@@ -44,10 +45,9 @@ while stack_links:
         time.sleep(1)
 
 # Scrivi i dati dei professori in formato JSON
-print("\n----------------Creo il json con i dati dei professori e dei corsi----------------")
-#write_professors_json(dati_professori)
+print("\n----------------Scrivo i dati del dizionario dei professori nel file db.json ----------------")
+write_professors_json(dati_professori)
 
 
 print("\n----------------Creo il json con le offerte formative relative ai corsi di laurea----------------\n")
 estrai_informazioni_corsi()
-print("\n----------------Json creato correttamente----------------\n")
