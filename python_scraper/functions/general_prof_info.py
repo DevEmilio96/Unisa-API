@@ -125,7 +125,7 @@ def analize_icon(parser, icon):
 
 def clean_text(text):
     """Sostituisce i tag <br> trovati nel testo con uno spazio."""
-    cleaned_text = text.replace('<br>', ' ')
+    cleaned_text = text.replace('<br>', ', ')
     return ' '.join(cleaned_text.split())
 
 def format_phone_number(phone_number):
