@@ -304,6 +304,6 @@ def write_reception_hours_csv(professors_data, filename='csv/orari_di_riceviment
 #write_courses_csv(dati_professori)
 #write_reception_hours_csv(dati_professori)
 #write_phone_csv(dati_professori)
-#write_professors_json(professors_data)
-write_to_remote_database(dati_professori)
+write_professors_json(dati_professori)
+#write_to_remote_database(dati_professori)
 

@@ -1,1 +1,4 @@
 curl -X POST -H "Content-Type: application/json" -d "{\"domanda\": \"quali professori insegnano Tecnologie software per il web?\"}" http://127.0.0.1:5000/chatbot
+curl -X POST -H "Content-Type: application/json" -d "{\"domanda\": \"quali professori insegnano Tecnologie software per il web?\"}" https://kobra.pythonanywhere.com/
+
+<iframe src="http://docs.google.com/gview?url=https://corsi.unisa.it/uploads/rescue/__piano-studi-cds/2023/05121.pdf?b&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
