@@ -28,7 +28,7 @@ def animazione_caricamento(messaggio="Caricamento"):
     sys.stdout.write('\r' + ' ' * (len(messaggio) + 2) + '\r')
     sys.stdout.flush()
 
-def estrai_informazioni_corsi(max_attempts=5, delay=5):
+def estrai_informazioni_corsi(location = "json/degree_courses.json", max_attempts=5, delay=5):
     global loading
     url_corsi = f"{url_base}/didattica/corsi-laurea"
     corsi_info = []
@@ -73,13 +73,14 @@ def estrai_informazioni_corsi(max_attempts=5, delay=5):
             if response is not None:
                 corsi_info.append(corso_info)
     
-    with open("corsi_unisa.json", "w", encoding="utf-8") as file_json:
+    with open(location, "w", encoding="utf-8") as file_json:
         json.dump(corsi_info, file_json, ensure_ascii=False, indent=4)
 
-    print("\nInformazioni sui corsi e piani di studio salvate in 'corsi_unisa.json'.")
+    print(f"\nInformazioni sui piani di studio salvate in '{location}'.")
 
 def make_request_with_retry(url, nome_corso, max_attempts, delay):
-    corso_info = {"nome": nome_corso, "link": url, "piano_di_studi": []}
+    link_corso_base = url.replace("/didattica/piano-di-studi", "")
+    corso_info = {"nome": nome_corso, "link": link_corso_base, "piano_di_studi": []}
     for attempt in range(max_attempts):
         try:
             response = requests.get(url, verify=False, timeout=10)

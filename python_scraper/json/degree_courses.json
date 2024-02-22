@@ -1,7 +1,7 @@
 [
     {
         "nome": "CHIMICA",
-        "link": "https://corsi.unisa.it/chimica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/chimica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05124.pdf?b",
@@ -11,7 +11,7 @@
     },
     {
         "nome": "DISCIPLINE DELLE ARTI VISIVE, DELLA MUSICA E DELLO SPETTACOLO",
-        "link": "https://corsi.unisa.it/davimus/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/davimus",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43124.pdf?b",
@@ -21,7 +21,7 @@
     },
     {
         "nome": "ECONOMIA AZIENDALE",
-        "link": "https://corsi.unisa.it/economia-aziendale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/economia-aziendale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02121.pdf?b",
@@ -31,7 +31,7 @@
     },
     {
         "nome": "ECONOMIA E COMMERCIO",
-        "link": "https://corsi.unisa.it/economia-e-commercio/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/economia-e-commercio",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02124.pdf?b",
@@ -41,7 +41,7 @@
     },
     {
         "nome": "ECONOMIA E MANAGEMENT",
-        "link": "https://corsi.unisa.it/economia-e-management/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/economia-e-management",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02127.pdf?b",
@@ -51,7 +51,7 @@
     },
     {
         "nome": "FARMACEUTICA E NUTRACEUTICA ANIMALE",
-        "link": "https://corsi.unisa.it/farmaceutica-e-nutraceutica-animale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/farmaceutica-e-nutraceutica-animale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07123.pdf?b",
@@ -61,7 +61,7 @@
     },
     {
         "nome": "FILOSOFIA",
-        "link": "https://corsi.unisa.it/filosofia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/filosofia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03125.pdf?b",
@@ -71,7 +71,7 @@
     },
     {
         "nome": "FISICA",
-        "link": "https://corsi.unisa.it/fisica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/fisica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05126.pdf?b",
@@ -81,7 +81,7 @@
     },
     {
         "nome": "FISIOTERAPIA (ABILITANTE ALLA PROF. SANIT. DI FISIOTERAPISTA)",
-        "link": "https://corsi.unisa.it/fisioterapia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/fisioterapia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10122.pdf?b",
@@ -91,7 +91,7 @@
     },
     {
         "nome": "GESTIONE E VALORIZZAZIONE DELLE RISORSE AGRARIE E DELLE AREE PROTETTE",
-        "link": "https://corsi.unisa.it/agraria/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/agraria",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07122.pdf?b",
@@ -101,7 +101,7 @@
     },
     {
         "nome": "GIURISTA D'IMPRESA E DELLE NUOVE TECNOLOGIE",
-        "link": "https://corsi.unisa.it/giurista-d-impresa-e-delle-nuove-tecnologie/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/giurista-d-impresa-e-delle-nuove-tecnologie",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/01121.pdf?b",
@@ -111,7 +111,7 @@
     },
     {
         "nome": "INFERMIERISTICA (ABILITANTE ALLA PROF. SANIT. DI INFERMIERE)",
-        "link": "https://corsi.unisa.it/infermieristica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/infermieristica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10121.pdf?b",
@@ -121,7 +121,7 @@
     },
     {
         "nome": "INFORMATICA",
-        "link": "https://corsi.unisa.it/Informatica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/Informatica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05121.pdf?b",
@@ -131,7 +131,7 @@
     },
     {
         "nome": "INGEGNERIA CHIMICA",
-        "link": "https://corsi.unisa.it/ingegneria-chimica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-chimica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06122.pdf?b",
@@ -141,7 +141,7 @@
     },
     {
         "nome": "INGEGNERIA CIVILE",
-        "link": "https://corsi.unisa.it/ingegneria-civile/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-civile",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06121.pdf?b",
@@ -151,7 +151,7 @@
     },
     {
         "nome": "INGEGNERIA CIVILE PER L'AMBIENTE ED IL TERRITORIO",
-        "link": "https://corsi.unisa.it/ingegneria-ambientale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-ambientale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06125.pdf?b",
@@ -161,7 +161,7 @@
     },
     {
         "nome": "INGEGNERIA DELL'INFORMAZIONE PER LA MEDICINA DIGITALE",
-        "link": "https://corsi.unisa.it/ingegneria-dell-informazione-per-la-medicina-digitale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-dell-informazione-per-la-medicina-digitale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06128.pdf?b",
@@ -171,7 +171,7 @@
     },
     {
         "nome": "INGEGNERIA ELETTRONICA",
-        "link": "https://corsi.unisa.it/ingegneria-elettronica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-elettronica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06124.pdf?b",
@@ -181,7 +181,7 @@
     },
     {
         "nome": "INGEGNERIA GESTIONALE",
-        "link": "https://corsi.unisa.it/ingegneria-gestionale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-gestionale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06126.pdf?b",
@@ -191,7 +191,7 @@
     },
     {
         "nome": "INGEGNERIA INFORMATICA",
-        "link": "https://corsi.unisa.it/ingegneria-informatica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-informatica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06127.pdf?b",
@@ -201,7 +201,7 @@
     },
     {
         "nome": "INGEGNERIA MECCANICA",
-        "link": "https://corsi.unisa.it/ingegneria-meccanica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-meccanica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06123.pdf?b",
@@ -211,7 +211,7 @@
     },
     {
         "nome": "LETTERE",
-        "link": "https://corsi.unisa.it/lettere/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/lettere",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03126.pdf?b",
@@ -221,7 +221,7 @@
     },
     {
         "nome": "LINGUE E CULTURE STRANIERE",
-        "link": "https://corsi.unisa.it/lingue-e-culture-straniere/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/lingue-e-culture-straniere",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43122.pdf?b",
@@ -231,7 +231,7 @@
     },
     {
         "nome": "MATEMATICA",
-        "link": "https://corsi.unisa.it/matematica/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/matematica",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05123.pdf?b",
@@ -241,7 +241,7 @@
     },
     {
         "nome": "OSTETRICIA (ABILITANTE ALLA PROF. SANIT. DI OSTETRICA/O)",
-        "link": "https://corsi.unisa.it/ostetricia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ostetricia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10124.pdf?b",
@@ -251,7 +251,7 @@
     },
     {
         "nome": "SCIENZE AMBIENTALI",
-        "link": "https://corsi.unisa.it/scienze-ambientali/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-ambientali",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05127.pdf?b",
@@ -261,7 +261,7 @@
     },
     {
         "nome": "SCIENZE BIOLOGICHE",
-        "link": "https://corsi.unisa.it/scienze-biologiche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-biologiche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05128.pdf?b",
@@ -271,7 +271,7 @@
     },
     {
         "nome": "SCIENZE DEI BENI CULTURALI",
-        "link": "https://corsi.unisa.it/scienze-dei-beni-culturali/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-dei-beni-culturali",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03128.pdf?b",
@@ -281,7 +281,7 @@
     },
     {
         "nome": "SCIENZE DEL SERVIZIO SOCIALE",
-        "link": "https://corsi.unisa.it/scienze-del-servizio-sociale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-del-servizio-sociale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03129.pdf?b",
@@ -291,7 +291,7 @@
     },
     {
         "nome": "SCIENZE DEL TURISMO",
-        "link": "https://corsi.unisa.it/scienze-del-turismo/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-del-turismo",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02129.pdf?b",
@@ -301,7 +301,7 @@
     },
     {
         "nome": "SCIENZE DELL'AMMINISTRAZIONE E DELL'ORGANIZZAZIONE",
-        "link": "https://corsi.unisa.it/scienze-dell-amministrazione-e-dell-organizzazione/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-dell-amministrazione-e-dell-organizzazione",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12122.pdf?b",
@@ -311,7 +311,7 @@
     },
     {
         "nome": "SCIENZE DELL'EDUCAZIONE",
-        "link": "https://corsi.unisa.it/scienze-educazione/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-educazione",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44124.pdf?b",
@@ -321,7 +321,7 @@
     },
     {
         "nome": "SCIENZE DELLA COMUNICAZIONE",
-        "link": "https://corsi.unisa.it/scienze-della-comunicazione/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-della-comunicazione",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03122.pdf?b",
@@ -331,7 +331,7 @@
     },
     {
         "nome": "SCIENZE DELLE ATTIVITA' MOTORIE, SPORTIVE E DELL'EDUCAZIONE PSICOMOTORIA",
-        "link": "https://corsi.unisa.it/scienze-attivita-motorie-sportive-educazione-psicomotoria/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-attivita-motorie-sportive-educazione-psicomotoria",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44125.pdf?b",
@@ -341,7 +341,7 @@
     },
     {
         "nome": "SCIENZE E NANOTECNOLOGIE PER LA SOSTENIBILITÀ",
-        "link": "https://corsi.unisa.it/scienze-e-nanotecnologie-per-la-sostenibilita/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-e-nanotecnologie-per-la-sostenibilita",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05129.pdf?b",
@@ -351,7 +351,7 @@
     },
     {
         "nome": "SCIENZE POLITICHE E DELLE RELAZIONI INTERNAZIONALI",
-        "link": "https://corsi.unisa.it/scienze-politiche-e-relazioni-Internazionali/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-politiche-e-relazioni-Internazionali",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12121.pdf?b",
@@ -361,7 +361,7 @@
     },
     {
         "nome": "SOCIOLOGIA",
-        "link": "https://corsi.unisa.it/sociologia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/sociologia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03123.pdf?b",
@@ -371,7 +371,7 @@
     },
     {
         "nome": "STATISTICA PER I BIG DATA",
-        "link": "https://corsi.unisa.it/statistica-per-i-big-data/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/statistica-per-i-big-data",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02128.pdf?b",
@@ -381,7 +381,7 @@
     },
     {
         "nome": "STUDI DIPLOMATICI, INTERNAZIONALI E SULLA SICUREZZA GLOBALE",
-        "link": "https://corsi.unisa.it/studi-diplomatici-internazionali-e-sulla-sicurezza-globale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/studi-diplomatici-internazionali-e-sulla-sicurezza-globale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12125.pdf?b",
@@ -391,7 +391,7 @@
     },
     {
         "nome": "TECNICHE DI RADIOLOGIA MEDICA, PER IMMAGINI E RADIOTERAPIA (ABILITANTE ALLA PROFESSIONE SANITARIA DI TECNICO DI RADIOLOGIA MEDICA)",
-        "link": "https://corsi.unisa.it/tecniche-di-radiologia-medica-per-immagini-e-radioterapia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/tecniche-di-radiologia-medica-per-immagini-e-radioterapia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10125.pdf?b",
@@ -401,7 +401,7 @@
     },
     {
         "nome": "TECNICHE ERBORISTICHE",
-        "link": "https://corsi.unisa.it/tecniche-erboristiche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/tecniche-erboristiche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07121.pdf?b",
@@ -411,7 +411,7 @@
     },
     {
         "nome": "TECNICHE PER L'EDILIZIA E Il TERRITORIO",
-        "link": "https://corsi.unisa.it/tecniche-per-l-edilizia-e-il-territorio/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/tecniche-per-l-edilizia-e-il-territorio",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06129.pdf?b",
@@ -421,7 +421,7 @@
     },
     {
         "nome": "ARCHEOLOGIA E CULTURE ANTICHE",
-        "link": "https://corsi.unisa.it/archeologia-e-culture-antiche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/archeologia-e-culture-antiche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03223.pdf?b",
@@ -431,7 +431,7 @@
     },
     {
         "nome": "BIOLOGIA",
-        "link": "https://corsi.unisa.it/biologia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/biologia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05221.pdf?b",
@@ -441,7 +441,7 @@
     },
     {
         "nome": "CHIMICA",
-        "link": "https://corsi.unisa.it/chimica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/chimica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05223.pdf?b",
@@ -451,7 +451,7 @@
     },
     {
         "nome": "CONSULENZA E MANAGEMENT AZIENDALE",
-        "link": "https://corsi.unisa.it/consulenza-e-management-aziendale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/consulenza-e-management-aziendale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02221.pdf?b",
@@ -461,7 +461,7 @@
     },
     {
         "nome": "CORPORATE COMMUNICATION E MEDIA",
-        "link": "https://corsi.unisa.it/corporate-communication-e-media/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/corporate-communication-e-media",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03231.pdf?b",
@@ -471,7 +471,7 @@
     },
     {
         "nome": "DATA SCIENCE E GESTIONE DELL'INNOVAZIONE",
-        "link": "https://corsi.unisa.it/data-science-e-gestione-dell-innovazione-lm-data/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/data-science-e-gestione-dell-innovazione-lm-data",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02228.pdf?b",
@@ -481,7 +481,7 @@
     },
     {
         "nome": "ECONOMIA",
-        "link": "https://corsi.unisa.it/economia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/economia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02222.pdf?b",
@@ -491,7 +491,7 @@
     },
     {
         "nome": "ECONOMIA GOVERNO E AMMINISTRAZIONE",
-        "link": "https://corsi.unisa.it/economia-governo-e-amministrazione/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/economia-governo-e-amministrazione",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02231.pdf?b",
@@ -501,7 +501,7 @@
     },
     {
         "nome": "ELECTRICAL ENGINEERING FOR DIGITAL ENERGY",
-        "link": "https://corsi.unisa.it/electrical-engineering-for-digital-energy/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/electrical-engineering-for-digital-energy",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06233.pdf?b",
@@ -511,7 +511,7 @@
     },
     {
         "nome": "FILOLOGIA MODERNA",
-        "link": "https://corsi.unisa.it/filologia-moderna/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/filologia-moderna",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03221.pdf?b",
@@ -521,7 +521,7 @@
     },
     {
         "nome": "FILOLOGIA, LETTERATURE E STORIA DELL'ANTICHITÀ",
-        "link": "https://corsi.unisa.it/filologia-letterature-e-storia-dell-antichita/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/filologia-letterature-e-storia-dell-antichita",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03222.pdf?b",
@@ -531,7 +531,7 @@
     },
     {
         "nome": "FILOSOFIA",
-        "link": "https://corsi.unisa.it/filosofia-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/filosofia-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03226.pdf?b",
@@ -541,7 +541,7 @@
     },
     {
         "nome": "FISICA",
-        "link": "https://corsi.unisa.it/fisica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/fisica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05226.pdf?b",
@@ -551,7 +551,7 @@
     },
     {
         "nome": "FOOD ENGINEERING",
-        "link": "https://corsi.unisa.it/ingegneria-alimentare/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-alimentare",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06228.pdf?b",
@@ -561,7 +561,7 @@
     },
     {
         "nome": "GESTIONE E VALORIZZAZIONE DEGLI ARCHIVI E DELLE BIBLIOTECHE",
-        "link": "https://corsi.unisa.it/gestione-e-valorizzazione-degli-archivi-e-delle-biblioteche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/gestione-e-valorizzazione-degli-archivi-e-delle-biblioteche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03220.pdf?b",
@@ -571,7 +571,7 @@
     },
     {
         "nome": "GLOBAL STUDIES AND EU",
-        "link": "https://corsi.unisa.it/global-studies-and-eu/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/global-studies-and-eu",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12225.pdf?b",
@@ -581,7 +581,7 @@
     },
     {
         "nome": "INFORMATICA",
-        "link": "https://corsi.unisa.it/informatica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/informatica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05225.pdf?b",
@@ -591,7 +591,7 @@
     },
     {
         "nome": "INFORMATION ENGINEERING FOR DIGITAL MEDICINE",
-        "link": "https://corsi.unisa.it/information-Engineering-for-digital-medicine/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/information-Engineering-for-digital-medicine",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06232.pdf?b",
@@ -601,7 +601,7 @@
     },
     {
         "nome": "INGEGNERIA CHIMICA",
-        "link": "https://corsi.unisa.it/ingegneria-chimica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-chimica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06222.pdf?b",
@@ -611,7 +611,7 @@
     },
     {
         "nome": "INGEGNERIA CIVILE",
-        "link": "https://corsi.unisa.it/ingegneria-civile-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-civile-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06221.pdf?b",
@@ -621,7 +621,7 @@
     },
     {
         "nome": "INGEGNERIA ELETTRONICA",
-        "link": "https://corsi.unisa.it/ingegneria-elettronica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-elettronica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06224.pdf?b",
@@ -631,7 +631,7 @@
     },
     {
         "nome": "INGEGNERIA GESTIONALE",
-        "link": "https://corsi.unisa.it/ingegneria-gestionale-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-gestionale-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06226.pdf?b",
@@ -641,7 +641,7 @@
     },
     {
         "nome": "INGEGNERIA INFORMATICA",
-        "link": "https://corsi.unisa.it/ingegneria-informatica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-informatica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06227.pdf?b",
@@ -651,7 +651,7 @@
     },
     {
         "nome": "INGEGNERIA MECCANICA",
-        "link": "https://corsi.unisa.it/ingegneria-meccanica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-meccanica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06223.pdf?b",
@@ -661,7 +661,7 @@
     },
     {
         "nome": "INGEGNERIA PER L'AMBIENTE ED IL TERRITORIO",
-        "link": "https://corsi.unisa.it/ingegneria-ambientale-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-ambientale-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06225.pdf?b",
@@ -671,7 +671,7 @@
     },
     {
         "nome": "INNOVAZIONI PER LE PRODUZIONI AGRARIE MEDITERRANEE",
-        "link": "https://corsi.unisa.it/agraria-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/agraria-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07222.pdf?b",
@@ -681,7 +681,7 @@
     },
     {
         "nome": "LINGUE E LETTERATURE MODERNE",
-        "link": "https://corsi.unisa.it/lingue-e-letterature-moderne/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/lingue-e-letterature-moderne",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43221.pdf?b",
@@ -691,7 +691,7 @@
     },
     {
         "nome": "LINGUISTICA E DIDATTICA DELL'ITALIANO NEL CONTESTO INTERNAZIONALE",
-        "link": "https://corsi.unisa.it/linguistica-e-didattica-dell-italiano/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/linguistica-e-didattica-dell-italiano",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03240.pdf?b",
@@ -701,7 +701,7 @@
     },
     {
         "nome": "MANAGEMENT DEI SISTEMI TURISTICI PER LO SVILUPPO SOSTENIBILE",
-        "link": "https://corsi.unisa.it/management-dei-sistemi-turistici-per-lo-sviluppo-sostenibile/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/management-dei-sistemi-turistici-per-lo-sviluppo-sostenibile",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12228.pdf?b",
@@ -711,7 +711,7 @@
     },
     {
         "nome": "MANAGEMENT DELLE ATTIVITÀ SPORTIVE E MOTORIE PER IL BENESSERE SOCIALE",
-        "link": "https://corsi.unisa.it/management-delle-attivita-sportive-e-motorie-per-il-benessere-sociale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/management-delle-attivita-sportive-e-motorie-per-il-benessere-sociale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12227.pdf?b",
@@ -721,7 +721,7 @@
     },
     {
         "nome": "MATEMATICA",
-        "link": "https://corsi.unisa.it/matematica-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/matematica-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05222.pdf?b",
@@ -731,7 +731,7 @@
     },
     {
         "nome": "POLITICHE TERRITORIALI E COOPERAZIONE INTERNAZIONALE",
-        "link": "https://corsi.unisa.it/politiche-territoriali-e-cooperazione-internazionale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/politiche-territoriali-e-cooperazione-internazionale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12226.pdf?b",
@@ -741,7 +741,7 @@
     },
     {
         "nome": "PSICOLOGIA DI COMUNITÀ PER I CONTESTI FORMATIVI, PER IL BENESSERE E PER LO SPORT",
-        "link": "https://corsi.unisa.it/psicologia-di-comunita-per-i-contesti-formativi-per-il-benessere-e-per-lo-sport/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/psicologia-di-comunita-per-i-contesti-formativi-per-il-benessere-e-per-lo-sport",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44225.pdf?b",
@@ -751,7 +751,7 @@
     },
     {
         "nome": "SCIENZE AMBIENTALI",
-        "link": "https://corsi.unisa.it/scienze-ambientali-magistrale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-ambientali-magistrale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05224.pdf?b",
@@ -761,7 +761,7 @@
     },
     {
         "nome": "SCIENZE DELL'EDUCAZIONE PERMANENTE E DELLA FORMAZIONE CONTINUA",
-        "link": "https://corsi.unisa.it/scienze-educazione-permanente-e-formazione-continua/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-educazione-permanente-e-formazione-continua",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44224.pdf?b",
@@ -771,7 +771,7 @@
     },
     {
         "nome": "SCIENZE DELLA VALUTAZIONE MOTORIO-SPORTIVA E TECNICHE DI ANALISI E PROGETTAZIONE DELLO SPORT PER DISABILI",
-        "link": "https://corsi.unisa.it/scienze-della-valutazione-motorio-sportiva/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-della-valutazione-motorio-sportiva",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44222.pdf?b",
@@ -781,7 +781,7 @@
     },
     {
         "nome": "SCIENZE DELLO SPETTACOLO E DELLA PRODUZIONE MULTIMEDIALE",
-        "link": "https://corsi.unisa.it/scienze-dello-spettacolo-e-della-produzione-multimediale/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-dello-spettacolo-e-della-produzione-multimediale",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43222.pdf?b",
@@ -791,7 +791,7 @@
     },
     {
         "nome": "SCIENZE INFERMIERISTICHE E OSTETRICHE",
-        "link": "https://corsi.unisa.it/scienze-infermieristiche-e-ostetriche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-infermieristiche-e-ostetriche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10221.pdf?b",
@@ -801,7 +801,7 @@
     },
     {
         "nome": "SCIENZE PEDAGOGICHE",
-        "link": "https://corsi.unisa.it/scienze-pedagogiche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-pedagogiche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44221.pdf?b",
@@ -811,7 +811,7 @@
     },
     {
         "nome": "SCIENZE STATISTICHE PER LA FINANZA",
-        "link": "https://corsi.unisa.it/scienze-statistiche-per-la-finanza/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-statistiche-per-la-finanza",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02224.pdf?b",
@@ -821,7 +821,7 @@
     },
     {
         "nome": "SICUREZZA INFORMATICA E TECNOLOGIE CLOUD",
-        "link": "https://corsi.unisa.it/sicurezza-informatica-e-tecnologie-cloud/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/sicurezza-informatica-e-tecnologie-cloud",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05227.pdf?b",
@@ -831,7 +831,7 @@
     },
     {
         "nome": "SMART INDUSTRY ENGINEERING",
-        "link": "https://corsi.unisa.it/smart-industry-engineering/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/smart-industry-engineering",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06230.pdf?b",
@@ -841,7 +841,7 @@
     },
     {
         "nome": "SOCIOLOGIA E POLITICHE PER IL TERRITORIO",
-        "link": "https://corsi.unisa.it/sociologia-e-politiche-per-il-territorio/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/sociologia-e-politiche-per-il-territorio",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03229.pdf?b",
@@ -851,7 +851,7 @@
     },
     {
         "nome": "STORIA E CRITICA D'ARTE",
-        "link": "https://corsi.unisa.it/storia-e-critica-d-arte/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/storia-e-critica-d-arte",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03224.pdf?b",
@@ -861,7 +861,7 @@
     },
     {
         "nome": "CHIMICA E TECNOLOGIA FARMACEUTICHE",
-        "link": "https://corsi.unisa.it/chimica-e-tecnologia-farmaceutiche/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/chimica-e-tecnologia-farmaceutiche",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07604.pdf?b",
@@ -871,7 +871,7 @@
     },
     {
         "nome": "FARMACIA",
-        "link": "https://corsi.unisa.it/farmacia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/farmacia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07603.pdf?b",
@@ -881,7 +881,7 @@
     },
     {
         "nome": "GIURISPRUDENZA",
-        "link": "https://corsi.unisa.it/giurisprudenza/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/giurisprudenza",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/01601.pdf?b",
@@ -891,7 +891,7 @@
     },
     {
         "nome": "INGEGNERIA EDILE-ARCHITETTURA",
-        "link": "https://corsi.unisa.it/ingegneria-edile-architettura/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/ingegneria-edile-architettura",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06601.pdf?b",
@@ -901,7 +901,7 @@
     },
     {
         "nome": "SCIENZE DELLA FORMAZIONE PRIMARIA",
-        "link": "https://corsi.unisa.it/scienze-della-formazione-primaria/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/scienze-della-formazione-primaria",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44610.pdf?b",
@@ -911,7 +911,7 @@
     },
     {
         "nome": "MEDICINA E CHIRURGIA",
-        "link": "https://corsi.unisa.it/medicina-e-chirurgia/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/medicina-e-chirurgia",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10601.pdf?b",
@@ -921,7 +921,7 @@
     },
     {
         "nome": "ODONTOIATRIA E PROTESI DENTARIA",
-        "link": "https://corsi.unisa.it/odontoiatria-protesi-dentaria/didattica/piano-di-studi",
+        "link": "https://corsi.unisa.it/odontoiatria-protesi-dentaria",
         "piano_di_studi": [
             {
                 "url": "https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10602.pdf?b",

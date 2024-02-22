@@ -1,3 +1,60 @@
+
+from functions.didattica import *
+
+def estrai_dati_professore(url_professore):
+    try:
+        # Esegue una richiesta alla pagina del professore
+        response = requests.get(url_professore, verify=False, timeout=10)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Estrazione dei dati dalla pagina utilizzando selettori adeguati
+        nome = soup.find('h1', id='rescue-title').find('span', class_='hidden-xs').text.strip().replace(" |", "")
+        titolo = analize_icon(soup, "glyphicon glyphicon-user")  # Estrazione del titolo
+        dipartimento = analize_icon(soup, "glyphicon glyphicon-home")  # Estrazione del dipartimento
+        telefono = analize_icon(soup, "glyphicon glyphicon-earphone")  # Estrazione del telefono
+        email = analize_icon(soup, "glyphicon glyphicon-envelope")  # Estrazione dell'email
+        ufficio = analize_icon(soup, "glyphicon glyphicon-map-marker")  # Estrazione dell'ufficio
+        personalPageUrl = analize_icon(soup, "fa fa-link")  # Estrazione della pagina personale
+        orari_di_ricevimento = analize_icon(soup, "fa fa-calendar")  # Estrazione degli orari di ricevimento
+        url_immagine_professore = getImgUrl(soup)  # Estrazione dell'URL dell'immagine del professore
+        corsi = search_courses(soup)  # Estrazione dei corsi
+        
+        url_professore = url_professore
+        error = False
+    except Exception as e:
+        print(f"Errore durante l'elaborazione di {url_professore}: {e}")
+        # In caso di errore, assegna valori 'Null' e imposta 'error' a True
+        nome = "Null" 
+        titolo = "Null" 
+        dipartimento = "Null"  
+        telefono = "Null"  
+        email = "Null"  
+        ufficio = "Null"  
+        personalPageUrl = "Null"
+        orari_di_ricevimento = "Null"
+        corsi = "Null"
+        url_professore = url_professore
+        url_immagine_professore = ""
+        error = True
+
+    # Crea un dizionario con i dati estratti
+    dati_professore = {
+        'nome': nome,
+        'titolo': titolo,
+        'dipartimento': dipartimento,
+        'telefono': telefono,
+        'email': email,
+        'ufficio': ufficio,
+        'pagina_personale' : personalPageUrl,
+        'orari_di_ricevimento' : orari_di_ricevimento,
+        'corsi' : corsi,
+        'url' : url_professore,
+        'url_immagine_professore' : url_immagine_professore,
+        'error' : error
+    }
+    
+    return dati_professore
+
 def getImgUrl(soup):
     img_link_element = soup.find('img', id='rescue-structure-img')
     if img_link_element:
