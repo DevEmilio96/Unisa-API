@@ -100,4 +100,4 @@ def make_request_with_retry(url, nome_corso, max_attempts, delay):
     return corso_info, None
 
 # Eseguire la funzione
-estrai_informazioni_corsi()
+

@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
-import spacy
-from utils import *
+from chatbot_utils.utils import *
 
 app = Flask(__name__)
 
