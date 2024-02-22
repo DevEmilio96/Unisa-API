@@ -22,7 +22,7 @@ def find_professors_by_department_or_field(department_or_field, professori):
     """
     matched_professors = []
     for professor in professori:
-        if department_or_field.lower() in professor["dipartimento"].lower() or any(department_or_field.lower() in corso["department"].lower() for corso in professor.get("corsi", [])):
+        if department_or_field.lower() in professor["dipartimento"].lower():
             matched_professors.append(professor["nome"])
     return matched_professors
 

@@ -4,81 +4,95 @@ from chatbot_utils.utils import *
 app = Flask(__name__)
 
 # Carica i dati JSON
-professori = carica_docenti('db.json')
+professori = carica_docenti('json/db.json')
 
-def rispondi_a_domanda(domanda):
+def rispondi_a_domanda(domanda, professori = professori):
     professore_nome = extract_prof_name(domanda)
     print(f"nome professore trovato {professore_nome}")
     department_or_field = extract_department_or_field(domanda)
-    # Se è stata identificata una domanda riguardante un corso specifico
-    if "quali professori insegnano" in domanda.lower() or "chi insegna" in domanda.lower():
+
+    # Mappa categorie di domande a liste di frasi chiave
+    domande_categorie = {
+        "insegnamento": ["quali professori insegnano", "chi insegna", "che insegnano"],
+        "orari_ricevimento": ["orari di ricevimento"],
+        "tutte_informazioni": ["tutte le informazioni"],
+        "contatti": ["contattare", "contatti telefonici", "contatti telefonoci"],
+        "corsi_insegnati": ["corsi insegna", "cosa insegna", "che insegna"],
+        "informazioni_generali": ["chi è"],
+        "dipartimento_campo": ["lista dei professori appartenenti al"]
+    }
+
+    # Gestione domande sull'insegnamento
+    if any(frase in domanda.lower() for frase in domande_categorie["insegnamento"]):
         course_name = extract_course_name(domanda)
         professors_for_course = find_professors_for_course(course_name, professori)
         if professors_for_course:
-            response = f"I professori che insegnano {course_name} sono: " + ", ".join(professors_for_course) + "."
+            response = f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
         else:
             response = f"Nessun professore trovato che insegna {course_name}."
         return response
-    
-        # Nuova logica per domande sui dipartimenti o campi di studio
-    
-    elif department_or_field:
+
+    # Gestione domande sui dipartimenti o campi di studio
+    elif any(frase in domanda.lower() for frase in domande_categorie["dipartimento_campo"]) and department_or_field:
+        print(f"----------ho trovato {department_or_field}")
         matched_professors = find_professors_by_department_or_field(department_or_field, professori)
         if matched_professors:
-            return f"I professori che insegnano {department_or_field} sono: " + ", ".join(matched_professors) + "."
+            matched_professors = list(set(matched_professors))
+            matched_professors = [prof for prof in matched_professors if prof and prof != "Null"]
+            return f"I professori che insegnano presso il dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(matched_professors) + "."
         else:
-            return f"Nessun professore trovato che insegna {department_or_field}."
-    
-    # Se è stata identificata una domanda riguardante un professore specifico
-    elif professore_nome:
-        professore = find_professore(professore_nome,professori)
-        if professore:
-            # Risposta per gli orari di ricevimento
-            if "orari di ricevimento" in domanda.lower():
-                orari = professore.get("orari_di_ricevimento", [])
-                if orari:
-                    orari_str = ", ".join([f"{orario['day']} dalle {orario['timings']} {orario['location']}" for orario in orari if orario["day"] != "Null"])
-                    return f"Gli orari di ricevimento di {professore['nome']} sono: {orari_str}."
-                else:
-                    return f"Non sono stati trovati orari di ricevimento per {professore['nome']}."
-            # Risposta per tutte le informazioni
-            elif "tutte le informazioni" in domanda.lower():
-                info_parts = [
-                    f"Nome: {professore['nome']}",
-                    f"Titolo: {professore['titolo']}",
-                    f"Dipartimento: {professore['dipartimento']}",
-                    f"Corsi insegnati: {format_corsi(professore.get('corsi', []))}",
-                    f"Contatti: {format_contatti(professore)}",
-                    f"Orari di ricevimento: {format_orari(professore.get('orari_di_ricevimento', []))}"
-                ]
-                return " ".join(info_parts)
+            return f"Nessun professore trovato che insegna presso il dipartimento di {department_or_field}."
 
-            # Risposta per i contatti o i contatti telefonici
-            elif "contattare" in domanda.lower() or "contatti telefonici" in domanda.lower() or "contatti telefonoci" in domanda.lower():
-                contatti = f"Email: {professore['email']}"
-                if isinstance(professore['telefono'], list):
-                    telefoni = ", ".join(professore['telefono'])
-                else:
-                    telefoni = professore['telefono']
-                if telefoni != "Null":
-                    contatti += f", Telefono/i: {telefoni}"
-                return f"Ecco come puoi contattare {professore['nome']}: {contatti}."
-            # Risposta per i corsi insegnati
-            elif "corsi insegna" in domanda.lower() or "cosa insegna" in domanda.lower() or "che insegna" in domanda.lower():
-                corsi = professore.get("corsi", [])
-                if corsi:
-                    corsi_str = ", ".join([corso["name"] for corso in corsi])
-                    return f"{professore['nome']} insegna i seguenti corsi: {corsi_str}."
-                else:
-                    return f"Non sono stati trovati corsi insegnati da {professore['nome']}."
-            # Risposta generale sul professore
-            elif "chi è" in domanda.lower():
-                return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
+    # Gestione domande su un professore specifico
+    elif professore_nome:
+        professore = find_professore(professore_nome, professori)
+        if professore:
+            for categoria, frasi in domande_categorie.items():
+                if any(frase in domanda.lower() for frase in frasi):
+                    return gestisci_categoria_risposta(categoria, professore, domanda)
         else:
             return "Professore non trovato."
     else:
         return "Non sono riuscito a identificare il nome del professore nella domanda."
 
+def gestisci_categoria_risposta(categoria, professore, domanda):
+    if categoria == "orari_ricevimento":
+        orari = professore.get("orari_di_ricevimento", [])
+        if orari:
+            orari_str = ", ".join([f"{orario['day']} dalle {orario['timings']} {orario['location']}" for orario in orari if orario["day"] != "Null"])
+            return f"Gli orari di ricevimento di {professore['nome']} sono: {orari_str}."
+        else:
+            return f"Non sono stati trovati orari di ricevimento per {professore['nome']}."
+    elif categoria == "tutte_informazioni":
+        info_parts = [
+            f"Nome: {professore['nome']}",
+            f"Titolo: {professore['titolo']}",
+            f"Dipartimento: {professore['dipartimento']}",
+            f"Corsi insegnati: {format_corsi(professore.get('corsi', []))}",
+            f"Contatti: {format_contatti(professore)}",
+            f"Orari di ricevimento: {format_orari(professore.get('orari_di_ricevimento', []))}"
+        ]
+        return " ".join(info_parts)
+    elif categoria == "contatti":
+        contatti = f"Email: {professore['email']}"
+        if isinstance(professore['telefono'], list):
+            telefoni = ", ".join(professore['telefono'])
+        else:
+            telefoni = professore['telefono']
+        if telefoni != "Null":
+            contatti += f", Telefono/i: {telefoni}"
+        return f"Ecco come puoi contattare {professore['nome']}: {contatti}."
+    elif categoria == "corsi_insegnati":
+        corsi = professore.get("corsi", [])
+        if corsi:
+            corsi_str = ", ".join([corso["name"] for corso in corsi])
+            return f"{professore['nome']} insegna i seguenti corsi: {corsi_str}."
+        else:
+            return f"Non sono stati trovati corsi insegnati da {professore['nome']}."
+    elif categoria == "informazioni_generali":
+        return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
+
+    return "Domanda non riconosciuta o categoria non gestita."
 
 
 @app.route('/chatbot', methods=['POST'])
@@ -89,32 +103,35 @@ def chatbot():
     return jsonify({"risposta": risposta})
 
 if __name__ == '__main__':
-    print("Quali sono gli orari di ricevimento di Rita Francese?")
+    print("\nQuali sono gli orari di ricevimento di Rita Francese?")
     print(rispondi_a_domanda("Quali sono gli orari di ricevimento di Rita Francese?"))
 
-    print("tutte le informazioni Rita Francese?")
+    print("\ntutte le informazioni Rita Francese?")
     print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
 
-    print("Come posso contattare Rita Francese?")
+    print("\nCome posso contattare Rita Francese?")
     print(rispondi_a_domanda("Come posso contattare Rita Francese?"))
 
-    print("Quali sono i contatti telefonici di Rita Francese?")
+    print("\nQuali sono i contatti telefonici di Rita Francese?")
     print(rispondi_a_domanda("Quali sono i contatti telefonici di Rita Francese?"))
 
-    print("Dimmi i contatti telefonoci di Rita Francese?")
+    print("\nDimmi i contatti telefonoci di Rita Francese?")
     print(rispondi_a_domanda("Dimmi i contatti telefonoci di Rita Francese"))
 
-    print("quali professori insegnano TECNOLOGIE SOFTWARE PER IL WEB?")
+    print("\nquali professori insegnano TECNOLOGIE SOFTWARE PER IL WEB?")
     print(rispondi_a_domanda("quali professori insegnano TECNOLOGIE SOFTWARE PER IL WEB?"))
 
-    print("chi insegna Programmazione I")
+    print("\nchi insegna Programmazione I")
     print(rispondi_a_domanda("chi insegna Programmazione I"))
 
-    print("che insegna Rita Francese?")
-    print(rispondi_a_domanda("che insegna Rita Francese?"))
+    print("\ncosa insegna Rita Francese?")
+    print(rispondi_a_domanda("cosa insegna Rita Francese?"))
 
-    print("dammi la lista dei professori che insegnano matematica")
-    print(rispondi_a_domanda("dammi la lista dei professori che insegnano matematica"))
+    print("\ndammi la lista dei professori che insegnano Informatica")
+    print(rispondi_a_domanda("dammi la lista dei professori che insegnano Informatica"))
+
+    print("\n lista dei professori appartenenti al Dipartimento di Informatica")
+    print(rispondi_a_domanda("lista dei professori appartenenti al Dipartimento di Informatica"))
 
     
 
