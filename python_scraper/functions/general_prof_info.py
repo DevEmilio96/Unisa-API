@@ -73,52 +73,68 @@ def analize_icon(parser, icon):
     icons_td = parser.find_all('span', class_=icon)  # Trova tutte le icone
     if icon == "fa fa-calendar":
         icons_td = parser.find_all('i', class_=icon)  # Trova tutte le icone
-        if not icons_td :
-            result = {'day': "Null",'timings': "Null",'location':"Null"}
+        if not icons_td:
+            result = {'day': "Null", 'timings': "Null", 'location': "Null"}
             results.append(result)
             return results
-        
-    
 
     for icon_td in icons_td:
         icon_td = icon_td.find_parent('td')  # Trova il genitore 'td' dell'icona
         professor_td = icon_td.find_next_sibling('td')  # Vai al prossimo 'td'
-        if icon =="fa fa-link":
+        if icon == "fa fa-link":
             a_element = professor_td.find('a')  # Trova l'elemento <a> all'interno del <td>
             result = a_element.get("href")  # Ottieni l'attributo href dell'elemento <a>
-        elif icon =="fa fa-calendar":
+        elif icon == "fa fa-calendar":
             tr_element = icon_td.find_parent('tr')  # Trova l'elemento 'tr' che contiene i dati del ricevimento
             if tr_element:
                 td_elements = tr_element.find_all('td')  # Trova tutti gli elementi 'td' all'interno del 'tr'
                 
                 # Estrai i dati del ricevimento (considerando che ci possono essere più orari)
-                day = td_elements[1].find('strong').text.strip()
-                timings = td_elements[2].find('strong').text.strip()
-                location = td_elements[3].text.strip()
+                day = clean_text(td_elements[1].find('strong').text)
+                timings = clean_text(td_elements[2].find('strong').text)
+                location = clean_text(td_elements[3].text)
                 
                 result = {
                     'day': day if day else "Null",
                     'timings': timings if timings else "Null",
                     'location': location if location else "Null"
                 }
+        else:
+            result = clean_text(professor_td.text) if professor_td else "Null"
 
-        else:  
-            result = professor_td.text.strip() if professor_td else "Null"
-        
-        if icon == "glyphicon glyphicon-earphone" and not result.startswith("089 96"):
-            continue
+        if icon == "glyphicon glyphicon-earphone":
+            # Formatta il numero di telefono
+            result = format_phone_number(result)
+            if not result.startswith("089 96"):
+                continue
+
         results.append(result)
 
-    if icon =="fa fa-calendar":
+    if icon == "fa fa-calendar":
         return results
-    
+
     if not results:
-        return "Null"  # Se non viene trovata alcuna icona, restituisce una stringa "Null"
+        return "Null"
     elif len(results) == 1:
-        return results[0]  # Se viene trovata una sola icona, restituisce la stringa singola
+        return results[0]
     else:
-        unique_results = list(set(results))  # Rimuovi i duplicati dagli array
-        #unique_results = results
+        unique_results = list(set(results))
         if len(unique_results) == 1:
-            return unique_results[0]   
-        return unique_results  # Restituisce l'array di stringhe senza duplicati
+            return unique_results[0]
+        return unique_results
+
+def clean_text(text):
+    """Sostituisce i tag <br> trovati nel testo con uno spazio."""
+    cleaned_text = text.replace('<br>', ' ')
+    return ' '.join(cleaned_text.split())
+
+def format_phone_number(phone_number):
+    """Formatta il numero di telefono nel formato desiderato."""
+    # Rimuovi caratteri non numerici
+    digits = ''.join(filter(str.isdigit, phone_number))
+    # Formatta secondo il pattern desiderato, assumendo che abbiamo sempre la lunghezza corretta
+    if len(digits) == 10:
+        formatted = f"{digits[0:3]} {digits[3:5]} {digits[5:7]} {digits[7:9]}"
+    else:
+        formatted = phone_number  # Restituisci il numero originale se non corrisponde
+    return formatted
