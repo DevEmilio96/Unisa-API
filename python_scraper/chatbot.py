@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Carica i dati JSON
 professori = carica_docenti('json/db.json')
 
-def rispondi_a_domanda(domanda, professori = professori):
+def rispondi_a_domanda(domanda, professori = professori, formato="voce"):
     professore_nome = extract_prof_name(domanda)
     print(f"nome professore trovato {professore_nome}")
     department_or_field = extract_department_or_field(domanda)
@@ -16,7 +16,7 @@ def rispondi_a_domanda(domanda, professori = professori):
         "insegnamento": ["quali professori insegnano", "chi insegna", "che insegnano"],
         "orari_ricevimento": ["orari di ricevimento"],
         "tutte_informazioni": ["tutte le informazioni"],
-        "contatti": ["contattare", "contatti telefonici", "contatti telefonoci"],
+        "contatti": ["contattare", "contatti"],
         "corsi_insegnati": ["corsi insegna", "cosa insegna", "che insegna"],
         "informazioni_generali": ["chi è"],
         "dipartimento_campo": ["lista dei professori appartenenti al"]
@@ -49,13 +49,13 @@ def rispondi_a_domanda(domanda, professori = professori):
         if professore:
             for categoria, frasi in domande_categorie.items():
                 if any(frase in domanda.lower() for frase in frasi):
-                    return gestisci_categoria_risposta(categoria, professore, domanda)
+                    return gestisci_categoria_risposta(categoria, professore, formato)
         else:
             return "Professore non trovato."
     else:
         return "Non sono riuscito a identificare il nome del professore nella domanda."
 
-def gestisci_categoria_risposta(categoria, professore, domanda):
+def gestisci_categoria_risposta(categoria, professore, formato):
     if categoria == "orari_ricevimento":
         orari = professore.get("orari_di_ricevimento", [])
         if orari:
@@ -74,14 +74,17 @@ def gestisci_categoria_risposta(categoria, professore, domanda):
         ]
         return " ".join(info_parts)
     elif categoria == "contatti":
-        contatti = f"Email: {professore['email']}"
-        if isinstance(professore['telefono'], list):
-            telefoni = ", ".join(professore['telefono'])
+        if formato == "testo":
+            return professore['nome']
         else:
-            telefoni = professore['telefono']
-        if telefoni != "Null":
-            contatti += f", Telefono/i: {telefoni}"
-        return f"Ecco come puoi contattare {professore['nome']}: {contatti}."
+            contatti = f"Email: {professore['email']}"
+            if isinstance(professore['telefono'], list):
+                telefoni = ", ".join(professore['telefono'])
+            else:
+                telefoni = professore['telefono']
+            if telefoni != "Null":
+                contatti += f", o Telefono: {telefoni}"
+            return f"Puoi contattare {professore['nome']} tramite {contatti}."
     elif categoria == "corsi_insegnati":
         corsi = professore.get("corsi", [])
         if corsi:
@@ -99,7 +102,8 @@ def gestisci_categoria_risposta(categoria, professore, domanda):
 def chatbot():
     dati_richiesta = request.get_json()
     testo_domanda = dati_richiesta.get("domanda")
-    risposta = rispondi_a_domanda(testo_domanda)
+    formato_risposta = dati_richiesta.get("formato", "testo")  # Default a "testo" se non specificato
+    risposta = rispondi_a_domanda(testo_domanda, formato=formato_risposta)
     return jsonify({"risposta": risposta})
 
 if __name__ == '__main__':
@@ -112,8 +116,8 @@ if __name__ == '__main__':
     print("\nCome posso contattare Rita Francese?")
     print(rispondi_a_domanda("Come posso contattare Rita Francese?"))
 
-    print("\nQuali sono i contatti telefonici di Rita Francese?")
-    print(rispondi_a_domanda("Quali sono i contatti telefonici di Rita Francese?"))
+    print("\nQuali sono i contatti telefonici di Carmine PELLEGRINO?")
+    print(rispondi_a_domanda("Quali sono i contatti telefonici di Carmine PELLEGRINO?"))
 
     print("\nDimmi i contatti telefonoci di Rita Francese?")
     print(rispondi_a_domanda("Dimmi i contatti telefonoci di Rita Francese"))

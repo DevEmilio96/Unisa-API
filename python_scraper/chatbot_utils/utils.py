@@ -50,15 +50,18 @@ def extract_course_name(question):
 
 def extract_prof_name(question):
     doc = nlp(question)
-    # Crea una lista per raccogliere parti del nome identificate
     name_parts = []
-    # Itera su token per identificare strutture che potrebbero indicare un nome
+
+    # Precedentemente identificato come nome proprio o candidato nome
+    prev_token_is_name = False
+
     for token in doc:
-        # Aggiungi logica personalizzata basata sulla struttura della frase, ad es.:
-        # Se il token è un nome proprio o parte di una struttura nominale
-        if token.pos_ == 'PROPN' or (token.dep_ in ['flat', 'appos'] and token.head.pos_ == 'PROPN'):
+        if token.pos_ == 'PROPN' or prev_token_is_name:
             name_parts.append(token.text)
-    # Unisci le parti del nome per formare il nome completo
+            prev_token_is_name = True
+        elif token.pos_ != 'PROPN' and prev_token_is_name:
+            break  # Interrompe l'aggiunta di parti del nome se non si tratta di un nome proprio consecutivo
+
     full_name = ' '.join(name_parts)
     return full_name if full_name else None
 
