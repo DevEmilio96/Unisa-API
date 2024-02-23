@@ -62,9 +62,17 @@ class VoiceResponseFormatter:
 
         orari_ricevimento = format_orari(data.get('orari_di_ricevimento', []))
         if orari_ricevimento:
-            info_parts.append(f"È possibile parlare con {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}")
+            info_parts.append(f"È possibile incontrare {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}")
 
         # Rimuove parti vuote e unisce il tutto in una stringa
         return " ".join(filter(None, info_parts))
+    
+    def formatReceptionHours(self,data):
+        orari_ricevimento = format_orari(data.get('orari_di_ricevimento', []))
+        if orari_ricevimento:
+            return f"È possibile incontrare {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}"
+        else:
+            return f"{data['nome']} non ha specificato degli orari di ricevimento."
+
 
     pass

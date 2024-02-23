@@ -64,7 +64,7 @@ def extract_prof_name(question):
             break  # Interrompe l'aggiunta di parti del nome se non si tratta di un nome proprio consecutivo
 
     full_name = ' '.join(name_parts)
-    return full_name if full_name else None
+    return re.sub(r"[ ?]+$", "",  full_name) if full_name else None
 
 def find_professors_for_course(course_name, professors):
     professors_for_course = []

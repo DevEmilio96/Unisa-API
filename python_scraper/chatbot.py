@@ -17,11 +17,11 @@ def rispondi_a_domanda(domanda, professori = professori, formato="voce"):
     domande_categorie = {
         "insegnamento": ["quali professori insegnano", "chi insegna", "che insegnano"],
         "orari_ricevimento": ["orari di ricevimento"],
-        "tutte_informazioni": ["tutte le informazioni"],
-        "contatti": ["contattare", "contatti"],
+        "tutte_informazioni": ["tutte le informazioni", "cosa sai di", "parlami di"],
+        "contatti": ["contattare", "contatti","incontrare"],
         "corsi_insegnati": ["corsi insegna", "cosa insegna", "che insegna"],
         "informazioni_generali": ["chi è"],
-        "dipartimento_campo": ["lista dei professori appartenenti al"]
+        "dipartimento_campo": ["professori appartenenti al"]
     }
 
     # Gestione domande sull'insegnamento
@@ -47,7 +47,7 @@ def rispondi_a_domanda(domanda, professori = professori, formato="voce"):
 
     # Gestione domande su un professore specifico
     elif professore_nome:
-        professore_nome = re.sub(r"[ ?]+$", "",  professore_nome)
+        
         professore = find_professore(professore_nome, professori)
         if professore:
             for categoria, frasi in domande_categorie.items():
@@ -60,12 +60,12 @@ def rispondi_a_domanda(domanda, professori = professori, formato="voce"):
 
 def gestisci_categoria_risposta(categoria, professore, formato):
     if categoria == "orari_ricevimento":
-        orari = professore.get("orari_di_ricevimento", [])
-        if orari:
-            orari_str = ", ".join([f"{orario['day']} dalle {orario['timings']} {orario['location']}" for orario in orari if orario["day"] != "Null"])
-            return f"Gli orari di ricevimento di {professore['nome']} sono: {orari_str}."
-        else:
-            return f"Non sono stati trovati orari di ricevimento per {professore['nome']}."
+        if formato == 'voce':
+            formatter = VoiceResponseFormatter()
+            return formatter.formatReceptionHours(professore)
+        if formato == 'testo':
+            return TextResponseFormatter.default(professore['nome'])
+
     elif categoria == "tutte_informazioni":
         if formato == 'voce':
             formatter = VoiceResponseFormatter()
@@ -102,8 +102,8 @@ def chatbot():
     return jsonify({"risposta": risposta})
 
 if __name__ == '__main__':
-    print("\ntutte le informazioni Rita Francese?")
-    print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
+    print("\nQuali sono gli orari di ricevimento di Rita Francese?")
+    print(rispondi_a_domanda("Quali sono gli orari di ricevimento di Rita Francese?"))
     '''
     print("\nQuali sono gli orari di ricevimento di Rita Francese?")
     print(rispondi_a_domanda("Quali sono gli orari di ricevimento di Rita Francese?"))
