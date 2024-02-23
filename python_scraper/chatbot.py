@@ -18,7 +18,7 @@ def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
     domande_categorie = {
         # domande sui corsi
         "insegnamento": ["quali professori insegnano", "chi insegna", "che insegnano"],
-        "offerta_formativa_corso": ["offerta formativa del corso","scheda", "obiettivi", "preprequisiti","contenuti","metodi didattici","testi"],
+        "offerta_formativa_corso": ["offerta formativa del corso","scheda", "obiettivi", "prerequisiti","contenuti","metodi didattici","testi"],
         # domande sui dipartimenti
         "dipartimento_campo": ["professori appartenenti al"],
         "offerta_formativa_dipartimento": ["offerta formativa del dipartimento","offerta formativa di","piano di studi"],
@@ -36,18 +36,21 @@ def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
     for categoria, frasi in domande_categorie.items():
         if any(frase in domanda.lower() for frase in frasi):
             if categoria == "dipartimento_campo" and department_or_field:
-                return gestisci_categoria_risposta_sui_dipartimenti(
-                    department_or_field, professori, formato, categoria
-                )
+                return gestisci_categoria_risposta(department_or_field, professori, formato, categoria)
+            
             elif categoria == "insegnamento":
-                return handle_query_with_format(domanda, professori, formato, categoria)
+                return gestisci_categoria_risposta(domanda, professori, formato, categoria)
+            
             elif categoria == "offerta_formativa_corso":
-                frase_trovata = next((frase for frase in frasi if frase in domanda.lower()), None)
-                return offerta_formativa_corso(frase_trovata)
+                keyword = next((frase for frase in frasi if frase in domanda.lower()), None)
+                return  gestisci_categoria_risposta(domanda, professori, formato, categoria, keyword)
+            
             elif categoria =="offerta_formativa_dipartimento":
-                return offerta_formativa_dipartimento(domanda, formato)
+                return gestisci_categoria_risposta(domanda, dipartimenti, formato, categoria)
+            
             elif categoria =="aiuto":
                 return how_to_use_this_chat_bot()
+            
             elif professore_nome:
                 professore = find_professore(professore_nome, professori)
                 if professore:
@@ -83,41 +86,14 @@ def how_to_use_this_chat_bot():
             """
     
     return help_text
-def offerta_formativa_corso(frase_trovata):
-    print(f"-----------{frase_trovata}")
-
-def offerta_formativa_dipartimento(domanda, formato):
+     
+def gestisci_categoria_risposta(domanda, data, formato, categoria, keyword=None):
     formatter = (
         VoiceResponseFormatter() if formato == "voce" else TextResponseFormatter()
     )
-    # Trova il corso nei dati caricati
-    dipartimento = find_department_by_department_name(domanda, dipartimenti)
-    if dipartimento:
-        # Formatta e restituisce la risposta
-        return formatter.format_offerta_formativa_dipartimento(dipartimento)
-    else:
-        return "Corso di studi non trovato."
-    
-def handle_query_with_format(query, professori, formato, categoria):
-    formatter = (
-        VoiceResponseFormatter() if formato == "voce" else TextResponseFormatter()
-    )
-    if categoria == "insegnamento":
-        course_name = extract_course_name(query)
-        professors_for_course = find_professors_for_course(course_name, professori)
-        if professors_for_course:
-            return formatter.format_insegnamento(course_name, professors_for_course)
-        else:
-            return f"Nessun professore trovato che insegna {course_name}."
-        
-def gestisci_categoria_risposta_sui_dipartimenti(domanda, professori, formato, categoria):
-    print("----------------------------------")
-    formatter = (
-        VoiceResponseFormatter() if formato == "voce" else TextResponseFormatter()
-    )
-    if categoria in ["dipartimento_campo", "insegnamento"]:
+    if categoria in ["dipartimento_campo", "insegnamento","offerta_formativa_dipartimento","offerta_formativa_corso"]:
         if hasattr(formatter, f"format_{categoria}"):
-            return getattr(formatter, f"format_{categoria}")(domanda,professori)
+            return getattr(formatter, f"format_{categoria}")(domanda, data, keyword)
 
     
     # Risposta per categorie non gestite
@@ -155,13 +131,17 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\n lista dei professori appartenenti al Dipartimento di Informatica")
-    print(rispondi_a_domanda("lista dei professori appartenenti al Dipartimento di Informatica"))
+    print("\nobiettivi del corso TECNOLOGIE SOFTWARE PER IL WEB")
+    print(rispondi_a_domanda("obiettivi del corso TECNOLOGIE SOFTWARE PER IL WEB"))
     """
+    print("\nobiettivi del corso di Programmazione I")
+    print(rispondi_a_domanda("obiettivi del corso di Programmazione I"))
+
+    print("\npiano di studi informatica")
+    print(rispondi_a_domanda("piano di studi informatica"))
+
     print("\nscheda del corso di Programmazione I?")
-    print(
-        rispondi_a_domanda("scheda del corso di Programmazione I")
-    )
+    print(rispondi_a_domanda("scheda del corso di Programmazione I"))
 
     print("\nQuali sono gli orari di ricevimento di Rita Francese?")
     print(rispondi_a_domanda("Quali sono gli orari di ricevimento di Rita Francese?"))

@@ -80,7 +80,7 @@ class VoiceResponseFormatter:
             return f"{data['nome']} non ha specificato degli orari di ricevimento."
 
     ########################################### domande sui dipartimenti ###########################################
-    def format_dipartimento_campo(self, domanda, professori):
+    def format_dipartimento_campo(self, domanda, professori, keyword=None):
         department_or_field = domanda
         matched_professors = find_professors_by_department_or_field(
             department_or_field, professori
@@ -91,15 +91,30 @@ class VoiceResponseFormatter:
             return f"Nessun professore trovato per il dipartimento di {department_or_field}."
         
     
-    def format_offerta_formativa_dipartimento(self,dipartimento):
+    def format_offerta_formativa_dipartimento(self, domanda, dipartimenti, keyword=None):
         # Calcola l'anno corrente
-        anno_corrente = datetime.now().year
-        return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}/{anno_corrente}. "
+        dipartimento = find_department_by_department_name(domanda, dipartimenti)
+        if dipartimento:
+            anno_corrente = datetime.now().year
+            return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}/{anno_corrente}. "
     
     ########################################### # domande sui corsi ###########################################
-    def format_insegnamento(self, course_name,professors_for_course):
-        return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+    def format_insegnamento(self, domanda, professori, keyword=None):
+        course_name = extract_course_name(domanda)
+        professors_for_course = find_professors_for_course(course_name, professori)
+        if professors_for_course:
+            return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+        else:
+            return f"Nessun professore trovato che insegna {course_name}."
+        
     
-    def format_offerta_formativa_corso():
-        print("--------")
+    def format_offerta_formativa_corso(self, domanda, professori, keyword):
+        print(f"domanda {domanda}")
+        course_name = extract_course_name(domanda)
+        print(f"nome corso {course_name}")
+        professors_for_course = find_professors_for_course(course_name, professori)
+        if professors_for_course:
+            if keyword in ["obiettivi", "prerequisiti","contenuti","metodi didattici","testi"]:
+                #return professors_for_course['corsi'][course_name]['scheda'][keyword]
+                return len(professors_for_course)
     pass
