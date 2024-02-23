@@ -28,6 +28,8 @@ def rispondi_a_domanda(domanda, professori=professori, formato="testo"):
         "contatti": ["contattare", "contatti", "incontrare"],
         "corsi_insegnati": ["corsi insegna", "cosa insegna", "che insegna"],
         "informazioni_generali": ["chi è"],
+        #help
+        "aiuto":["cosa sai fare","help","cosa posso chiederti","aiutami"]
     }
 
     # Categorizza la domanda e trova la risposta appropriata
@@ -41,6 +43,8 @@ def rispondi_a_domanda(domanda, professori=professori, formato="testo"):
                 return handle_query_with_format(domanda, professori, formato, categoria)
             elif categoria =="offerta_formativa_dipartimento":
                 return offerta_formativa_dipartimento(domanda, formato)
+            elif categoria =="aiuto":
+                return how_to_use_this_chat_bot()
             elif professore_nome:
                 professore = find_professore(professore_nome, professori)
                 if professore:
@@ -49,6 +53,33 @@ def rispondi_a_domanda(domanda, professori=professori, formato="testo"):
                     return "Professore non trovato."
             break
     return "Domanda non riconosciuta."
+def how_to_use_this_chat_bot():
+    help_text = """
+        Benvenuto nell'assistente virtuale dell'Università di Salerno! Ecco alcune categorie di domande che puoi farmi, con relativi esempi:
+
+        1. **Insegnamento**
+        - Quali professori insegnano Programmazione I?
+        - Chi insegna il corso di Matematica?
+        - Che insegnano nel corso di Grafica?
+
+        2. **Offerta Formativa del Corso**
+        - Qual è l'offerta formativa del corso di Informatica?
+        - Potresti mostrarmi la scheda del corso di Fisica?
+        - Quali sono gli obiettivi del corso di Chimica?
+
+        3. **Dipartimento**
+        - Quali professori appartengono al dipartimento di Ingegneria Informatica?
+        - Qual è l'offerta formativa del dipartimento di Matematica?
+
+        4. **Professori**
+        - Quali sono gli orari di ricevimento del professor Rossi?
+        - Puoi darmi tutte le informazioni su professor Bianchi?
+        - Come posso contattare professor Verdi?
+        - Quali corsi insegna professor Neri?
+        - Chi è Rita Francese?
+            """
+    
+    return help_text
 
 def offerta_formativa_dipartimento(domanda, formato):
     formatter = (
@@ -118,9 +149,9 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\npiano di studi informatica")
+    print("\nhelp")
     print(
-        rispondi_a_domanda("offerta formativa del dipartimento di managment dei sistemi turistici")
+        rispondi_a_domanda("help")
     )
     """
     print("\nQuali sono gli orari di ricevimento di Rita Francese?")
