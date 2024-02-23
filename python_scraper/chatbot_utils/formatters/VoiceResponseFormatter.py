@@ -1,4 +1,5 @@
 from chatbot_utils.utils import *
+from datetime import datetime
 
 class VoiceResponseFormatter:
     def format_contatti(self, data):
@@ -79,8 +80,9 @@ class VoiceResponseFormatter:
     
     def format_insegnamento(self, course_name,professors_for_course):
         return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
-    #return f"Nessun professore trovato per il dipartimento di {department_or_field}."
-    #return f"Nessun professore trovato che insegna {course_name}."
-
-
+    
+    def format_offerta_formativa_dipartimento(self,dipartimento):
+        # Calcola l'anno corrente
+        anno_corrente = datetime.now().year
+        return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}/{anno_corrente}. "
     pass

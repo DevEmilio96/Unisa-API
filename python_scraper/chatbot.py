@@ -7,10 +7,10 @@ import re
 app = Flask(__name__)
 
 # Carica i dati JSON
-professori = carica_docenti("json/db.json")
+professori = load_json("json/db.json")
+dipartimenti = load_json("json/degree_courses.json")
 
-
-def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
+def rispondi_a_domanda(domanda, professori=professori, formato="testo"):
     professore_nome = extract_prof_name(domanda)
     print(f"nome professore trovato: {professore_nome}")
     department_or_field = extract_department_or_field(domanda)
@@ -39,6 +39,8 @@ def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
                 )
             elif categoria == "insegnamento":
                 return handle_query_with_format(domanda, professori, formato, categoria)
+            elif categoria =="offerta_formativa_dipartimento":
+                return offerta_formativa_dipartimento(domanda, formato)
             elif professore_nome:
                 professore = find_professore(professore_nome, professori)
                 if professore:
@@ -48,7 +50,18 @@ def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
             break
     return "Domanda non riconosciuta."
 
-
+def offerta_formativa_dipartimento(domanda, formato):
+    formatter = (
+        VoiceResponseFormatter() if formato == "voce" else TextResponseFormatter()
+    )
+    # Trova il corso nei dati caricati
+    dipartimento = find_department_by_department_name(domanda, dipartimenti)
+    if dipartimento:
+        # Formatta e restituisce la risposta
+        return formatter.format_offerta_formativa_dipartimento(dipartimento)
+    else:
+        return "Corso di studi non trovato."
+    
 def handle_query_with_format(query, professori, formato, categoria):
     formatter = (
         VoiceResponseFormatter() if formato == "voce" else TextResponseFormatter()
@@ -71,6 +84,7 @@ def handle_query_with_format(query, professori, formato, categoria):
             return formatter.format_insegnamento(course_name, professors_for_course)
         else:
             return f"Nessun professore trovato che insegna {course_name}."
+        
 
 
 def gestisci_categoria_risposta(categoria, professore, formato):
@@ -104,9 +118,9 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\nquali professori insegnano TECNOLOGIE SOFTWARE PER IL WEB?")
+    print("\npiano di studi informatica")
     print(
-        rispondi_a_domanda("quali professori insegnano TECNOLOGIE SOFTWARE PER IL WEB?")
+        rispondi_a_domanda("offerta formativa del dipartimento di managment dei sistemi turistici")
     )
     """
     print("\nQuali sono gli orari di ricevimento di Rita Francese?")

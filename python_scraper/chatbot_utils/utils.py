@@ -10,7 +10,7 @@ def extract_department_or_field(question):
     """
     # Qui puoi implementare la logica specifica per estrarre il dipartimento o il campo di studio
     # Questo esempio è semplificato e potrebbe richiedere adattamenti.
-    keywords = ["dipartimento di", "insegnano", "insegnare", "insegna"]
+    keywords = ["dipartimento di", "insegnano", "insegnare", "insegna","piano di studi"]
     for keyword in keywords:
         if keyword in question.lower():
             start_index = question.lower().find(keyword) + len(keyword) + 1
@@ -26,6 +26,46 @@ def find_professors_by_department_or_field(department_or_field, professori):
         if department_or_field.lower() in professor["dipartimento"].lower():
             matched_professors.append(professor["nome"])
     return matched_professors
+
+
+def find_department_by_department_name(department_or_field, dipartimenti, parole_da_ignorare=None):
+    """
+    Trova i dipartimenti basandosi sul nome del dipartimento, utilizzando spaCy per l'elaborazione del linguaggio naturale,
+    ignorando un insieme specifico di parole chiave e gestendo varianti di parole chiave rilevanti.
+    """
+    if parole_da_ignorare is None:
+        parole_da_ignorare = {"di", "in", "su", "il", "la", "del", "della", "piano", "studi"}
+    
+    # Aggiungi qui eventuali sinonimi o varianti di parole chiave
+    varianti_parole_chiave = {
+        "informatica": ["informatico", "informatica"],
+        # Aggiungi altre varianti di parole chiave se necessario
+    }
+
+    doc_query = nlp(department_or_field.lower())
+    parole_chiave_query = {token.lemma_ for token in doc_query if not token.is_stop and not token.is_punct and token.lemma_ not in parole_da_ignorare}
+    
+    # Espandi le parole chiave della query con le loro varianti note
+    parole_chiave_query_espanso = set()
+    for parola in parole_chiave_query:
+        parole_chiave_query_espanso.add(parola)
+        if parola in varianti_parole_chiave:
+            parole_chiave_query_espanso.update(varianti_parole_chiave[parola])
+    
+    best_match = None
+    max_corrispondenze = 0
+
+    for dipartimento in dipartimenti:
+        doc_dipartimento = nlp(dipartimento["nome"].lower())
+        parole_chiave_dipartimento = {token.lemma_ for token in doc_dipartimento if not token.is_stop and not token.is_punct and token.lemma_ not in parole_da_ignorare}
+
+        corrispondenze = len(parole_chiave_query_espanso & parole_chiave_dipartimento)
+        if corrispondenze > max_corrispondenze:
+            max_corrispondenze = corrispondenze
+            best_match = dipartimento
+
+    return best_match
+
 
 def extract_course_name(question):
     # Pulisci la domanda rimuovendo spazi e punti interrogativi alla fine
@@ -140,6 +180,6 @@ def format_contatti(professore):
         return "Contatti non disponibili."
     return ", ".join(contatti)
 
-def carica_docenti(file_path):
+def load_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)

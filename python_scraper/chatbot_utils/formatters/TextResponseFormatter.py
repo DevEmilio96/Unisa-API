@@ -8,4 +8,7 @@ class TextResponseFormatter:
     
     def format_insegnamento(self, course_name,professors_for_course):
         return professors_for_course
+    
+    def format_offerta_formativa_dipartimento(self,dipartimento):
+        return dipartimento
     pass
