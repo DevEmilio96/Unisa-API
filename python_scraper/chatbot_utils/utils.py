@@ -68,26 +68,37 @@ def find_department_by_department_name(department_or_field, dipartimenti, parole
 
 
 def extract_course_name(question):
-    # Pulisci la domanda rimuovendo spazi e punti interrogativi alla fine
+    print(f"extract_course_name -------------- {question}")
+    # Pulisci la domanda e crea un documento SpaCy
     question_cleaned = question.rstrip(" ?")
+    doc = nlp(question_cleaned)
     
-    # Dividi la domanda pulita in parole
-    tokens = question_cleaned.split()
+    # Definisci una lista semplificata di parole chiave
+    keywords = ["offerta", "scheda", "obiettivi", "prerequisiti", "contenuti", "metodi", "testi", "insegnare"]
     
-    # Definisci una lista di possibili parole chiave che precedono il nome del corso
-    keywords = ["insegnano", "insegna"]
+    # Definisci una lista di preposizioni e parole da ignorare
+    ignore_words = ["del", "di", "per", "il", "la", "lo", "i", "gli", "le", "corso", "corsi", "a"]
+    
+    # Variabile per memorizzare il nome del corso
     nome_corso = ""
     
-    # Cerca ciascuna parola chiave nella domanda
-    for keyword in keywords:
-        if keyword in question_cleaned:
-            # Il nome del corso segue immediatamente la parola chiave
-            indice_inizio_corso = tokens.index(keyword) + 1
-            nome_corso = " ".join(tokens[indice_inizio_corso:]).title()
-            break  # Uscire dal ciclo una volta trovata la parola chiave
+    # Flag per indicare se siamo dopo la parola chiave e pronti a raccogliere il nome del corso
+    collecting_course_name = False
+    
+    # Processa il documento per cercare le parole chiave e ignorare le parole non significative
+    for token in doc:
+        # Se stiamo raccogliendo il nome del corso
+        if collecting_course_name:
+            if token.text.lower() not in ignore_words:
+                # Costruisci il nome del corso a partire da qui
+                nome_corso = " ".join([token.text for token in doc[token.i:]]).capitalize()
+                break
+        
+        # Cerca la parola chiave e imposta il flag per iniziare la raccolta dopo aver superato le parole da ignorare
+        elif token.lemma_.lower() in keywords or token.text.lower() in ignore_words:
+            collecting_course_name = True  # Inizia a raccogliere il nome del corso dopo questo punto
     
     return nome_corso
-
 
 def extract_prof_name(question):
     doc = nlp(question)

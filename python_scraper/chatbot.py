@@ -131,8 +131,11 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\nobiettivi del corso TECNOLOGIE SOFTWARE PER IL WEB")
-    print(rispondi_a_domanda("obiettivi del corso TECNOLOGIE SOFTWARE PER IL WEB"))
+    print("\nchi insegna Programmazione I")
+    print(rispondi_a_domanda("chi insegna Programmazione I"))
+    
+    print("\noprerequisiti del corso tecnologie software per il web")
+    print(rispondi_a_domanda("prerequisiti del corso di tecnologie software per il web"))
     """
     print("\nobiettivi del corso di Programmazione I")
     print(rispondi_a_domanda("obiettivi del corso di Programmazione I"))
