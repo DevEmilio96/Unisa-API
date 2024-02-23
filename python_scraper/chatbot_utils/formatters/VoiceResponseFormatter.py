@@ -1,7 +1,7 @@
 from chatbot_utils.utils import *
 
 class VoiceResponseFormatter:
-    def formatContacts(self, data):
+    def format_contatti(self, data):
         # Logica per formattare la risposta per la lettura vocale
         nome = data['nome']
         # Inizia a costruire la risposta
@@ -33,7 +33,7 @@ class VoiceResponseFormatter:
         return " ".join(response_parts) + "."
     
     @staticmethod
-    def formatTeachedCourses(data):
+    def format_corsi_insegnati(data):
         corsi = data.get("corsi", [])
         if corsi:
             corsi_str = ", ".join([corso["name"] for corso in corsi])
@@ -41,7 +41,7 @@ class VoiceResponseFormatter:
         else:
             return f"Non sono stati trovati corsi insegnati da {data['nome']}."
         
-    def allInfo(self, data):
+    def format_tutte_informazioni(self, data):
         info_parts = [f"{data['nome']}"]
 
         titolo = data.get('titolo')
@@ -67,12 +67,20 @@ class VoiceResponseFormatter:
         # Rimuove parti vuote e unisce il tutto in una stringa
         return " ".join(filter(None, info_parts))
     
-    def formatReceptionHours(self,data):
+    def format_orari_ricevimento(self,data):
         orari_ricevimento = format_orari(data.get('orari_di_ricevimento', []))
         if orari_ricevimento:
             return f"È possibile incontrare {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}"
         else:
             return f"{data['nome']} non ha specificato degli orari di ricevimento."
+
+    def format_dipartimento_campo(self, department_or_field, matched_professors):
+        return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(matched_professors) + "."
+    
+    def format_insegnamento(self, course_name,professors_for_course):
+        return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+    #return f"Nessun professore trovato per il dipartimento di {department_or_field}."
+    #return f"Nessun professore trovato che insegna {course_name}."
 
 
     pass
