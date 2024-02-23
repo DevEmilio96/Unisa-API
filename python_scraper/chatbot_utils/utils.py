@@ -34,7 +34,7 @@ def find_department_by_department_name(department_or_field, dipartimenti, parole
     ignorando un insieme specifico di parole chiave e gestendo varianti di parole chiave rilevanti.
     """
     if parole_da_ignorare is None:
-        parole_da_ignorare = {"di", "in", "su", "il", "la", "del", "della", "piano", "studi"}
+        parole_da_ignorare = {"di", "in", "su", "il", "la", "del", "della", "piano", "studi","dipartimento"}
     
     # Aggiungi qui eventuali sinonimi o varianti di parole chiave
     varianti_parole_chiave = {

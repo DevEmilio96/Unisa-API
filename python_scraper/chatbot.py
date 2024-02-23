@@ -52,7 +52,7 @@ def rispondi_a_domanda(domanda, professori=professori, formato="testo"):
                 else:
                     return "Professore non trovato."
             break
-    return "Domanda non riconosciuta."
+    return "Non ho ben capito la domanda, puoi usare 'help' per ottenere la lista delle mie funzionalità."
 def how_to_use_this_chat_bot():
     help_text = """
         Benvenuto nell'assistente virtuale dell'Università di Salerno! Ecco alcune categorie di domande che puoi farmi, con relativi esempi:
@@ -119,22 +119,23 @@ def handle_query_with_format(query, professori, formato, categoria):
 
 
 def gestisci_categoria_risposta(categoria, professore, formato):
-    formatter = (
-        VoiceResponseFormatter()
-        if formato == "voce"
-        else TextResponseFormatter.default(professore["nome"])
-    )
-    if categoria in [
-        "orari_ricevimento",
-        "tutte_informazioni",
-        "contatti",
-        "corsi_insegnati",
-    ]:
-        return getattr(formatter, f"format_{categoria}")(professore)
-    elif categoria == "informazioni_generali":
-        return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
-
-    return "Domanda non riconosciuta o categoria non gestita."
+    # Scelta del formatter in base al formato
+    if formato == "voce":
+        formatter = VoiceResponseFormatter()
+    else:
+        formatter = TextResponseFormatter.default(professore["nome"])
+    
+    # Gestione delle categorie con metodi specifici o default
+    if categoria in ["orari_ricevimento", "tutte_informazioni", "contatti", "corsi_insegnati","informazioni_generali"]:
+        # Se la categoria corrisponde, usa il metodo specifico se esiste per il formato 'voce',
+        # altrimenti usa il metodo 'default' per qualsiasi altro formato
+        if hasattr(formatter, f"format_{categoria}"):
+            return getattr(formatter, f"format_{categoria}")(professore)
+        else:
+            return formatter
+    
+    # Risposta per categorie non gestite
+    return "Non ho ben capito la domanda, puoi usare 'help' per ottenere la lista delle mie funzionalità."
 
 
 @app.route("/chatbot", methods=["POST"])
@@ -149,9 +150,9 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\nhelp")
+    print("\nQuali corsi insegna professor Neri?")
     print(
-        rispondi_a_domanda("help")
+        rispondi_a_domanda("Quali corsi insegna professor Neri?")
     )
     """
     print("\nQuali sono gli orari di ricevimento di Rita Francese?")

@@ -38,9 +38,12 @@ class VoiceResponseFormatter:
         corsi = data.get("corsi", [])
         if corsi:
             corsi_str = ", ".join([corso["name"] for corso in corsi])
-            return f", insegna i seguenti corsi: {corsi_str}."
+            return f"{data['nome']}, insegna i seguenti corsi: {corsi_str}."
         else:
             return f"Non sono stati trovati corsi insegnati da {data['nome']}."
+        
+    def format_informazioni_generali(professore):
+        return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
         
     def format_tutte_informazioni(self, data):
         info_parts = [f"{data['nome']}"]
