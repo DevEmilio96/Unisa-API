@@ -2,6 +2,7 @@ from chatbot_utils.utils import *
 from datetime import datetime
 
 class VoiceResponseFormatter:
+    ########################################### domande sui professori ###########################################
     def format_contatti(self, data):
         # Logica per formattare la risposta per la lettura vocale
         nome = data['nome']
@@ -78,14 +79,27 @@ class VoiceResponseFormatter:
         else:
             return f"{data['nome']} non ha specificato degli orari di ricevimento."
 
-    def format_dipartimento_campo(self, department_or_field, matched_professors):
-        return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(matched_professors) + "."
-    
-    def format_insegnamento(self, course_name,professors_for_course):
-        return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+    ########################################### domande sui dipartimenti ###########################################
+    def format_dipartimento_campo(self, domanda, professori):
+        department_or_field = domanda
+        matched_professors = find_professors_by_department_or_field(
+            department_or_field, professori
+        )
+        if matched_professors:
+            return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(matched_professors) + "."
+        else:
+            return f"Nessun professore trovato per il dipartimento di {department_or_field}."
+        
     
     def format_offerta_formativa_dipartimento(self,dipartimento):
         # Calcola l'anno corrente
         anno_corrente = datetime.now().year
         return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}/{anno_corrente}. "
+    
+    ########################################### # domande sui corsi ###########################################
+    def format_insegnamento(self, course_name,professors_for_course):
+        return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+    
+    def format_offerta_formativa_corso():
+        print("--------")
     pass
