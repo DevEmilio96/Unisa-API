@@ -17,14 +17,14 @@ def extract_department_or_field(question):
             return question[start_index:].capitalize().rstrip("?").strip()
     return None
 
-def find_professors_by_department_or_field(department_or_field, professori):
+def find_all_professors_details_by_department_or_field(department_or_field, professori):
     """
     Trova i professori in base al dipartimento o campo di studio.
     """
     matched_professors = []
     for professor in professori:
         if department_or_field.lower() in professor["dipartimento"].lower():
-            matched_professors.append(professor["nome"])
+            matched_professors.append(professor)
     return matched_professors
 
 
@@ -119,14 +119,16 @@ def extract_prof_name(question):
     full_name = ' '.join(name_parts)
     return re.sub(r"[ ?]+$", "",  full_name) if full_name else None
 
-def find_professors_for_course(course_name, professors):
+
+def find_all_professors_details_for_course(course_name, professors):
     professors_for_course = []
     for professor in professors:
         for course in professor.get("corsi", []):
             if course_name.upper() in course["name"].upper():  # Usa upper() per il confronto case-insensitive
-                professors_for_course.append(professor["nome"])
+                professors_for_course.append(professor)
                 break
     return professors_for_course
+
 
 def find_professore(nome,professori):
     # Normalizza il nome per la ricerca case-insensitive

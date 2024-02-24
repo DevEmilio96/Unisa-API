@@ -136,9 +136,6 @@ def chatbot():
 CORS(app)
 if __name__ == "__main__":
 
-    print("\nscheda del corso di Programmazione I")
-    print(rispondi_a_domanda("scheda del corso di Programmazione I"))
-
     '''
     print("\nscheda del corso di Programmazione I")
     print(rispondi_a_domanda("scheda del corso di Programmazione I"))

@@ -81,15 +81,17 @@ class VoiceResponseFormatter:
     ########################################### domande sui dipartimenti ###########################################
     def format_dipartimento_campo(self, domanda, professori, keyword=None):
         department_or_field = domanda
-        matched_professors = find_professors_by_department_or_field(
+        matched_professors = find_all_professors_details_by_department_or_field(
             department_or_field, professori
         )
         if matched_professors:
-            return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(matched_professors) + "."
+            # Assumendo che matched_professors sia una lista di dizionari,
+            # dove ogni dizionario rappresenta un professore e ha una chiave 'nome'
+            professori_nomi = [prof['nome'] for prof in matched_professors]
+            return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi) + "."
         else:
             return f"Nessun professore trovato per il dipartimento di {department_or_field}."
-        
-    
+
     def format_offerta_formativa_dipartimento(self, domanda, dipartimenti, keyword=None):
         # Calcola l'anno corrente
         dipartimento = find_department_by_department_name(domanda, dipartimenti)
@@ -100,22 +102,24 @@ class VoiceResponseFormatter:
     ########################################### # domande sui corsi ###########################################
     def format_insegnamento(self, domanda, professori, keyword=None):
         course_name = extract_course_name(domanda)
-        professors_for_course = find_professors_for_course(course_name, professori)
+        professors_for_course = find_all_professors_details_for_course(course_name, professori)
         if professors_for_course:
-            return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+            # Utilizza una list comprehension per estrarre i nomi dei professori
+            professori_nomi = [prof['nome'] for prof in professors_for_course]
+            return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi) + "."
         else:
             return f"Nessun professore trovato che insegna {course_name}."
-        
+
     
     def format_offerta_formativa_corso(self, domanda, professori, keyword):
         
         course_name = extract_course_name(domanda)
         
-        professors_for_course = find_professors_for_course(course_name, professori)
+        professors_for_course = find_all_professors_details_for_course(course_name, professori)
         
         # Assicurati di procedere solo se ci sono professori associati al corso
         if professors_for_course:
-            professore = find_professore(professors_for_course[0], professori)
+            professore = find_professore(professors_for_course[0]['nome'], professori)
             dettagli_corso_cercato = None
             # Scorri tutti i corsi per trovare quello specifico
             for corso in professore["corsi"]:
