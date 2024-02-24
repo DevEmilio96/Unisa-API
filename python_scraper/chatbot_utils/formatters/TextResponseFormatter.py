@@ -15,6 +15,7 @@ class TextResponseFormatter:
     
     def format_offerta_formativa_dipartimento(self,domanda, dipartimenti, keyword=None):
         dipartimento = find_department_by_department_name(domanda, dipartimenti)
+        
         if dipartimento:
             return {"data" : dipartimento, "type" : {"mode" : "dipartimento"}}
     

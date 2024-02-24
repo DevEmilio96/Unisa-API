@@ -29,19 +29,18 @@ def find_all_professors_details_by_department_or_field(department_or_field, prof
 
 
 def find_department_by_department_name(department_or_field, dipartimenti, parole_da_ignorare=None):
-    """
-    Trova i dipartimenti basandosi sul nome del dipartimento, utilizzando spaCy per l'elaborazione del linguaggio naturale,
-    ignorando un insieme specifico di parole chiave e gestendo varianti di parole chiave rilevanti.
-    """
     if parole_da_ignorare is None:
-        parole_da_ignorare = {"di", "in", "su", "il", "la", "del", "della", "piano", "studi","dipartimento"}
-    
+        parole_da_ignorare = {"di", "in", "su", "il", "la", "del", "della", "piano", "studi", "dipartimento", "studio"}
+
     # Aggiungi qui eventuali sinonimi o varianti di parole chiave
     varianti_parole_chiave = {
         "informatica": ["informatico", "informatica"],
+        "medicina": ["medicina", "medicinale", "medico", "chirurgia", "chirurgico"],
+        "medicino": ["medicina", "medicinale", "medico", "chirurgia", "chirurgico"]
         # Aggiungi altre varianti di parole chiave se necessario
     }
 
+    # Processa la query per identificare le parole chiave rilevanti
     doc_query = nlp(department_or_field.lower())
     parole_chiave_query = {token.lemma_ for token in doc_query if not token.is_stop and not token.is_punct and token.lemma_ not in parole_da_ignorare}
     
@@ -60,11 +59,13 @@ def find_department_by_department_name(department_or_field, dipartimenti, parole
         parole_chiave_dipartimento = {token.lemma_ for token in doc_dipartimento if not token.is_stop and not token.is_punct and token.lemma_ not in parole_da_ignorare}
 
         corrispondenze = len(parole_chiave_query_espanso & parole_chiave_dipartimento)
+        #parole_chiave_query_espanso ={"medicina"}
         if corrispondenze > max_corrispondenze:
             max_corrispondenze = corrispondenze
             best_match = dipartimento
-
+    
     return best_match
+
 
 def arabic_to_roman(num):
     # Dizionario di conversione per i numeri più comuni trovati nei nomi dei corsi
