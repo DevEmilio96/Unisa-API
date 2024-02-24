@@ -57,11 +57,10 @@ class VoiceResponseFormatter:
         if dipartimento:
             info_parts.append(f"presso il {dipartimento}")
 
-        corsi = self.formatTeachedCourses(data)
-        if corsi:
-            info_parts.append(corsi)
+        if data['corsi']:
+            info_parts.append(self.format_corsi_insegnati(data))
 
-        contatti = self.formatContacts(data)
+        contatti = self.format_contatti(data)
         if contatti:
             info_parts.append(contatti)
 
@@ -101,20 +100,58 @@ class VoiceResponseFormatter:
     ########################################### # domande sui corsi ###########################################
     def format_insegnamento(self, domanda, professori, keyword=None):
         course_name = extract_course_name(domanda)
+        print(f"nome corso: {course_name}")
         professors_for_course = find_professors_for_course(course_name, professori)
         if professors_for_course:
-            return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
+                # Preparazione della parte iniziale della frase in base al numero di professori
+            if len(professors_for_course) == 0:
+                return f"Non ci sono professori che insegnano {course_name}."
+            elif len(professors_for_course) == 1:
+                intro = f"Il professore che insegna {course_name} è: "
+            else:
+                intro = f"I professori che insegnano {course_name} sono {len(professors_for_course)}: "
+    
+                # Costruzione della frase finale
+            professors_list = ", ".join(professors_for_course)
+            return intro + professors_list + "."
         else:
             return f"Nessun professore trovato che insegna {course_name}."
         
     
     def format_offerta_formativa_corso(self, domanda, professori, keyword):
-        print(f"domanda {domanda}")
+        
         course_name = extract_course_name(domanda)
-        print(f"nome corso {course_name}")
         professors_for_course = find_professors_for_course(course_name, professori)
+        
+        # Assicurati di procedere solo se ci sono professori associati al corso
         if professors_for_course:
-            if keyword in ["obiettivi", "prerequisiti","contenuti","metodi didattici","testi"]:
-                #return professors_for_course['corsi'][course_name]['scheda'][keyword]
-                return len(professors_for_course)
+            professore = find_professore(professors_for_course[0], professori)
+            dettagli_corso_cercato = None
+            # Scorri tutti i corsi per trovare quello specifico
+            for corso in professore["corsi"]:
+                # Usa 'in' per verificare se course_name è una sottostringa di corso["name"]
+                if course_name.upper() in corso["name"].upper():  # Confronto case-insensitive
+                    dettagli_corso_cercato = corso
+                    break  # Interrompi il ciclo una volta trovato il corso
+
+            if not dettagli_corso_cercato:
+                return f"Dettagli non trovati per il corso {course_name}"
+            
+            if 'scheda' not in dettagli_corso_cercato or keyword.lower() not in (key.lower() for key in dettagli_corso_cercato['scheda']):
+                return f"Dettaglio '{keyword}' non disponibile per il corso {course_name}"
+
+            if keyword in ["obiettivi", "prerequisiti", "contenuti", "metodi didattici", "testi"]:
+                # Normalizza la keyword per il confronto
+                keyword_normalized = keyword.lower()
+                # Se un corso corrispondente è stato trovato, restituisci i dettagli specifici richiesti
+                if dettagli_corso_cercato and any(key.lower() == keyword_normalized for key in dettagli_corso_cercato['scheda']):
+                    # Se la condizione è soddisfatta, fai qualcosa con i dettagli del corso
+                    # Ad esempio, restituisci il valore associato alla keyword nel dizionario 'scheda'
+                    for key, value in dettagli_corso_cercato['scheda'].items():
+                        if key.lower() == keyword_normalized:
+                            return f"{keyword} per {course_name}: {value}"
+            else:
+                return f"Puoi visualizzare sulla mia interfaccia la scheda del corso per {course_name}"
+        else:
+            return f"Non ho trovato nessun professore che insegna {course_name}"
     pass

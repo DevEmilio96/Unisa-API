@@ -66,39 +66,40 @@ def find_department_by_department_name(department_or_field, dipartimenti, parole
 
     return best_match
 
+def arabic_to_roman(num):
+    # Dizionario di conversione per i numeri più comuni trovati nei nomi dei corsi
+    conversion_dict = {
+        1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V',
+        6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX', 10: 'X'
+    }
+    return conversion_dict.get(num, str(num))  # Restituisce il numero romano o il numero originale come stringa
 
 def extract_course_name(question):
-    print(f"extract_course_name -------------- {question}")
     # Pulisci la domanda e crea un documento SpaCy
     question_cleaned = question.rstrip(" ?")
     doc = nlp(question_cleaned)
     
-    # Definisci una lista semplificata di parole chiave
-    keywords = ["offerta", "scheda", "obiettivi", "prerequisiti", "contenuti", "metodi", "testi", "insegnare"]
-    
-    # Definisci una lista di preposizioni e parole da ignorare
+    # Variabili iniziali
+    keywords = ["offerta", "scheda", "obiettivi", "prerequisiti", "contenuti", "metodi", "testi", "insegnare", "insegnano", "insegna", "lista", "dammi"]
     ignore_words = ["del", "di", "per", "il", "la", "lo", "i", "gli", "le", "corso", "corsi", "a"]
-    
-    # Variabile per memorizzare il nome del corso
-    nome_corso = ""
-    
-    # Flag per indicare se siamo dopo la parola chiave e pronti a raccogliere il nome del corso
+    nome_corso = []
     collecting_course_name = False
     
-    # Processa il documento per cercare le parole chiave e ignorare le parole non significative
+    # Estrazione del nome del corso
     for token in doc:
-        # Se stiamo raccogliendo il nome del corso
-        if collecting_course_name:
-            if token.text.lower() not in ignore_words:
-                # Costruisci il nome del corso a partire da qui
-                nome_corso = " ".join([token.text for token in doc[token.i:]]).capitalize()
-                break
-        
-        # Cerca la parola chiave e imposta il flag per iniziare la raccolta dopo aver superato le parole da ignorare
-        elif token.lemma_.lower() in keywords or token.text.lower() in ignore_words:
-            collecting_course_name = True  # Inizia a raccogliere il nome del corso dopo questo punto
+        if token.lemma_.lower() in keywords or token.text.lower() in ignore_words:
+            if collecting_course_name:  # Se abbiamo già iniziato a raccogliere, resettiamo per evitare falsi positivi
+                nome_corso = []
+            continue
+        else:
+            collecting_course_name = True
+            nome_corso.append(token.text)
     
-    return nome_corso
+    # Gestione dei numeri romani rimossa per semplicità
+    # Capitalizza solo la prima lettera di ogni parola nel nome del corso
+    nome_corso_capitalized = " ".join([word.capitalize() for word in nome_corso])
+    
+    return nome_corso_capitalized
 
 def extract_prof_name(question):
     doc = nlp(question)

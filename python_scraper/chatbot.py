@@ -131,12 +131,10 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\nchi insegna Programmazione I")
-    print(rispondi_a_domanda("chi insegna Programmazione I"))
-    
-    print("\noprerequisiti del corso tecnologie software per il web")
-    print(rispondi_a_domanda("prerequisiti del corso di tecnologie software per il web"))
-    """
+    print("\nlista dei professori che insegnano PRODUZIONE ASSISTITA DA CALCOLATORE")
+    print(rispondi_a_domanda("quali professori insegnano PRODUZIONE ASSISTITA DA CALCOLATORE"))
+
+    '''
     print("\nobiettivi del corso di Programmazione I")
     print(rispondi_a_domanda("obiettivi del corso di Programmazione I"))
 
@@ -175,6 +173,6 @@ if __name__ == "__main__":
 
     print("\n lista dei professori appartenenti al Dipartimento di Informatica")
     print(rispondi_a_domanda("lista dei professori appartenenti al Dipartimento di Informatica"))
-    """
+    '''
 
     app.run(debug=True)
