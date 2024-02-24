@@ -30,7 +30,7 @@ class TestRispostaADomanda_for_voice_format(unittest.TestCase):
 
         for domanda, risposta_attesa in domande_risposte:
             with self.subTest(domanda=domanda):
-                risposta_ottenuta = rispondi_a_domanda(domanda)
+                risposta_ottenuta = rispondi_a_domanda(domanda,formato="voce")
                 self.assertEqual(self.normalize_text(risposta_attesa).lower(), self.normalize_text(risposta_ottenuta).lower())
     
     def normalize_text(self,text):

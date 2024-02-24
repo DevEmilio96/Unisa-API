@@ -10,7 +10,7 @@ app = Flask(__name__)
 professori = load_json("json/db.json")
 dipartimenti = load_json("json/degree_courses.json")
 
-def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
+def rispondi_a_domanda(domanda, formato="testo"):
     professore_nome = extract_prof_name(domanda)
     department_or_field = extract_department_or_field(domanda)
 
@@ -130,9 +130,13 @@ def chatbot():
 
 
 if __name__ == "__main__":
+    print("\ntutte le informazioni Rita Francese?")
+    print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
+    
+    '''
     print("\nuna domanda a caso")
     print(rispondi_a_domanda("una domanda a caso"))
-    '''
+    
     print("\nscheda del corso di ANATOMIA E ISTOLOGIA PATOLOGICA I?")
     print(rispondi_a_domanda("scheda del corso di ANATOMIA E ISTOLOGIA PATOLOGICA I"))
 
