@@ -3,6 +3,7 @@ from chatbot_utils.utils import *
 from chatbot_utils.formatters.TextResponseFormatter import TextResponseFormatter
 from chatbot_utils.formatters.VoiceResponseFormatter import VoiceResponseFormatter
 import re
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
@@ -122,6 +123,7 @@ def gestisci_categoria_risposta_sui_professori(categoria, professore, formato):
 
 
 @app.route("/chatbot", methods=["POST"])
+@cross_origin()
 def chatbot():
     dati_richiesta = request.get_json()
     testo_domanda = dati_richiesta.get("domanda")
@@ -131,7 +133,7 @@ def chatbot():
     risposta = rispondi_a_domanda(testo_domanda, formato=formato_risposta)
     return jsonify({"risposta": risposta})
 
-
+CORS(app)
 if __name__ == "__main__":
 
     print("\nscheda del corso di Programmazione I")
