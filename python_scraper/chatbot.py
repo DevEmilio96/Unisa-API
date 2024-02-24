@@ -107,7 +107,7 @@ def gestisci_categoria_risposta_sui_professori(categoria, professore, formato):
     if formato == "voce":
         formatter = VoiceResponseFormatter()
     else:
-        formatter = TextResponseFormatter.default(professore["nome"])
+        formatter = TextResponseFormatter.default(professore)
     
     # Gestione delle categorie con metodi specifici o default
     if categoria in ["orari_ricevimento", "tutte_informazioni", "contatti", "corsi_insegnati","informazioni_generali"]:
