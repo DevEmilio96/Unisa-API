@@ -144,4 +144,9 @@ class VoiceResponseFormatter:
                 return f"Puoi visualizzare sulla mia interfaccia la scheda del corso per {course_name}"
         else:
             return f"Non ho trovato nessun professore che insegna {course_name}"
+    def invalid(self,subject):
+        if subject =="question":
+            return "Non ho ben capito la domanda, puoi usare 'help' per ottenere la lista delle mie funzionalità."
+        if subject =="professor":
+            return "Professore non trovato."
     pass

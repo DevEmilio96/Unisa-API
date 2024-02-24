@@ -49,4 +49,6 @@ class TextResponseFormatter:
         else:
             # Se il corso non è stato trovato o non ha una 'scheda', restituisci None
             return None
+    def invalid(self,subject=None):
+        return None
     pass

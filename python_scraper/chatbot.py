@@ -13,7 +13,9 @@ dipartimenti = load_json("json/degree_courses.json")
 def rispondi_a_domanda(domanda, formato="testo"):
     professore_nome = extract_prof_name(domanda)
     department_or_field = extract_department_or_field(domanda)
-
+    formatter = (
+        VoiceResponseFormatter() if formato == "voce" else TextResponseFormatter()
+    )
     domande_categorie = {
         # domande sui corsi
         "insegnamento": ["quali professori insegnano", "chi insegna", "che insegnano"],
@@ -55,9 +57,10 @@ def rispondi_a_domanda(domanda, formato="testo"):
                 if professore:
                     return gestisci_categoria_risposta_sui_professori(categoria, professore, formato)
                 else:
-                    return "Professore non trovato."
+                    return formatter.invalid("professor")
             break
-    return "Non ho ben capito la domanda, puoi usare 'help' per ottenere la lista delle mie funzionalità."
+
+    return formatter.invalid("question")
 def how_to_use_this_chat_bot():
     help_text = """
         Benvenuto nell'assistente virtuale dell'Università di Salerno! Ecco alcune categorie di domande che puoi farmi, con relativi esempi:
@@ -130,9 +133,9 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\ntutte le informazioni Rita Francese?")
-    print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
-    
+    print("\nchi è Maradona?")
+    print(rispondi_a_domanda("chi è Maradona?"))
+
     '''
     print("\nuna domanda a caso")
     print(rispondi_a_domanda("una domanda a caso"))
