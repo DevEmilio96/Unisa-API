@@ -43,7 +43,7 @@ class VoiceResponseFormatter:
         else:
             return f"Non sono stati trovati corsi insegnati da {data['nome']}."
         
-    def format_informazioni_generali(professore):
+    def format_informazioni_generali(self,professore):
         return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
         
     def format_tutte_informazioni(self, data):

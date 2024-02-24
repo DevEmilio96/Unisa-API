@@ -9,6 +9,8 @@ class TestRispostaADomanda_for_voice_format(unittest.TestCase):
             ("piano di studi informatica", "Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di INFORMATICA per l'anno 2023/2024."),
             ##################### domande sui professori #####################
             ("chi è il professor maradona?","Professore non trovato."),
+            ("chi è rita francese","Rita FRANCESE è Professore Associato presso Dipartimento di Informatica/DI."),
+            ("chi è carmine gravino?","Carmine GRAVINO è Professore Associato presso Dipartimento di Informatica/DI."),
             ("Quali sono gli orari di ricevimento di Rita Francese?", "È possibile incontrare Rita FRANCESE nei seguenti orari di ricevimento: Lunedì con orario non specificato presso Microsoft teams codice corso: amhccqo, Martedì dalle 15:00 alle 16:30 presso piattaforma teams del corso, Venerdì dalle 15:00 alle 16:30 presso piattaforma teams del corso"),
             ("tutte le informazioni Rita Francese?", "Rita FRANCESE è Professore Associato presso il Dipartimento di Informatica/DI Rita FRANCESE, insegna i seguenti corsi: ENTERPRISE MOBILE APPLICATION DEVELOPMENT, TECNOLOGIE SOFTWARE PER IL WEB. Puoi contattare Rita FRANCESE tramite Email: francese@unisa.it e Telefono: 089 96 33 16. È possibile incontrare Rita FRANCESE nei seguenti orari di ricevimento: Lunedì con orario non specificato presso Microsoft teams codice corso: amhccqo, Martedì dalle 15:00 alle 16:30 presso piattaforma teams del corso, Venerdì dalle 15:00 alle 16:30 presso piattaforma teams del corso"),
             ("Come posso contattare Rita Francese?", "Puoi contattare Rita FRANCESE tramite Email: francese@unisa.it e Telefono: 089 96 33 16."),

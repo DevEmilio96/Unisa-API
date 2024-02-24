@@ -2,8 +2,8 @@ import json
 import spacy
 import re
 
-nlp = spacy.load("it_core_news_sm")
-
+nlp = spacy.load("it_core_news_lg")
+# it_core_news_md medio , it_core_news_sm piu leggero , it_core_news_lg piu pesante
 def extract_department_or_field(question):
     """
     Estrae il nome del dipartimento o campo di studio dalla domanda.
@@ -104,6 +104,10 @@ def extract_course_name(question):
     return " ".join(nome_corso_words)
 
 def extract_prof_name(question):
+    # Aggiungi un punto interrogativo alla fine se non presente
+    if not question.endswith("?"):
+        question += "?"
+
     doc = nlp(question)
     name_parts = []
 

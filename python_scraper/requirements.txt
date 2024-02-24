@@ -6,3 +6,4 @@ selenium
 webdriver-manager
 pymysql
 flask-cors
+it_core_news_lg

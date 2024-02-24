@@ -11,7 +11,7 @@ app = Flask(__name__)
 professori = load_json("json/db.json")
 dipartimenti = load_json("json/degree_courses.json")
 
-def rispondi_a_domanda(domanda, formato="testo"):
+def rispondi_a_domanda(domanda, formato="voce"):
     professore_nome = extract_prof_name(domanda)
     department_or_field = extract_department_or_field(domanda)
     formatter = (
@@ -79,6 +79,7 @@ def how_to_use_this_chat_bot():
         3. **Dipartimento**
         - Quali professori appartengono al dipartimento di Ingegneria Informatica?
         - Qual è l'offerta formativa del dipartimento di Matematica?
+        - Piano di studi di Informatica
 
         4. **Professori**
         - Quali sono gli orari di ricevimento del professor Rossi?
@@ -135,8 +136,10 @@ def chatbot():
 
 CORS(app)
 if __name__ == "__main__":
-
     '''
+    print("\nchi è carmine gravino")
+    print(rispondi_a_domanda("chi è carmine gravino"))
+
     print("\nscheda del corso di Programmazione I")
     print(rispondi_a_domanda("scheda del corso di Programmazione I"))
 
