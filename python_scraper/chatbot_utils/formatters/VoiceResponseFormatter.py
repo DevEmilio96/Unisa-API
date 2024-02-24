@@ -100,20 +100,9 @@ class VoiceResponseFormatter:
     ########################################### # domande sui corsi ###########################################
     def format_insegnamento(self, domanda, professori, keyword=None):
         course_name = extract_course_name(domanda)
-        print(f"nome corso: {course_name}")
         professors_for_course = find_professors_for_course(course_name, professori)
         if professors_for_course:
-                # Preparazione della parte iniziale della frase in base al numero di professori
-            if len(professors_for_course) == 0:
-                return f"Non ci sono professori che insegnano {course_name}."
-            elif len(professors_for_course) == 1:
-                intro = f"Il professore che insegna {course_name} è: "
-            else:
-                intro = f"I professori che insegnano {course_name} sono {len(professors_for_course)}: "
-    
-                # Costruzione della frase finale
-            professors_list = ", ".join(professors_for_course)
-            return intro + professors_list + "."
+            return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professors_for_course) + "."
         else:
             return f"Nessun professore trovato che insegna {course_name}."
         
@@ -121,6 +110,7 @@ class VoiceResponseFormatter:
     def format_offerta_formativa_corso(self, domanda, professori, keyword):
         
         course_name = extract_course_name(domanda)
+        
         professors_for_course = find_professors_for_course(course_name, professori)
         
         # Assicurati di procedere solo se ci sono professori associati al corso
@@ -134,10 +124,10 @@ class VoiceResponseFormatter:
                     dettagli_corso_cercato = corso
                     break  # Interrompi il ciclo una volta trovato il corso
 
-            if not dettagli_corso_cercato:
+            if not dettagli_corso_cercato or 'scheda' not in dettagli_corso_cercato:
                 return f"Dettagli non trovati per il corso {course_name}"
             
-            if 'scheda' not in dettagli_corso_cercato or keyword.lower() not in (key.lower() for key in dettagli_corso_cercato['scheda']):
+            if 'scheda' not in dettagli_corso_cercato and keyword.lower() not in (key.lower() for key in dettagli_corso_cercato['scheda']):
                 return f"Dettaglio '{keyword}' non disponibile per il corso {course_name}"
 
             if keyword in ["obiettivi", "prerequisiti", "contenuti", "metodi didattici", "testi"]:

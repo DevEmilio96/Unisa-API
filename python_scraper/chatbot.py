@@ -12,7 +12,6 @@ dipartimenti = load_json("json/degree_courses.json")
 
 def rispondi_a_domanda(domanda, professori=professori, formato="voce"):
     professore_nome = extract_prof_name(domanda)
-    print(f"nome professore trovato: {professore_nome}")
     department_or_field = extract_department_or_field(domanda)
 
     domande_categorie = {
@@ -131,10 +130,18 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\nlista dei professori che insegnano PRODUZIONE ASSISTITA DA CALCOLATORE")
+    print("\nuna domanda a caso")
+    print(rispondi_a_domanda("una domanda a caso"))
+    '''
+    print("\nscheda del corso di ANATOMIA E ISTOLOGIA PATOLOGICA I?")
+    print(rispondi_a_domanda("scheda del corso di ANATOMIA E ISTOLOGIA PATOLOGICA I"))
+
+    print("\ndammi la lista dei professori che insegnano programmazione")
+    print(rispondi_a_domanda("dammi la lista dei professori che insegnano programmazione"))
+
+    print("\nquali professori insegnano PRODUZIONE ASSISTITA DA CALCOLATORE")
     print(rispondi_a_domanda("quali professori insegnano PRODUZIONE ASSISTITA DA CALCOLATORE"))
 
-    '''
     print("\nobiettivi del corso di Programmazione I")
     print(rispondi_a_domanda("obiettivi del corso di Programmazione I"))
 

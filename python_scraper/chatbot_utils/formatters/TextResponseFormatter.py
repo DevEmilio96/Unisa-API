@@ -26,7 +26,6 @@ class TextResponseFormatter:
        
     def format_offerta_formativa_corso(self, domanda, professori, keyword):
         course_name = extract_course_name(domanda)
-        print(f"nome corso: {course_name}")
         professors_for_course = find_professors_for_course(course_name, professori)
 
         # Inizializza dettagli_corso_cercato a None

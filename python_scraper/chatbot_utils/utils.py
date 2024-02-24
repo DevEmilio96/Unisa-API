@@ -80,26 +80,27 @@ def extract_course_name(question):
     doc = nlp(question_cleaned)
     
     # Variabili iniziali
-    keywords = ["offerta", "scheda", "obiettivi", "prerequisiti", "contenuti", "metodi", "testi", "insegnare", "insegnano", "insegna", "lista", "dammi"]
-    ignore_words = ["del", "di", "per", "il", "la", "lo", "i", "gli", "le", "corso", "corsi", "a"]
-    nome_corso = []
+    keywords = ["offerta", "scheda", "obiettivi", "prerequisiti", "contenuti", "metodi", "testi", "insegnare", "insegna"]
+    ignore_words = ["del", "di", "per", "il", "la", "lo", "i", "gli", "le", "corso", "corsi", "a", "dimmi", "lista", "che", "dei", "professori", "insegnano"]
+    nome_corso = ""
     collecting_course_name = False
     
     # Estrazione del nome del corso
     for token in doc:
-        if token.lemma_.lower() in keywords or token.text.lower() in ignore_words:
-            if collecting_course_name:  # Se abbiamo già iniziato a raccogliere, resettiamo per evitare falsi positivi
-                nome_corso = []
-            continue
-        else:
+        if collecting_course_name:
+            if token.text.lower() not in ignore_words:
+                nome_corso = " ".join([token.text for token in doc[token.i:]]).capitalize()
+                break
+        elif token.lemma_.lower() in keywords or token.text.lower() in ignore_words:
             collecting_course_name = True
-            nome_corso.append(token.text)
     
-    # Gestione dei numeri romani rimossa per semplicità
-    # Capitalizza solo la prima lettera di ogni parola nel nome del corso
-    nome_corso_capitalized = " ".join([word.capitalize() for word in nome_corso])
+    # Conversione da numeri arabi a romani nel nome del corso
+    nome_corso_words = nome_corso.split()
+    for i, word in enumerate(nome_corso_words):
+        if word.isdigit():
+            nome_corso_words[i] = arabic_to_roman(int(word))
     
-    return nome_corso_capitalized
+    return " ".join(nome_corso_words)
 
 def extract_prof_name(question):
     doc = nlp(question)
