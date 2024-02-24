@@ -133,10 +133,14 @@ def chatbot():
 
 
 if __name__ == "__main__":
-    print("\nchi è Maradona?")
-    print(rispondi_a_domanda("chi è Maradona?"))
+
+    print("\nscheda del corso di Programmazione I")
+    print(rispondi_a_domanda("scheda del corso di Programmazione I"))
 
     '''
+    print("\nscheda del corso di Programmazione I")
+    print(rispondi_a_domanda("scheda del corso di Programmazione I"))
+
     print("\nuna domanda a caso")
     print(rispondi_a_domanda("una domanda a caso"))
     
