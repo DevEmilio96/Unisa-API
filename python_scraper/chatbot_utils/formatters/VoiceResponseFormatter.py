@@ -55,7 +55,7 @@ class VoiceResponseFormatter:
 
         dipartimento = data.get('dipartimento')
         if dipartimento:
-            info_parts.append(f"presso il {dipartimento}")
+            info_parts.append(f"presso il {dipartimento}.")
 
         if data['corsi']:
             info_parts.append(self.format_corsi_insegnati(data))

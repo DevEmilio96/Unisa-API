@@ -147,7 +147,7 @@ def find_professore(nome,professori):
 
 def format_orari(orari):
     # Espressione regolare per validare il formato dell'orario "HH:MM - HH:MM"
-    timing_pattern = re.compile(r"\d{2}:\d{2} - \d{2}:\d{2}")
+    timing_pattern = re.compile(r"(0?[1-9]|1[0-9]|2[0-3]):[0-5][0-9] - (0?[1-9]|1[0-9]|2[0-3]):[0-5][0-9]")
 
     formatted_orari = []
     for o in orari:
