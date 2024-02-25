@@ -97,7 +97,7 @@ class VoiceResponseFormatter:
         dipartimento = find_department_by_department_name(domanda, dipartimenti)
         if dipartimento:
             anno_corrente = datetime.now().year
-            return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}/{anno_corrente}. "
+            return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}-{anno_corrente}. "
     
     ########################################### # domande sui corsi ###########################################
     def format_insegnamento(self, domanda, professori, keyword=None):
@@ -150,7 +150,7 @@ class VoiceResponseFormatter:
             return f"Non ho trovato nessun professore che insegna {course_name}"
     def invalid(self,subject):
         if subject =="question":
-            return "Non ho ben capito la domanda, puoi usare 'help' per ottenere la lista delle mie funzionalità."
+            return "Non ho ben capito la domanda, puoi dire 'aiuto' per ottenere la lista delle mie funzionalità."
         if subject =="professor":
             return "Professore non trovato."
     pass

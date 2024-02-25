@@ -12,6 +12,8 @@ professori = load_json("json/db.json")
 dipartimenti = load_json("json/degree_courses.json")
 
 def rispondi_a_domanda(domanda, formato="voce"):
+    domanda = domanda[0].lower() + domanda[1:]
+    print(f"{domanda}")
     professore_nome = extract_prof_name(domanda)
     department_or_field = extract_department_or_field(domanda)
     formatter = (
@@ -31,7 +33,7 @@ def rispondi_a_domanda(domanda, formato="voce"):
         "corsi_insegnati": ["corsi insegna", "cosa insegna", "che insegna"],
         "informazioni_generali": ["chi è"],
         #help
-        "aiuto":["cosa sai fare","help","cosa posso chiederti","aiutami"]
+        "aiuto":["cosa sai fare","help","cosa posso chiederti","aiutami","aiuto"]
     }
 
     # Categorizza la domanda e trova la risposta appropriata
@@ -136,6 +138,9 @@ def chatbot():
 
 CORS(app)
 if __name__ == "__main__":
+    print("\nParlami di Carmine Gravino")
+    print(rispondi_a_domanda("Parlami di Carmine Gravino"))
+
     '''
     print("\nchi è carmine gravino")
     print(rispondi_a_domanda("chi è carmine gravino"))
