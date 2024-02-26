@@ -1,7 +1,8 @@
 from chatbot_utils.utils import *
 from datetime import datetime
+from chatbot_utils.formatters.Formatter_Interface  import Formatter_Interface
 
-class VoiceResponseFormatter:
+class VoiceResponseFormatter(Formatter_Interface):
     ########################################### domande sui professori ###########################################
     def format_contatti(self, data):
         # Logica per formattare la risposta per la lettura vocale

@@ -1,6 +1,7 @@
 from chatbot_utils.utils import *
+from chatbot_utils.formatters.Formatter_Interface import Formatter_Interface
 
-class TextResponseFormatter:
+class TextResponseFormatter(Formatter_Interface):
     ########################################### # domande sui professori ###########################################
     def default(data):
         return {"data" : data, "type" : {"mode" : "professore"}}

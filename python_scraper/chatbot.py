@@ -11,7 +11,7 @@ app = Flask(__name__)
 professori = load_json("json/db.json")
 dipartimenti = load_json("json/degree_courses.json")
 
-def rispondi_a_domanda(domanda, formato="voce"):
+def rispondi_a_domanda(domanda, formato="testo"):
     domanda = domanda[0].lower() + domanda[1:]
     print(f"domanda ------- {domanda}")
     professore_nome = extract_prof_name(domanda)
@@ -138,6 +138,9 @@ def chatbot():
 
 CORS(app)
 if __name__ == "__main__":
+    
+    print("\ntutte le informazioni Rita Francese?")
+    print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
     '''
     print("\nParlami di Carmine Gravino")
     print(rispondi_a_domanda("Parlami di Carmine Gravino"))
