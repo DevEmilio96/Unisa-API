@@ -33,19 +33,19 @@ class VoiceResponseFormatter(Formatter_Interface):
                     response_parts.append("e Telefono:")
                 response_parts.append(telefoni_str)
 
-        return " ".join(response_parts) + "."
+        return {"data":" ".join(response_parts) + ".", "gesture":"happy"}
     
     @staticmethod
     def format_corsi_insegnati(data):
         corsi = data.get("corsi", [])
         if corsi:
             corsi_str = ", ".join([corso["name"] for corso in corsi])
-            return f"{data['nome']}, insegna i seguenti corsi: {corsi_str}."
+            return {"data":f"{data['nome']}, insegna i seguenti corsi: {corsi_str}.", "gesture":"happy"}
         else:
-            return f"Non sono stati trovati corsi insegnati da {data['nome']}."
+            return {"data":f"Non sono stati trovati corsi insegnati da {data['nome']}.", "gesture":"ugly"}
         
     def format_informazioni_generali(self,professore):
-        return f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}."
+        return {"data":f"{professore['nome']} è {professore['titolo']} presso {professore['dipartimento']}.", "gesture":"happy"}
         
     def format_tutte_informazioni(self, data):
         info_parts = [f"{data['nome']}"]
@@ -59,9 +59,9 @@ class VoiceResponseFormatter(Formatter_Interface):
             info_parts.append(f"presso il {dipartimento}.")
 
         if data['corsi']:
-            info_parts.append(self.format_corsi_insegnati(data))
+            info_parts.append(self.format_corsi_insegnati(data)['data'])
 
-        contatti = self.format_contatti(data)
+        contatti = self.format_contatti(data)['data']
         if contatti:
             info_parts.append(contatti)
 
@@ -70,14 +70,14 @@ class VoiceResponseFormatter(Formatter_Interface):
             info_parts.append(f"È possibile incontrare {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}")
 
         # Rimuove parti vuote e unisce il tutto in una stringa
-        return " ".join(filter(None, info_parts))
+        return {"data":" ".join(filter(None, info_parts)), "gesture":"happy"}
     
     def format_orari_ricevimento(self,data):
         orari_ricevimento = format_orari(data.get('orari_di_ricevimento', []))
         if orari_ricevimento:
-            return f"È possibile incontrare {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}"
+            return {"data":f"È possibile incontrare {data['nome']} nei seguenti orari di ricevimento: {orari_ricevimento}", "gesture":"happy"}
         else:
-            return f"{data['nome']} non ha specificato degli orari di ricevimento."
+            return {"data":f"{data['nome']} non ha specificato degli orari di ricevimento.", "gesture":"ugly"}
 
     ########################################### domande sui dipartimenti ###########################################
     def format_dipartimento_campo(self, domanda, professori, keyword=None):
@@ -90,18 +90,18 @@ class VoiceResponseFormatter(Formatter_Interface):
             # dove ogni dizionario rappresenta un professore e ha una chiave 'nome'
             professori_nomi = [prof['nome'] for prof in matched_professors]
             if len(matched_professors)>10:
-                return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi[:10]) + ", e altri che puoi visualizzare sull'interfaccia."
+                return {"data": f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi[:10]) + ", e altri che puoi visualizzare sull'interfaccia.", "gesture":"happy"}
             else:
-                return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi) + "."
+                return {"data": f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi) + ".", "gesture":"happy"}
         else:
-            return f"Nessun professore trovato per il dipartimento di {department_or_field}."
+            return {"data": f"Nessun professore trovato per il dipartimento di {department_or_field}.", "gesture":"ugly"}
 
     def format_offerta_formativa_dipartimento(self, domanda, dipartimenti, keyword=None):
         # Calcola l'anno corrente
         dipartimento = find_department_by_department_name(domanda, dipartimenti)
         if dipartimento:
             anno_corrente = datetime.now().year
-            return f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}-{anno_corrente}. "
+            return {"data":f"Puoi visualizzare sull'interfaccia l'offerta formativa per il percorso di studi di {dipartimento['nome']} per l'anno {anno_corrente-1}-{anno_corrente}. ", "gesture":"happy"}
     
     ########################################### # domande sui corsi ###########################################
     def format_insegnamento(self, domanda, professori, keyword=None):
@@ -111,11 +111,11 @@ class VoiceResponseFormatter(Formatter_Interface):
             # Utilizza una list comprehension per estrarre i nomi dei professori
             professori_nomi = [prof['nome'] for prof in professors_for_course]
             if len(professori_nomi)>10:
-                return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi[:10]) + ", e altri che puoi visualizzare sull'interfaccia."
+                return {"data":f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi[:10]) + ", e altri che puoi visualizzare sull'interfaccia.", "gesture":"happy"}
             else:
-                return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi) + "."
+                return {"data":f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi) + ".", "gesture":"happy"}
         else:
-            return f"Nessun professore trovato che insegna {course_name}."
+            return {"data":f"Nessun professore trovato che insegna {course_name}.", "gesture":"ugly"}
 
     
     def format_offerta_formativa_corso(self, domanda, professori, keyword):
@@ -150,9 +150,9 @@ class VoiceResponseFormatter(Formatter_Interface):
 
             # Verifica il risultato della ricerca
             if not dettagli_corso_cercato:
-                return f"Dettagli non trovati per il corso {course_name}"
+                return {"data":f"Dettagli non trovati per il corso {course_name}", "gesture":"ugly"}
             elif 'scheda' not in dettagli_corso_cercato:
-                return f"Dettagli '{keyword}' non disponibili per il corso {course_name}"
+                return {"data":f"Dettagli '{keyword}' non disponibili per il corso {course_name}", "gesture":"ugly"}
 
             if keyword in ["obiettivi", "prerequisiti", "contenuti", "metodi didattici", "testi"]:
                 # Normalizza la keyword per il confronto
@@ -163,14 +163,14 @@ class VoiceResponseFormatter(Formatter_Interface):
                     # Ad esempio, restituisci il valore associato alla keyword nel dizionario 'scheda'
                     for key, value in dettagli_corso_cercato['scheda'].items():
                         if key.lower() == keyword_normalized:
-                            return f"{keyword} per {course_name}: {value}"
+                            return {"data":f"{keyword} per {course_name}: {value}", "gesture":"happy"}
             else:
-                return f"Puoi visualizzare sulla mia interfaccia la scheda del corso per {course_name}"
+                return {"data": f"Puoi visualizzare sulla mia interfaccia la scheda del corso per {course_name}", "gesture":"happy"}
         else:
-            return f"Non ho trovato nessun professore che insegna {course_name}"
+            return {"data": f"Non ho trovato nessun professore che insegna {course_name}", "gesture":"ugly"}
     def invalid(self,subject):
         if subject =="question":
-            return "Non ho ben capito la domanda, puoi dire 'aiuto' per ottenere la lista delle mie funzionalità."
+            return {"data":"Non ho ben capito la domanda, puoi dire 'aiuto' per ottenere la lista delle mie funzionalità.", "gesture":"ugly"}
         if subject =="professor":
-            return "Professore non trovato."
+            return {"data":"Professore non trovato.", "gesture":"ugly"}
     pass

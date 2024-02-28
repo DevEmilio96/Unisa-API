@@ -139,8 +139,6 @@ def chatbot():
 CORS(app)
 if __name__ == "__main__":
     
-    print("\n lista dei professori appartenenti al Dipartimento di Informatica")
-    print(rispondi_a_domanda("lista dei professori appartenenti al Dipartimento di Informatica"))
     '''
     print("\nParlami di Carmine Gravino")
     print(rispondi_a_domanda("Parlami di Carmine Gravino"))
