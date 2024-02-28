@@ -11,7 +11,7 @@ app = Flask(__name__)
 professori = load_json("json/db.json")
 dipartimenti = load_json("json/degree_courses.json")
 
-def rispondi_a_domanda(domanda, formato="testo"):
+def rispondi_a_domanda(domanda, formato="voce"):
     domanda = domanda[0].lower() + domanda[1:]
     print(f"domanda ------- {domanda}")
     professore_nome = extract_prof_name(domanda)
@@ -24,12 +24,12 @@ def rispondi_a_domanda(domanda, formato="testo"):
         "insegnamento": ["quali professori insegnano", "chi insegna", "che insegnano"],
         "offerta_formativa_corso": ["offerta formativa del corso","scheda", "obiettivi", "prerequisiti","contenuti","metodi didattici","testi"],
         # domande sui dipartimenti
-        "dipartimento_campo": ["professori appartenenti al"],
+        "dipartimento_campo": ["professori appartenenti al","professori appartengono al"],
         "offerta_formativa_dipartimento": ["offerta formativa del dipartimento","offerta formativa di","piano di studi","corso di studi"],
         # domande sui professori
-        "orari_ricevimento": ["orari di ricevimento"],
+        "orari_ricevimento": ["orari di ricevimento", "incontrare"],
         "tutte_informazioni": ["tutte le informazioni", "cosa sai di", "parlami di"],
-        "contatti": ["contattare", "contatti", "incontrare"],
+        "contatti": ["contattare", "contatti"],
         "corsi_insegnati": ["corsi insegna", "cosa insegna", "che insegna"],
         "informazioni_generali": ["chi è"],
         #help
@@ -139,8 +139,8 @@ def chatbot():
 CORS(app)
 if __name__ == "__main__":
     
-    print("\ntutte le informazioni Rita Francese?")
-    print(rispondi_a_domanda("tutte le informazioni Rita Francese?"))
+    print("\n lista dei professori appartenenti al Dipartimento di Informatica")
+    print(rispondi_a_domanda("lista dei professori appartenenti al Dipartimento di Informatica"))
     '''
     print("\nParlami di Carmine Gravino")
     print(rispondi_a_domanda("Parlami di Carmine Gravino"))

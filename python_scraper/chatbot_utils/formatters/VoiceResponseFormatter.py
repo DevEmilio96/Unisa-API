@@ -89,7 +89,10 @@ class VoiceResponseFormatter(Formatter_Interface):
             # Assumendo che matched_professors sia una lista di dizionari,
             # dove ogni dizionario rappresenta un professore e ha una chiave 'nome'
             professori_nomi = [prof['nome'] for prof in matched_professors]
-            return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi) + "."
+            if len(matched_professors)>10:
+                return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi[:10]) + ", e altri che puoi visualizzare sull'interfaccia."
+            else:
+                return f"I professori del dipartimento di {department_or_field} sono {len(matched_professors)}: " + ", ".join(professori_nomi) + "."
         else:
             return f"Nessun professore trovato per il dipartimento di {department_or_field}."
 
@@ -107,7 +110,10 @@ class VoiceResponseFormatter(Formatter_Interface):
         if professors_for_course:
             # Utilizza una list comprehension per estrarre i nomi dei professori
             professori_nomi = [prof['nome'] for prof in professors_for_course]
-            return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi) + "."
+            if len(professori_nomi)>10:
+                return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi[:10]) + ", e altri che puoi visualizzare sull'interfaccia."
+            else:
+                return f"I professori che insegnano {course_name} sono {len(professors_for_course)}: " + ", ".join(professori_nomi) + "."
         else:
             return f"Nessun professore trovato che insegna {course_name}."
 
@@ -118,22 +124,35 @@ class VoiceResponseFormatter(Formatter_Interface):
         
         professors_for_course = find_all_professors_details_for_course(course_name, professori)
         
+        # Inizializza una variabile per tenere traccia del corso cercato
+        dettagli_corso_cercato = None
+
         # Assicurati di procedere solo se ci sono professori associati al corso
         if professors_for_course:
-            professore = find_professore(professors_for_course[0]['nome'], professori)
-            dettagli_corso_cercato = None
-            # Scorri tutti i corsi per trovare quello specifico
-            for corso in professore["corsi"]:
-                # Usa 'in' per verificare se course_name è una sottostringa di corso["name"]
-                if course_name.upper() in corso["name"].upper():  # Confronto case-insensitive
-                    dettagli_corso_cercato = corso
-                    break  # Interrompi il ciclo una volta trovato il corso
+            # Scorri tutti i professori trovati per il corso
+            for professor_info in professors_for_course:
+                professore = find_professore(professor_info['nome'], professori)
+                
+                # Scorri tutti i corsi per trovare quello specifico
+                for corso in professore["corsi"]:
+                    # Usa 'in' per verificare se course_name è una sottostringa di corso["name"]
+                    if course_name.upper() == corso["name"].upper():  # Confronto case-insensitive
+                        # Controlla se la chiave 'scheda' esiste e contiene il dettaglio cercato
+                        if 'scheda' in corso and keyword.lower() in (key.lower() for key in corso['scheda']):
+                            dettagli_corso_cercato = corso
+                            break  # Interrompi il ciclo se hai trovato il corso con i dettagli richiesti
+                        elif 'scheda' in corso:
+                            # Se il corso ha una 'scheda' ma non il dettaglio cercato, segna come possibile match
+                            dettagli_corso_cercato = corso
+                            # Non interrompere il ciclo, continua a cercare un corso migliore
+                if dettagli_corso_cercato and 'scheda' in dettagli_corso_cercato:
+                    break  # Se hai trovato un corso con i dettagli richiesti, interrompi il ciclo dei professori
 
-            if not dettagli_corso_cercato or 'scheda' not in dettagli_corso_cercato:
+            # Verifica il risultato della ricerca
+            if not dettagli_corso_cercato:
                 return f"Dettagli non trovati per il corso {course_name}"
-            
-            if 'scheda' not in dettagli_corso_cercato and keyword.lower() not in (key.lower() for key in dettagli_corso_cercato['scheda']):
-                return f"Dettaglio '{keyword}' non disponibile per il corso {course_name}"
+            elif 'scheda' not in dettagli_corso_cercato:
+                return f"Dettagli '{keyword}' non disponibili per il corso {course_name}"
 
             if keyword in ["obiettivi", "prerequisiti", "contenuti", "metodi didattici", "testi"]:
                 # Normalizza la keyword per il confronto
