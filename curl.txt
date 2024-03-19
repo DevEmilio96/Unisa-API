@@ -4,4 +4,4 @@ curl -X POST -H "Content-Type: application/json" -d "{\"domanda\": \"quali profe
 <iframe src="http://docs.google.com/gview?url=https://corsi.unisa.it/uploads/rescue/__piano-studi-cds/2023/05121.pdf?b&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
 
 curl -X POST http://127.0.0.1:5000 \ -H "Content-Type: application/json" \ -d '{"domanda": "quali professori insegnano Tecnologie software per il web?", "formato": "testo"}'
-curl -X POST -H "Content-Type: application/json" -d "{\"domanda\": \"quali professori insegnano Tecnologie software per il web?\", \"formato\": \"testo\"}" http://127.0.0.1:5000/chatbot
+curl -X POST -H "Content-Type: application/json" -d "{\"domanda\": \"quali professori insegnano Tecnologie software per il web?\", \"formato\": \"testo\"}" https://kobra.pythonanywhere.com/chatbot
