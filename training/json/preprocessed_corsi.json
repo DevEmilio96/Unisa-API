@@ -1,0 +1,467 @@
+[
+    {
+        "nome_corso": "CHIMICA",
+        "link_corso": "https://corsi.unisa.it/chimica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05124.pdf?b"
+    },
+    {
+        "nome_corso": "DISCIPLINE DELLE ARTI VISIVE, DELLA MUSICA E DELLO SPETTACOLO",
+        "link_corso": "https://corsi.unisa.it/davimus",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43124.pdf?b"
+    },
+    {
+        "nome_corso": "ECONOMIA AZIENDALE",
+        "link_corso": "https://corsi.unisa.it/economia-aziendale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02121.pdf?b"
+    },
+    {
+        "nome_corso": "ECONOMIA E COMMERCIO",
+        "link_corso": "https://corsi.unisa.it/economia-e-commercio",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02124.pdf?b"
+    },
+    {
+        "nome_corso": "ECONOMIA E MANAGEMENT",
+        "link_corso": "https://corsi.unisa.it/economia-e-management",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02127.pdf?b"
+    },
+    {
+        "nome_corso": "FARMACEUTICA E NUTRACEUTICA ANIMALE",
+        "link_corso": "https://corsi.unisa.it/farmaceutica-e-nutraceutica-animale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07123.pdf?b"
+    },
+    {
+        "nome_corso": "FILOSOFIA",
+        "link_corso": "https://corsi.unisa.it/filosofia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03125.pdf?b"
+    },
+    {
+        "nome_corso": "FISICA",
+        "link_corso": "https://corsi.unisa.it/fisica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05126.pdf?b"
+    },
+    {
+        "nome_corso": "FISIOTERAPIA (ABILITANTE ALLA PROF. SANIT. DI FISIOTERAPISTA)",
+        "link_corso": "https://corsi.unisa.it/fisioterapia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10122.pdf?b"
+    },
+    {
+        "nome_corso": "GESTIONE E VALORIZZAZIONE DELLE RISORSE AGRARIE E DELLE AREE PROTETTE",
+        "link_corso": "https://corsi.unisa.it/agraria",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07122.pdf?b"
+    },
+    {
+        "nome_corso": "GIURISTA D'IMPRESA E DELLE NUOVE TECNOLOGIE",
+        "link_corso": "https://corsi.unisa.it/giurista-d-impresa-e-delle-nuove-tecnologie",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/01121.pdf?b"
+    },
+    {
+        "nome_corso": "INFERMIERISTICA (ABILITANTE ALLA PROF. SANIT. DI INFERMIERE)",
+        "link_corso": "https://corsi.unisa.it/infermieristica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10121.pdf?b"
+    },
+    {
+        "nome_corso": "INFORMATICA",
+        "link_corso": "https://corsi.unisa.it/Informatica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05121.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA CHIMICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-chimica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06122.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA CIVILE",
+        "link_corso": "https://corsi.unisa.it/ingegneria-civile",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06121.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA CIVILE PER L'AMBIENTE ED IL TERRITORIO",
+        "link_corso": "https://corsi.unisa.it/ingegneria-ambientale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06125.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA DELL'INFORMAZIONE PER LA MEDICINA DIGITALE",
+        "link_corso": "https://corsi.unisa.it/ingegneria-dell-informazione-per-la-medicina-digitale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06128.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA ELETTRONICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-elettronica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06124.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA GESTIONALE",
+        "link_corso": "https://corsi.unisa.it/ingegneria-gestionale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06126.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA INFORMATICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-informatica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06127.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA MECCANICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-meccanica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06123.pdf?b"
+    },
+    {
+        "nome_corso": "LETTERE",
+        "link_corso": "https://corsi.unisa.it/lettere",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03126.pdf?b"
+    },
+    {
+        "nome_corso": "LINGUE E CULTURE STRANIERE",
+        "link_corso": "https://corsi.unisa.it/lingue-e-culture-straniere",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43122.pdf?b"
+    },
+    {
+        "nome_corso": "MATEMATICA",
+        "link_corso": "https://corsi.unisa.it/matematica",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05123.pdf?b"
+    },
+    {
+        "nome_corso": "OSTETRICIA (ABILITANTE ALLA PROF. SANIT. DI OSTETRICA/O)",
+        "link_corso": "https://corsi.unisa.it/ostetricia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10124.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE AMBIENTALI",
+        "link_corso": "https://corsi.unisa.it/scienze-ambientali",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05127.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE BIOLOGICHE",
+        "link_corso": "https://corsi.unisa.it/scienze-biologiche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05128.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DEI BENI CULTURALI",
+        "link_corso": "https://corsi.unisa.it/scienze-dei-beni-culturali",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03128.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DEL SERVIZIO SOCIALE",
+        "link_corso": "https://corsi.unisa.it/scienze-del-servizio-sociale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03129.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DEL TURISMO",
+        "link_corso": "https://corsi.unisa.it/scienze-del-turismo",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02129.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELL'AMMINISTRAZIONE E DELL'ORGANIZZAZIONE",
+        "link_corso": "https://corsi.unisa.it/scienze-dell-amministrazione-e-dell-organizzazione",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12122.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELL'EDUCAZIONE",
+        "link_corso": "https://corsi.unisa.it/scienze-educazione",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44124.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELLA COMUNICAZIONE",
+        "link_corso": "https://corsi.unisa.it/scienze-della-comunicazione",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03122.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELLE ATTIVITA' MOTORIE, SPORTIVE E DELL'EDUCAZIONE PSICOMOTORIA",
+        "link_corso": "https://corsi.unisa.it/scienze-attivita-motorie-sportive-educazione-psicomotoria",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44125.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE E NANOTECNOLOGIE PER LA SOSTENIBILITÀ",
+        "link_corso": "https://corsi.unisa.it/scienze-e-nanotecnologie-per-la-sostenibilita",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05129.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE POLITICHE E DELLE RELAZIONI INTERNAZIONALI",
+        "link_corso": "https://corsi.unisa.it/scienze-politiche-e-relazioni-Internazionali",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12121.pdf?b"
+    },
+    {
+        "nome_corso": "SOCIOLOGIA",
+        "link_corso": "https://corsi.unisa.it/sociologia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03123.pdf?b"
+    },
+    {
+        "nome_corso": "STATISTICA PER I BIG DATA",
+        "link_corso": "https://corsi.unisa.it/statistica-per-i-big-data",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02128.pdf?b"
+    },
+    {
+        "nome_corso": "STUDI DIPLOMATICI, INTERNAZIONALI E SULLA SICUREZZA GLOBALE",
+        "link_corso": "https://corsi.unisa.it/studi-diplomatici-internazionali-e-sulla-sicurezza-globale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12125.pdf?b"
+    },
+    {
+        "nome_corso": "TECNICHE DI RADIOLOGIA MEDICA, PER IMMAGINI E RADIOTERAPIA (ABILITANTE ALLA PROFESSIONE SANITARIA DI TECNICO DI RADIOLOGIA MEDICA)",
+        "link_corso": "https://corsi.unisa.it/tecniche-di-radiologia-medica-per-immagini-e-radioterapia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10125.pdf?b"
+    },
+    {
+        "nome_corso": "TECNICHE ERBORISTICHE",
+        "link_corso": "https://corsi.unisa.it/tecniche-erboristiche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07121.pdf?b"
+    },
+    {
+        "nome_corso": "TECNICHE PER L'EDILIZIA E Il TERRITORIO",
+        "link_corso": "https://corsi.unisa.it/tecniche-per-l-edilizia-e-il-territorio",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06129.pdf?b"
+    },
+    {
+        "nome_corso": "ARCHEOLOGIA E CULTURE ANTICHE",
+        "link_corso": "https://corsi.unisa.it/archeologia-e-culture-antiche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03223.pdf?b"
+    },
+    {
+        "nome_corso": "BIOLOGIA",
+        "link_corso": "https://corsi.unisa.it/biologia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05221.pdf?b"
+    },
+    {
+        "nome_corso": "CHIMICA",
+        "link_corso": "https://corsi.unisa.it/chimica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05223.pdf?b"
+    },
+    {
+        "nome_corso": "CONSULENZA E MANAGEMENT AZIENDALE",
+        "link_corso": "https://corsi.unisa.it/consulenza-e-management-aziendale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02221.pdf?b"
+    },
+    {
+        "nome_corso": "CORPORATE COMMUNICATION E MEDIA",
+        "link_corso": "https://corsi.unisa.it/corporate-communication-e-media",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03231.pdf?b"
+    },
+    {
+        "nome_corso": "DATA SCIENCE E GESTIONE DELL'INNOVAZIONE",
+        "link_corso": "https://corsi.unisa.it/data-science-e-gestione-dell-innovazione-lm-data",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02228.pdf?b"
+    },
+    {
+        "nome_corso": "ECONOMIA",
+        "link_corso": "https://corsi.unisa.it/economia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02222.pdf?b"
+    },
+    {
+        "nome_corso": "ECONOMIA GOVERNO E AMMINISTRAZIONE",
+        "link_corso": "https://corsi.unisa.it/economia-governo-e-amministrazione",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02231.pdf?b"
+    },
+    {
+        "nome_corso": "ELECTRICAL ENGINEERING FOR DIGITAL ENERGY",
+        "link_corso": "https://corsi.unisa.it/electrical-engineering-for-digital-energy",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06233.pdf?b"
+    },
+    {
+        "nome_corso": "FILOLOGIA MODERNA",
+        "link_corso": "https://corsi.unisa.it/filologia-moderna",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03221.pdf?b"
+    },
+    {
+        "nome_corso": "FILOLOGIA, LETTERATURE E STORIA DELL'ANTICHITÀ",
+        "link_corso": "https://corsi.unisa.it/filologia-letterature-e-storia-dell-antichita",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03222.pdf?b"
+    },
+    {
+        "nome_corso": "FILOSOFIA",
+        "link_corso": "https://corsi.unisa.it/filosofia-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03226.pdf?b"
+    },
+    {
+        "nome_corso": "FISICA",
+        "link_corso": "https://corsi.unisa.it/fisica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05226.pdf?b"
+    },
+    {
+        "nome_corso": "FOOD ENGINEERING",
+        "link_corso": "https://corsi.unisa.it/ingegneria-alimentare",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06228.pdf?b"
+    },
+    {
+        "nome_corso": "GESTIONE E VALORIZZAZIONE DEGLI ARCHIVI E DELLE BIBLIOTECHE",
+        "link_corso": "https://corsi.unisa.it/gestione-e-valorizzazione-degli-archivi-e-delle-biblioteche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03220.pdf?b"
+    },
+    {
+        "nome_corso": "GLOBAL STUDIES AND EU",
+        "link_corso": "https://corsi.unisa.it/global-studies-and-eu",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12225.pdf?b"
+    },
+    {
+        "nome_corso": "INFORMATICA",
+        "link_corso": "https://corsi.unisa.it/informatica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05225.pdf?b"
+    },
+    {
+        "nome_corso": "INFORMATION ENGINEERING FOR DIGITAL MEDICINE",
+        "link_corso": "https://corsi.unisa.it/information-Engineering-for-digital-medicine",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06232.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA CHIMICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-chimica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06222.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA CIVILE",
+        "link_corso": "https://corsi.unisa.it/ingegneria-civile-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06221.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA ELETTRONICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-elettronica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06224.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA GESTIONALE",
+        "link_corso": "https://corsi.unisa.it/ingegneria-gestionale-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06226.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA INFORMATICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-informatica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06227.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA MECCANICA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-meccanica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06223.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA PER L'AMBIENTE ED IL TERRITORIO",
+        "link_corso": "https://corsi.unisa.it/ingegneria-ambientale-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06225.pdf?b"
+    },
+    {
+        "nome_corso": "INNOVAZIONI PER LE PRODUZIONI AGRARIE MEDITERRANEE",
+        "link_corso": "https://corsi.unisa.it/agraria-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07222.pdf?b"
+    },
+    {
+        "nome_corso": "LINGUE E LETTERATURE MODERNE",
+        "link_corso": "https://corsi.unisa.it/lingue-e-letterature-moderne",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43221.pdf?b"
+    },
+    {
+        "nome_corso": "LINGUISTICA E DIDATTICA DELL'ITALIANO NEL CONTESTO INTERNAZIONALE",
+        "link_corso": "https://corsi.unisa.it/linguistica-e-didattica-dell-italiano",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03240.pdf?b"
+    },
+    {
+        "nome_corso": "MANAGEMENT DEI SISTEMI TURISTICI PER LO SVILUPPO SOSTENIBILE",
+        "link_corso": "https://corsi.unisa.it/management-dei-sistemi-turistici-per-lo-sviluppo-sostenibile",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12228.pdf?b"
+    },
+    {
+        "nome_corso": "MANAGEMENT DELLE ATTIVITÀ SPORTIVE E MOTORIE PER IL BENESSERE SOCIALE",
+        "link_corso": "https://corsi.unisa.it/management-delle-attivita-sportive-e-motorie-per-il-benessere-sociale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12227.pdf?b"
+    },
+    {
+        "nome_corso": "MATEMATICA",
+        "link_corso": "https://corsi.unisa.it/matematica-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05222.pdf?b"
+    },
+    {
+        "nome_corso": "POLITICHE TERRITORIALI E COOPERAZIONE INTERNAZIONALE",
+        "link_corso": "https://corsi.unisa.it/politiche-territoriali-e-cooperazione-internazionale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/12226.pdf?b"
+    },
+    {
+        "nome_corso": "PSICOLOGIA DI COMUNITÀ PER I CONTESTI FORMATIVI, PER IL BENESSERE E PER LO SPORT",
+        "link_corso": "https://corsi.unisa.it/psicologia-di-comunita-per-i-contesti-formativi-per-il-benessere-e-per-lo-sport",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44225.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE AMBIENTALI",
+        "link_corso": "https://corsi.unisa.it/scienze-ambientali-magistrale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05224.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELL'EDUCAZIONE PERMANENTE E DELLA FORMAZIONE CONTINUA",
+        "link_corso": "https://corsi.unisa.it/scienze-educazione-permanente-e-formazione-continua",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44224.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELLA VALUTAZIONE MOTORIO-SPORTIVA E TECNICHE DI ANALISI E PROGETTAZIONE DELLO SPORT PER DISABILI",
+        "link_corso": "https://corsi.unisa.it/scienze-della-valutazione-motorio-sportiva",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44222.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELLO SPETTACOLO E DELLA PRODUZIONE MULTIMEDIALE",
+        "link_corso": "https://corsi.unisa.it/scienze-dello-spettacolo-e-della-produzione-multimediale",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/43222.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE INFERMIERISTICHE E OSTETRICHE",
+        "link_corso": "https://corsi.unisa.it/scienze-infermieristiche-e-ostetriche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10221.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE PEDAGOGICHE",
+        "link_corso": "https://corsi.unisa.it/scienze-pedagogiche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44221.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE STATISTICHE PER LA FINANZA",
+        "link_corso": "https://corsi.unisa.it/scienze-statistiche-per-la-finanza",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/02224.pdf?b"
+    },
+    {
+        "nome_corso": "SICUREZZA INFORMATICA E TECNOLOGIE CLOUD",
+        "link_corso": "https://corsi.unisa.it/sicurezza-informatica-e-tecnologie-cloud",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/05227.pdf?b"
+    },
+    {
+        "nome_corso": "SMART INDUSTRY ENGINEERING",
+        "link_corso": "https://corsi.unisa.it/smart-industry-engineering",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06230.pdf?b"
+    },
+    {
+        "nome_corso": "SOCIOLOGIA E POLITICHE PER IL TERRITORIO",
+        "link_corso": "https://corsi.unisa.it/sociologia-e-politiche-per-il-territorio",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03229.pdf?b"
+    },
+    {
+        "nome_corso": "STORIA E CRITICA D'ARTE",
+        "link_corso": "https://corsi.unisa.it/storia-e-critica-d-arte",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/03224.pdf?b"
+    },
+    {
+        "nome_corso": "CHIMICA E TECNOLOGIA FARMACEUTICHE",
+        "link_corso": "https://corsi.unisa.it/chimica-e-tecnologia-farmaceutiche",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07604.pdf?b"
+    },
+    {
+        "nome_corso": "FARMACIA",
+        "link_corso": "https://corsi.unisa.it/farmacia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/07603.pdf?b"
+    },
+    {
+        "nome_corso": "GIURISPRUDENZA",
+        "link_corso": "https://corsi.unisa.it/giurisprudenza",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/01601.pdf?b"
+    },
+    {
+        "nome_corso": "INGEGNERIA EDILE-ARCHITETTURA",
+        "link_corso": "https://corsi.unisa.it/ingegneria-edile-architettura",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/06601.pdf?b"
+    },
+    {
+        "nome_corso": "SCIENZE DELLA FORMAZIONE PRIMARIA",
+        "link_corso": "https://corsi.unisa.it/scienze-della-formazione-primaria",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/44610.pdf?b"
+    },
+    {
+        "nome_corso": "MEDICINA E CHIRURGIA",
+        "link_corso": "https://corsi.unisa.it/medicina-e-chirurgia",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10601.pdf?b"
+    },
+    {
+        "nome_corso": "ODONTOIATRIA E PROTESI DENTARIA",
+        "link_corso": "https://corsi.unisa.it/odontoiatria-protesi-dentaria",
+        "piani_di_studi": "Piano di Studi a.a 2023/2024: https://web.unisa.it/uploads/rescue/__piano-studi-cds/2023/10602.pdf?b"
+    }
+]
