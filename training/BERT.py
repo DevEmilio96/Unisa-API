@@ -4,20 +4,30 @@ from transformers import BertTokenizer, BertForSequenceClassification, Trainer, 
 from torch.utils.data import Dataset
 import torch
 
-# Carica il file JSON preprocessato
-with open('python_scraper/json/preprocessed_data.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+# Carica i file JSON preprocessati
+with open('training/json/preprocessed_docenti.json', 'r', encoding='utf-8') as f:
+    data_docenti = json.load(f)
 
-# Funzione per creare frasi e labels
-def create_texts_and_labels(data):
-    labels_map = {'domanda_su_corsi': 0, 'domanda_su_orari_ricevimento': 1, 'domanda_su_contatti': 2}
+with open('training/json/preprocessed_corsi.json', 'r', encoding='utf-8') as f:
+    data_corsi = json.load(f)
+
+# Funzione per creare frasi e labels per docenti e corsi di laurea
+def create_texts_and_labels(data_docenti, data_corsi):
+    labels_map = {
+        'domanda_su_corsi': 0, 
+        'domanda_su_orari_ricevimento': 1, 
+        'domanda_su_contatti': 2,
+        'domanda_su_corso_laurea': 3,  # Nuova etichetta per le domande sui corsi di laurea
+        'domanda_su_piano_studi': 4    # Nuova etichetta per i piani di studio
+    }
     texts = []
     labels = []
 
-    for docente in data:
+    # Crea frasi per i docenti
+    for docente in data_docenti:
         nome = docente['nome']
         
-        # Creiamo frasi per ogni intento
+        # Domande sui docenti
         texts.append(f"Quali corsi insegna {nome}?")
         labels.append(labels_map['domanda_su_corsi'])
         
@@ -27,10 +37,22 @@ def create_texts_and_labels(data):
         texts.append(f"Come posso contattare {nome}?")
         labels.append(labels_map['domanda_su_contatti'])
     
+    # Crea frasi per i corsi di laurea
+    for corso in data_corsi:
+        nome_corso = corso['nome_corso']
+        
+        # Domande sui corsi di laurea
+        texts.append(f"Qual è l'offerta formativa di {nome_corso}?")
+        labels.append(labels_map['domanda_su_corso_laurea'])
+        
+        # Domande sui piani di studio
+        texts.append(f"Dove posso trovare il piano di studi di {nome_corso}?")
+        labels.append(labels_map['domanda_su_piano_studi'])
+    
     return texts, labels
 
 # Crea frasi e labels dal dataset preprocessato
-texts, labels = create_texts_and_labels(data)
+texts, labels = create_texts_and_labels(data_docenti, data_corsi)
 
 # Dividi il dataset in training e evaluation set (80% addestramento, 20% valutazione)
 texts_train, texts_eval, labels_train, labels_eval = train_test_split(texts, labels, test_size=0.2, random_state=42)
@@ -64,8 +86,8 @@ class CustomDataset(Dataset):
 train_dataset = CustomDataset(train_encodings, train_labels_tensor)
 eval_dataset = CustomDataset(eval_encodings, eval_labels_tensor)
 
-# Modello BERT per la classificazione
-model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=3)
+# Modello BERT per la classificazione con 5 classi (3 per i docenti, 2 per i corsi)
+model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=5)
 
 # TrainingArguments
 training_args = TrainingArguments(
